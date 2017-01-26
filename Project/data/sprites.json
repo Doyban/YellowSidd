@@ -1,0 +1,9 @@
+{
+	"batAlien"			: {"sx":   2, "sy": 2, "cols": 1, "frames": 1, "tilew": 21, "tileh": 15},
+	"blueSmallAlien"	: {"sx":  25, "sy": 2, "cols": 1, "frames": 1, "tilew": 17, "tileh":  4},
+	"greenBigAlien"		: {"sx":  44, "sy": 2, "cols": 1, "frames": 1, "tilew": 13, "tileh": 10},
+	"greenSnakeAlien" 	: {"sx":  59, "sy": 2, "cols": 1, "frames": 1, "tilew": 21, "tileh":  8},
+	"pinkAlien"		  	: {"sx":  82, "sy": 2, "cols": 1, "frames": 1, "tilew": 17, "tileh": 15},
+	"player"			: {"sx": 101, "sy": 2, "cols": 1, "frames": 1, "tilew": 17, "tileh": 19},
+	"snailAlien"		: {"sx": 120, "sy": 2, "cols": 1, "frames": 1, "tilew": 18, "tileh": 12}
+}

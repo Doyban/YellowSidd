@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en";>
+<head>
+    <meta charset="UTF-8">
+    <title>YellowSidd</title>
+    <script src="lib/quintus.js"></script>
+    <script src="lib/quintus_2d.js"></script>
+    <script src="lib/quintus_anim.js"></script>
+    <script src="lib/quintus_audio.js"></script>
+    <script src="lib/quintus_input.js"></script>
+    <script src="lib/quintus_scenes.js"></script>
+    <script src="lib/quintus_sprites.js"></script>
+    <script src="lib/quintus_tmx.js"></script>
+    <script src="lib/quintus_touch.js"></script>
+    <script src="lib/quintus_ui.js"></script>
+
+    <script src="scripts/enemy.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/stats.js"></script>
+
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="fb-like" data-href="https://apps.facebook.com/yellowsidd" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=242231026115859";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '242231026115859',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+
+    // ADD ADDITIONAL FACEBOOK CODE HERE
+    // Place following code after FB.init call.
+
+  function onLogin(response) {
+    if (response.status == 'connected') {
+      FB.api('/me?fields=first_name', function(data) {
+        var welcomeBlock = document.getElementById('fb-welcome');
+        welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
+      });
+    }
+  }
+
+  FB.getLoginStatus(function(response) {
+    // Check login status on load, and if the user is
+    // already logged in, go directly to the welcome message.
+    if (response.status == 'connected') {
+      onLogin(response);
+    } else {
+      // Otherwise, show Login dialog first.
+      FB.login(function(response) {
+        onLogin(response);
+      }, {scope: 'user_friends, email'});
+    }
+  });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+</body>
+</html>
