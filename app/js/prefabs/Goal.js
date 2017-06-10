@@ -22,5 +22,9 @@ YellowSidd.Goal.prototype.update = function () {
 
 YellowSidd.Goal.prototype.reach_goal = function () {
   "use strict";
+  // Save the player lives and score before loading a new level, otherwise it will be restarted. For this, we will save this information in the browser localStorage when reaching the goal.
+  localStorage.player_lives = this.game_state.prefabs.player.lives;
+  localStorage.player_score = this.game_state.prefabs.player.score;
+
   this.game_state.state.start('BootState', true, false, this.next_level); // Start the next level.
 };

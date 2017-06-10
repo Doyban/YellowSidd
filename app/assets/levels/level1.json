@@ -5,15 +5,30 @@
     "fly_spritesheet": {"type": "spritesheet", "source": "assets/spritesheets/fly_spritesheet.png", "frame_width": 37, "frame_height": 20, "frames": 2},
     "slime_image": {"type": "image", "source": "assets/images/slime.png"},
     "goal_image": {"type": "image", "source": "assets/images/goal.png"},
+    "checkpoint_image": { "type": "image", "source": "assets/images/checkpoint.png" },
+    "coin_image": { "type": "image", "source": "assets/images/coin.png" },
+    "fireball_image": { "type": "image", "source": "assets/images/fireball.png" },
+    "life_item_image": { "type": "image", "source": "assets/images/life_item.png" },
+    "fireball_item_image": { "type": "image", "source": "assets/images/fireball.png" },
+    "boss_image": { "type": "image", "source": "assets/images/boss.png" },
+    "stone_enemy_image": { "type": "image", "source": "assets/images/stone_enemy.png" },
+
     "level_tilemap": {"type": "tilemap", "source": "assets/maps/level1.json"}
   },
   "groups": [
-    "enemies",
     "goals",
-    "players"
+    "checkpoints",
+    "coins",
+    "fireballs",
+    "enemies",
+    "players",
+    "items",
+    "hud",
+    "invincible_enemies",
+    "enemy_fireballs"
   ],
   "map": {
     "key": "level_tilemap",
-    "tileset": "map_tiles"
+    "tilesets": ["map_tiles", "map_tiles"]
   }
 }

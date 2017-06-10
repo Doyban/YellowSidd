@@ -8,6 +8,8 @@ YellowSidd.Enemy = function (game_state, position, properties) {
   this.walking_speed = +properties.walking_speed;
   this.walking_distance = +properties.walking_distance;
 
+  this.score = +properties.score; // Add a score property.
+
   // Save previous x to keep track of walked distance.
   this.previous_x = this.x;
 
@@ -32,4 +34,12 @@ YellowSidd.Enemy.prototype.update = function () {
     this.previous_x = this.x;
     this.scale.setTo(-this.scale.x, 1);
   }
+};
+
+YellowSidd.Enemy.prototype.switch_direction = function () {
+  "use strict";
+  // Switch x direction.
+  this.body.velocity.x *= -1;
+  this.previous_x = this.x;
+  this.scale.setTo(-this.scale.x, 1);
 };
