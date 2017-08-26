@@ -1,0 +1,28 @@
+{"frames": [
+
+{
+	"filename": "snailWalk1.png",
+	"frame": {"x":0,"y":0,"w":54,"h":31},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":31},
+	"sourceSize": {"w":54,"h":31}
+},
+{
+	"filename": "snailWalk2.png",
+	"frame": {"x":54,"y":0,"w":57,"h":31},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":57,"h":31},
+	"sourceSize": {"w":57,"h":31}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "enemy15_spritesheet.png",
+	"format": "RGBA8888",
+	"size": {"w":111,"h":31},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:831f5faf8b5b1c609f5e8eb06e5025da:42da5a8ccefc2f727eb22d704d3416e5:2a6d8f3c9d03d09dc907a550ef48d5ea$"
+}
+}

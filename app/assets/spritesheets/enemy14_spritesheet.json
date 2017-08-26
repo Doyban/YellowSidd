@@ -1,0 +1,28 @@
+{"frames": [
+
+{
+	"filename": "slimeWalk1.png",
+	"frame": {"x":0,"y":0,"w":50,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":28},
+	"sourceSize": {"w":50,"h":28}
+},
+{
+	"filename": "slimeWalk2.png",
+	"frame": {"x":0,"y":28,"w":51,"h":26},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":26},
+	"sourceSize": {"w":51,"h":26}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "enemy14_spritesheet.png",
+	"format": "RGBA8888",
+	"size": {"w":51,"h":54},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:373bb24d0d95a1048e3782f1494a67bd:9095227917152205b3950229cff5741c:b3b79f8bbe27bf6ae084f319b2353d28$"
+}
+}

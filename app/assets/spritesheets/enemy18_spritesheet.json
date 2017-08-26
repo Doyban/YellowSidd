@@ -1,0 +1,36 @@
+{"frames": [
+
+{
+	"filename": "spider.png",
+	"frame": {"x":0,"y":0,"w":71,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":45},
+	"sourceSize": {"w":71,"h":45}
+},
+{
+	"filename": "spider_walk1.png",
+	"frame": {"x":71,"y":0,"w":72,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":51},
+	"sourceSize": {"w":72,"h":51}
+},
+{
+	"filename": "spider_walk2.png",
+	"frame": {"x":143,"y":0,"w":77,"h":53},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":77,"h":53},
+	"sourceSize": {"w":77,"h":53}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "enemy18_spritesheet.png",
+	"format": "RGBA8888",
+	"size": {"w":220,"h":53},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f705b95aeebe3d4c87960e1a2a667c28:5213f6b9f3df6be610e93024a12ce307:1ce5addebba2f1acf825510c11b6ab82$"
+}
+}

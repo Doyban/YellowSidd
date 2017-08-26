@@ -1,0 +1,36 @@
+{"frames": [
+
+{
+	"filename": "slimeBlue.png",
+	"frame": {"x":0,"y":0,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "slimeBlue_hit.png",
+	"frame": {"x":128,"y":0,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "slimeBlue_move.png",
+	"frame": {"x":256,"y":0,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "enemy3_spritesheet.png",
+	"format": "RGBA8888",
+	"size": {"w":384,"h":128},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1aad9d0baa9c2591318c8b0559929142:61f024a249f7edd231cfb462569c51c2:f41575195a375a7893f5ac9874b88a06$"
+}
+}

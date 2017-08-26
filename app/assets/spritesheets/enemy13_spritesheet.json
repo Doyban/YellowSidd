@@ -1,0 +1,28 @@
+{"frames": [
+
+{
+	"filename": "flyFly1.png",
+	"frame": {"x":0,"y":0,"w":72,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":36},
+	"sourceSize": {"w":72,"h":36}
+},
+{
+	"filename": "flyFly2.png",
+	"frame": {"x":0,"y":36,"w":75,"h":31},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":75,"h":31},
+	"sourceSize": {"w":75,"h":31}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "enemy13_spritesheet.png",
+	"format": "RGBA8888",
+	"size": {"w":75,"h":67},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5853d64ab38439979d206477dd137ad7:6ea0c1e918b1f9d8bf3588e9465e9306:fe2b1a71b944600c5e2a3822fae236a5$"
+}
+}
