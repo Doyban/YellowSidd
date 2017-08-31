@@ -2,7 +2,7 @@ var YellowSidd = YellowSidd;
 
 YellowSidd.TiledState = function () {
   "use strict";
-  Phaser.State.call(this);
+  Phaser.State.call(this); // Extend Phaser.State class.
 
   // Object that maps each prefab type to its constructor.
   this.prefab_classes = {
@@ -22,19 +22,17 @@ YellowSidd.TiledState = function () {
   }
 };
 
+// Set up constructor.
 YellowSidd.TiledState.prototype = Object.create(Phaser.State.prototype);
 YellowSidd.TiledState.prototype.constructor = YellowSidd.TiledState;
 
 YellowSidd.TiledState.prototype.init = function (level_data) {
   "use strict";
+  YellowSidd.JSONLevelState.prototype.init.call(this, level_data); // Extend JSONLevelState.init method.
+
   var tileset_index;
-  this.level_data = level_data;
 
-  this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-  this.scale.pageAlignHorizontally = true;
-  this.scale.pageAlignVertically = true;
-
-  // Start physics system.
+  // Set up physics system.
   this.game.physics.startSystem(Phaser.Physics.ARCADE);
   this.game.physics.arcade.gravity.y = 1000;
 
