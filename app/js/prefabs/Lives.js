@@ -1,8 +1,8 @@
 var YellowSidd = YellowSidd || {};
 
-YellowSidd.Lives = function (game_state, position, properties) {
+YellowSidd.Lives = function (game_state, name, position, properties) {
   "use strict";
-  YellowSidd.Prefab.call(this, game_state, position, properties);
+  YellowSidd.Prefab.call(this, game_state, name, position, properties);
 
   this.frame = +properties.frame;
   this.visible = false; // Will be invisible, since we will use asset only to create new sprites showing the player lives.

@@ -1,8 +1,8 @@
 var YellowSidd = YellowSidd || {};
 
-YellowSidd.Goal = function (game_state, position, properties) {
+YellowSidd.Goal = function (game_state, name, position, properties) {
   "use strict";
-  YellowSidd.Prefab.call(this, game_state, position, properties);
+  YellowSidd.Prefab.call(this, game_state, name, position, properties);
 
   this.next_level = properties.next_level;
 

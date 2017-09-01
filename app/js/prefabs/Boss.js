@@ -1,8 +1,8 @@
 var YellowSidd = YellowSidd || {};
 
-YellowSidd.Boss = function (game_state, position, properties) {
+YellowSidd.Boss = function (game_state, name, position, properties) {
   "use strict";
-  YellowSidd.Prefab.call(this, game_state, position, properties);
+  YellowSidd.Prefab.call(this, game_state, name, position, properties);
 
   this.attack_rate = +properties.attack_rate;
   this.attack_speed = +properties.attack_speed;

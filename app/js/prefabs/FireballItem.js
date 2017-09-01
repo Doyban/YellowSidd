@@ -1,8 +1,8 @@
 var YellowSidd = YellowSidd || {};
 
-YellowSidd.FireballItem = function (game_state, position, properties) {
+YellowSidd.FireballItem = function (game_state, name, position, properties) {
   "use strict";
-  YellowSidd.Item.call(this, game_state, position, properties);
+  YellowSidd.Item.call(this, game_state, name, position, properties);
 };
 
 YellowSidd.FireballItem.prototype = Object.create(YellowSidd.Item.prototype);

@@ -1,8 +1,8 @@
 var YellowSidd = YellowSidd || {};
 
-YellowSidd.RunningEnemy = function (game_state, position, properties) {
+YellowSidd.RunningEnemy = function (game_state, name, position, properties) {
   "use strict";
-  YellowSidd.GroundEnemy.call(this, game_state, position, properties);
+  YellowSidd.GroundEnemy.call(this, game_state, name, position, properties);
 
   // Besides all the regular enemy properties, it will have a detection distance and a running speed.
   this.detection_distance = +properties.detection_distance;

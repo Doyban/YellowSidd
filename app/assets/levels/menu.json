@@ -1,0 +1,138 @@
+{
+  "assets": {
+    "audio_image": {"type": "image", "source": "assets/images/audio-on.png"},
+    "background_image": {"type": "image", "source": "assets/images/background.png"},
+    "exit_image": {"type": "image", "source": "assets/images/button-exit.png"},
+    "firebase_facebook_image": {"type": "image", "source": "assets/images/firebase-button-facebook.png"},
+    "firebase_google_image": {"type": "image", "source": "assets/images/firebase-button-google.png"},
+    "firebase_twitter_image": {"type": "image", "source": "assets/images/firebase-button-twitter.png"},
+    "gem_image": {"type": "image", "source": "assets/images/gem.png"},
+    "information_image": {"type": "image", "source": "assets/images/button-information.png"},
+    "invite_image": {"type": "image", "source": "assets/images/button-invite.png"},
+    "music_image": {"type": "image", "source": "assets/images/button-music-on.png"},
+    "play_image": {"type": "image", "source": "assets/images/button-play.png"},
+    "share_image": {"type": "image", "source": "assets/images/button-share.png"},
+    "shop_image": {"type": "image", "source": "assets/images/button-shop.png"}
+  },
+  "groups": [
+    "background",
+    "hud",
+    "menu_items"
+  ],
+  "prefabs": {
+    "audio": {
+      "position": {"x": 0.738, "y": 0.1},
+      "properties": {
+        "texture": "audio_image",
+        "group": "menu_items"
+      },
+      "type": "start_state_item"
+    },
+    "background": {
+      "position": {"x": 0, "y": 0},
+      "properties": {
+        "texture": "background_image",
+        "group": "background"
+      },
+      "type": "background"
+    },
+    "exit": {
+      "position": {"x": 0.95, "y": 0.1},
+      "properties": {
+        "texture": "exit_image",
+        "group": "menu_items"
+      },
+      "type": "start_state_item"
+    },
+    "gem": {
+      "position": {"x": 0.01, "y": 0.06},
+      "properties": {
+        "texture": "gem_image",
+        "group": "hud"
+      },
+      "type": "gem"
+    },
+    "firebase_facebook": {
+      "position": {"x": 0.5, "y": 0.4},
+      "properties": {
+        "texture": "firebase_facebook_image",
+        "group": "menu_items",
+        "level_file": "TODO",
+        "state_name": "TODO"
+      },
+      "type": "start_state_item"
+    },
+    "firebase_google": {
+      "position": {"x": 0.5, "y": 0.6},
+      "properties": {
+        "texture": "firebase_google_image",
+        "group": "menu_items",
+        "level_file": "TODO",
+        "state_name": "TODO"
+      },
+      "type": "start_state_item"
+    },
+    "firebase_twitter": {
+      "position": {"x": 0.5, "y": 0.8},
+      "properties": {
+        "texture": "firebase_twitter_image",
+        "group": "menu_items",
+        "level_file": "TODO",
+        "state_name": "TODO"
+      },
+      "type": "start_state_item"
+    },
+    "game_item": {
+      "position": {"x": 0.25, "y": 0.6},
+      "properties": {
+        "texture": "play_image",
+        "group": "menu_items",
+        "level_file": "assets/levels/level1.json",
+        "state_name": "GameState"
+      },
+      "type": "start_state_item"
+    },
+    "information": {
+      "position": {"x": 0.644, "y": 0.1},
+      "properties": {
+        "texture": "information_image",
+        "group": "menu_items"
+      },
+      "type": "start_state_item"
+    },
+    "share_item": {
+      "position": {"x": 0.262, "y": 0.1},
+      "properties": {
+        "texture": "share_image",
+        "group": "menu_items"
+      },
+      "type": "start_state_item"
+    },
+    "music": {
+      "position": {"x": 0.856, "y": 0.1},
+      "properties": {
+        "texture": "music_image",
+        "group": "menu_items"
+      },
+      "type": "start_state_item"
+    },
+    "invite": {
+      "position": {"x": 0.356, "y": 0.1},
+      "properties": {
+        "texture": "invite_image",
+        "group": "menu_items"
+      },
+      "type": "start_state_item"
+    },
+    "shop_item": {
+      "position": {"x": 0.75, "y": 0.6},
+      "properties": {
+        "texture": "shop_image",
+        "group": "menu_items",
+        "level_file": "TODO",
+        "state_name": "TODO"
+      },
+      "type": "start_state_item"
+    }
+  }
+}

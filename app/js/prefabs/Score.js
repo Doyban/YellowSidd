@@ -1,10 +1,12 @@
 var YellowSidd = YellowSidd || {};
 
-YellowSidd.Score = function (game_state, position, properties) {
+YellowSidd.Score = function (game_state, name, position, properties) {
   "use strict";
   Phaser.Text.call(this, game_state.game, position.x, position.y, properties.text);
 
   this.game_state = game_state;
+
+  this.name = name; // Save game state name.
 
   this.game_state.groups[properties.group].add(this);
 

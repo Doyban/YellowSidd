@@ -5,12 +5,13 @@ YellowSidd.LoadingState = function () {
   Phaser.State.call(this);
 };
 
-YellowSidd.prototype = Object.create(Phaser.State.prototype);
-YellowSidd.prototype.constructor = YellowSidd.LoadingState;
+YellowSidd.LoadingState.prototype = Object.create(Phaser.State.prototype);
+YellowSidd.LoadingState.prototype.constructor = YellowSidd.LoadingState;
 
-YellowSidd.LoadingState.prototype.init = function (level_data) {
+YellowSidd.LoadingState.prototype.init = function (level_data, next_state) {
   "use strict";
   this.level_data = level_data; // Init level data.
+  this.next_state = next_state; // Init next state.
 };
 
 YellowSidd.LoadingState.prototype.preload = function () {
@@ -38,5 +39,5 @@ YellowSidd.LoadingState.prototype.preload = function () {
 
 YellowSidd.LoadingState.prototype.create = function () {
   "use strict";
-  this.game.state.start('GameState', true, false, this.level_data); // Load GameState state.
+  this.game.state.start(this.next_state, true, false, this.level_data); // Load GameState state.
 };

@@ -1,9 +1,9 @@
 var YellowSidd = YellowSidd || {};
 
-YellowSidd.Player = function (game_state, position, properties) {
+YellowSidd.Player = function (game_state, name, position, properties) {
   "use strict";
 
-  YellowSidd.Prefab.call(this, game_state, position, properties);
+  YellowSidd.Prefab.call(this, game_state, name, position, properties);
 
   // Player properties.
   this.walking_speed = +properties.walking_speed;

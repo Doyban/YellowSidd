@@ -1,8 +1,8 @@
 var YellowSidd = YellowSidd || {};
 
-YellowSidd.FlyingEnemy = function (game_state, position, properties) {
+YellowSidd.FlyingEnemy = function (game_state, name, position, properties) {
   "use strict";
-  YellowSidd.Enemy.call(this, game_state, position, properties);
+  YellowSidd.Enemy.call(this, game_state, name, position, properties);
 
   // Flying enemy are not affected by gravity.
   this.body.allowGravity = false;

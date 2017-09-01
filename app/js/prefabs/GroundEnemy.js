@@ -1,8 +1,8 @@
 var YellowSidd = YellowSidd || {};
 
-YellowSidd.GroundEnemy = function (game_state, position, properties) {
+YellowSidd.GroundEnemy = function (game_state, name, position, properties) {
   "use strict";
-  YellowSidd.Enemy.call(this, game_state, position, properties);
+  YellowSidd.Enemy.call(this, game_state, name, position, properties);
 };
 
 YellowSidd.GroundEnemy.prototype = Object.create(YellowSidd.Enemy.prototype);

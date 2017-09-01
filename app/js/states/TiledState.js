@@ -28,9 +28,14 @@ YellowSidd.TiledState.prototype.constructor = YellowSidd.TiledState;
 
 YellowSidd.TiledState.prototype.init = function (level_data) {
   "use strict";
-  YellowSidd.JSONLevelState.prototype.init.call(this, level_data); // Extend JSONLevelState.init method.
-
   var tileset_index;
+
+  this.level_data = level_data; // Save level data.
+
+  // Scale game to fit screen.
+  this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+  this.scale.pageAlignHorizontally = true;
+  this.scale.pageAlignVertically = true;
 
   // Set up physics system.
   this.game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -89,7 +94,7 @@ YellowSidd.TiledState.prototype.create = function () {
     }
   }
 
-  this.init_hud(); // Init HUD.
+  // this.init_hud(); // Init HUD.
 
   this.game.camera.follow(this.prefabs.player); // Camera will follow player position.
 };
@@ -103,7 +108,7 @@ YellowSidd.TiledState.prototype.create_object = function (object) {
 
   // Create object according to its type.
   if (this.prefab_classes.hasOwnProperty(object.type)) {
-    prefab = new this.prefab_classes[object.type](this, position, object.properties); // Call the correct constructor using the type property from the map object. This is only possible because all prefabs use the same constructor.
+    prefab = new this.prefab_classes[object.type](this, object.name, position, object.properties); // Call the correct constructor using the type property from the map object. This is only possible because all prefabs use the same constructor.
   }
   this.prefabs[object.name] = prefab;
 };
@@ -129,15 +134,15 @@ YellowSidd.TiledState.prototype.game_over = function () {
 // Create the HUD objects in fixed positions instead of loading it from the Tiled map. It has been done because sometimes the Phaser world scaling could mess with the HUD objects positions when reloading the screen or updating the lives. The same reason with lives prefab initial position.
 YellowSidd.TiledState.prototype.init_hud = function () {
   "use strict";
-  var score_position, score, lives_position, lives; // Variables to display in the HUD.
-
+  var score_position, score, lives_position, name, lives; // Variables to display in the HUD.
+  name = 'score';
   // Display score in the HUD.
   score_position = new Phaser.Point(20, 20);
-  score = new YellowSidd.Score(this, score_position, {'text': 'Score: 0', 'group': 'hud'});
+  score = new YellowSidd.Score(this, name, score_position, {'text': 'Score: 0', 'group': 'hud'});
   this.prefabs['score'] = score;
 
   // Display lives in the HUD.
   lives_position = new Phaser.Point(this.game.world.width * 0.65, 20);
-  lives = new YellowSidd.Lives(this, lives_position, {'texture': 'player_spritesheet', 'group': 'hud', 'frame': 3, 'spacing': 16});
+  lives = new YellowSidd.Lives(this, name, lives_position, {'texture': 'player_spritesheet', 'group': 'hud', 'frame': 3, 'spacing': 16});
   this.prefabs['lives'] = lives;
 };

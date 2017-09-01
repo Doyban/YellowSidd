@@ -1,8 +1,8 @@
 var YellowSidd = YellowSidd || {};
 
-YellowSidd.Fireball = function (game_state, position, properties) {
+YellowSidd.Fireball = function (game_state, name, position, properties) {
   "use strict";
-  YellowSidd.Prefab.call(this, game_state, position, properties);
+  YellowSidd.Prefab.call(this, game_state, name, position, properties);
 
   this.direction = properties.direction;
   this.speed = +properties.speed;

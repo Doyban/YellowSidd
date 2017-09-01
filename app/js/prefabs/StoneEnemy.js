@@ -1,8 +1,8 @@
 var YellowSidd = YellowSidd || {};
 
-YellowSidd.StoneEnemy = function (game_state, position, properties) {
+YellowSidd.StoneEnemy = function (game_state, name, position, properties) {
   "use strict";
-  YellowSidd.Prefab.call(this, game_state, position, properties);
+  YellowSidd.Prefab.call(this, game_state, name, position, properties);
 
   this.game_state.game.physics.arcade.enable(this);
   this.body.allowGravity = false;

@@ -1,8 +1,8 @@
 var YellowSidd = YellowSidd || {};
 
-YellowSidd.LifeItem = function (game_state, position, properties) {
+YellowSidd.LifeItem = function (game_state, name, position, properties) {
   "use strict";
-  YellowSidd.Item.call(this, game_state, position, properties);
+  YellowSidd.Item.call(this, game_state, name, position, properties);
 };
 
 YellowSidd.LifeItem.prototype = Object.create(YellowSidd.Item.prototype);
