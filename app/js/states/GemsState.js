@@ -1,6 +1,6 @@
 var YellowSidd = YellowSidd || {};
 
-YellowSidd.PurchaseState = function () {
+YellowSidd.GemsState = function () {
   "use strict";
   YellowSidd.JSONLevelState.call(this); // Extend JSONLevelState class.
 
@@ -13,10 +13,10 @@ YellowSidd.PurchaseState = function () {
 };
 
 // Set up constructor.
-YellowSidd.PurchaseState.prototype = Object.create(YellowSidd.JSONLevelState.prototype);
-YellowSidd.PurchaseState.prototype.constructor = YellowSidd.PurchaseState;
+YellowSidd.GemsState.prototype = Object.create(YellowSidd.JSONLevelState.prototype);
+YellowSidd.GemsState.prototype.constructor = YellowSidd.GemsState;
 
-YellowSidd.PurchaseState.prototype.create = function () {
+YellowSidd.GemsState.prototype.create = function () {
   "use strict";
   var menu_position, menu_items, menu_properties, menu;
   YellowSidd.JSONLevelState.prototype.create.call(this); // Create groups and prefabs.
@@ -28,5 +28,5 @@ YellowSidd.PurchaseState.prototype.create = function () {
     menu_items.push(menu_item); // Add menu item to menu items array.
   }, this);
   menu_properties = {texture: '', group: 'background', menu_items: menu_items}; // Set properties of the menu.
-  menu = new YellowSidd.Purchase(this, 'menu', menu_position, menu_properties); // Create menu.
+  menu = new YellowSidd.Gems(this, 'menu', menu_position, menu_properties); // Create menu.
 };

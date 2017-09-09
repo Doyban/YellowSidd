@@ -3,15 +3,15 @@
     "audio_image": {"type": "image", "source": "assets/images/audio-on.png"},
     "background_image": {"type": "image", "source": "assets/images/background.png"},
     "exit_image": {"type": "image", "source": "assets/images/button-exit.png"},
-    "firebase_facebook_image": {"type": "image", "source": "assets/images/firebase-button-facebook.png"},
-    "firebase_google_image": {"type": "image", "source": "assets/images/firebase-button-google.png"},
-    "firebase_twitter_image": {"type": "image", "source": "assets/images/firebase-button-twitter.png"},
-    "game_image": {"type": "image", "source": "assets/images/button-game.png"},
     "gem_image": {"type": "image", "source": "assets/images/gem.png"},
+    "gems_5_image": {"type": "image", "source": "assets/images/button-gems-5.png"},
+    "gems_20_image": {"type": "image", "source": "assets/images/button-gems-20.png"},
+    "gems_50_image": {"type": "image", "source": "assets/images/button-gems-50.png"},
+    "gems_100_image": {"type": "image", "source": "assets/images/button-gems-100.png"},
+    "gems_200_image": {"type": "image", "source": "assets/images/button-gems-200.png"},
     "information_image": {"type": "image", "source": "assets/images/button-information.png"},
     "invite_image": {"type": "image", "source": "assets/images/button-invite.png"},
     "music_image": {"type": "image", "source": "assets/images/button-music-on.png"},
-    "purchase_image": {"type": "image", "source": "assets/images/button-purchase.png"},
     "share_image": {"type": "image", "source": "assets/images/button-share.png"}
   },
   "groups": [
@@ -23,9 +23,9 @@
     "audio_item": {
       "position": {"x": 0.738, "y": 0.1},
       "properties": {
-        "level_file": "assets/levels/menu.json",
+        "level_file": "assets/levels/gems.json",
         "group": "menu_items",
-        "state_name": "MenuState",
+        "state_name": "GemsState",
         "texture": "audio_image"
       },
       "type": "start_state_item"
@@ -41,40 +41,10 @@
     "exit_item": {
       "position": {"x": 0.95, "y": 0.1},
       "properties": {
-        "level_file": "assets/levels/menu.json",
+        "level_file": "assets/levels/purchase.json",
         "group": "menu_items",
-        "state_name": "MenuState",
+        "state_name": "PurchaseState",
         "texture": "exit_image"
-      },
-      "type": "start_state_item"
-    },
-    "firebase_facebook_item": {
-      "position": {"x": 0.5, "y": 0.4},
-      "properties": {
-        "level_file": "assets/levels/menu.json",
-        "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "firebase_facebook_image"
-      },
-      "type": "start_state_item"
-    },
-    "firebase_google_item": {
-      "position": {"x": 0.5, "y": 0.6},
-      "properties": {
-        "level_file": "assets/levels/menu.json",
-        "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "firebase_google_image"
-      },
-      "type": "start_state_item"
-    },
-    "firebase_twitter_item": {
-      "position": {"x": 0.5, "y": 0.8},
-      "properties": {
-        "level_file": "assets/levels/menu.json",
-        "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "firebase_twitter_image"
       },
       "type": "start_state_item"
     },
@@ -86,22 +56,62 @@
       },
       "type": "gem"
     },
-    "game_item": {
-      "position": {"x": 0.25, "y": 0.6},
+    "gems_5_item": {
+      "position": {"x": 0.1, "y": 0.4},
       "properties": {
-        "texture": "game_image",
+        "level_file": "assets/levels/gems.json",
         "group": "menu_items",
-        "level_file": "assets/levels/level1.json",
-        "state_name": "GameState"
+        "state_name": "GemsState",
+        "texture": "gems_5_image"
+      },
+      "type": "start_state_item"
+    },
+    "gems_20_item": {
+      "position": {"x": 0.5, "y": 0.4},
+      "properties": {
+        "level_file": "assets/levels/gems.json",
+        "group": "menu_items",
+        "state_name": "GemsState",
+        "texture": "gems_20_image"
+      },
+      "type": "start_state_item"
+    },
+    "gems_50_item": {
+      "position": {"x": 0.9, "y": 0.4},
+      "properties": {
+        "level_file": "assets/levels/gems.json",
+        "group": "menu_items",
+        "state_name": "GemsState",
+        "texture": "gems_50_image"
+      },
+      "type": "start_state_item"
+    },
+    "gems_100_item": {
+      "position": {"x": 0.3, "y": 0.8},
+      "properties": {
+        "level_file": "assets/levels/gems.json",
+        "group": "menu_items",
+        "state_name": "GemsState",
+        "texture": "gems_100_image"
+      },
+      "type": "start_state_item"
+    },
+    "gems_200_item": {
+      "position": {"x": 0.7, "y": 0.8},
+      "properties": {
+        "level_file": "assets/levels/gems.json",
+        "group": "menu_items",
+        "state_name": "GemsState",
+        "texture": "gems_200_image"
       },
       "type": "start_state_item"
     },
     "information_item": {
       "position": {"x": 0.644, "y": 0.1},
       "properties": {
-        "level_file": "assets/levels/menu.json",
+        "level_file": "assets/levels/gems.json",
         "group": "menu_items",
-        "state_name": "MenuState",
+        "state_name": "GemsState",
         "texture": "information_image"
       },
       "type": "start_state_item"
@@ -109,9 +119,9 @@
     "invite_item": {
       "position": {"x": 0.356, "y": 0.1},
       "properties": {
-        "level_file": "assets/levels/menu.json",
+        "level_file": "assets/levels/gems.json",
         "group": "menu_items",
-        "state_name": "MenuState",
+        "state_name": "GemsState",
         "texture": "invite_image"
       },
       "type": "start_state_item"
@@ -119,29 +129,19 @@
     "music_item": {
       "position": {"x": 0.856, "y": 0.1},
       "properties": {
-        "level_file": "assets/levels/menu.json",
+        "level_file": "assets/levels/gems.json",
         "group": "menu_items",
-        "state_name": "MenuState",
+        "state_name": "GemsState",
         "texture": "music_image"
-      },
-      "type": "start_state_item"
-    },
-    "purchase_item": {
-      "position": {"x": 0.75, "y": 0.6},
-      "properties": {
-        "texture": "purchase_image",
-        "group": "menu_items",
-        "level_file": "assets/levels/purchase.json",
-        "state_name": "PurchaseState"
       },
       "type": "start_state_item"
     },
     "share_item": {
       "position": {"x": 0.262, "y": 0.1},
       "properties": {
-        "level_file": "assets/levels/menu.json",
+        "level_file": "assets/levels/gems.json",
         "group": "menu_items",
-        "state_name": "MenuState",
+        "state_name": "GemsState",
         "texture": "share_image"
       },
       "type": "start_state_item"

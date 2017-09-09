@@ -3,15 +3,12 @@
     "audio_image": {"type": "image", "source": "assets/images/audio-on.png"},
     "background_image": {"type": "image", "source": "assets/images/background.png"},
     "exit_image": {"type": "image", "source": "assets/images/button-exit.png"},
-    "firebase_facebook_image": {"type": "image", "source": "assets/images/firebase-button-facebook.png"},
-    "firebase_google_image": {"type": "image", "source": "assets/images/firebase-button-google.png"},
-    "firebase_twitter_image": {"type": "image", "source": "assets/images/firebase-button-twitter.png"},
-    "game_image": {"type": "image", "source": "assets/images/button-game.png"},
     "gem_image": {"type": "image", "source": "assets/images/gem.png"},
     "information_image": {"type": "image", "source": "assets/images/button-information.png"},
     "invite_image": {"type": "image", "source": "assets/images/button-invite.png"},
     "music_image": {"type": "image", "source": "assets/images/button-music-on.png"},
-    "purchase_image": {"type": "image", "source": "assets/images/button-purchase.png"},
+    "purchase_gems_image": {"type": "image", "source": "assets/images/button-purchase-gems.png"},
+    "purchase_skills_image": {"type": "image", "source": "assets/images/button-purchase-skills.png"},
     "share_image": {"type": "image", "source": "assets/images/button-share.png"}
   },
   "groups": [
@@ -23,9 +20,9 @@
     "audio_item": {
       "position": {"x": 0.738, "y": 0.1},
       "properties": {
-        "level_file": "assets/levels/menu.json",
+        "level_file": "assets/levels/purchase.json",
         "group": "menu_items",
-        "state_name": "MenuState",
+        "state_name": "PurchaseState",
         "texture": "audio_image"
       },
       "type": "start_state_item"
@@ -48,36 +45,6 @@
       },
       "type": "start_state_item"
     },
-    "firebase_facebook_item": {
-      "position": {"x": 0.5, "y": 0.4},
-      "properties": {
-        "level_file": "assets/levels/menu.json",
-        "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "firebase_facebook_image"
-      },
-      "type": "start_state_item"
-    },
-    "firebase_google_item": {
-      "position": {"x": 0.5, "y": 0.6},
-      "properties": {
-        "level_file": "assets/levels/menu.json",
-        "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "firebase_google_image"
-      },
-      "type": "start_state_item"
-    },
-    "firebase_twitter_item": {
-      "position": {"x": 0.5, "y": 0.8},
-      "properties": {
-        "level_file": "assets/levels/menu.json",
-        "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "firebase_twitter_image"
-      },
-      "type": "start_state_item"
-    },
     "gem_item": {
       "position": {"x": 0.01, "y": 0.06},
       "properties": {
@@ -86,22 +53,12 @@
       },
       "type": "gem"
     },
-    "game_item": {
-      "position": {"x": 0.25, "y": 0.6},
-      "properties": {
-        "texture": "game_image",
-        "group": "menu_items",
-        "level_file": "assets/levels/level1.json",
-        "state_name": "GameState"
-      },
-      "type": "start_state_item"
-    },
     "information_item": {
       "position": {"x": 0.644, "y": 0.1},
       "properties": {
-        "level_file": "assets/levels/menu.json",
+        "level_file": "assets/levels/purchase.json",
         "group": "menu_items",
-        "state_name": "MenuState",
+        "state_name": "PurchaseState",
         "texture": "information_image"
       },
       "type": "start_state_item"
@@ -109,9 +66,9 @@
     "invite_item": {
       "position": {"x": 0.356, "y": 0.1},
       "properties": {
-        "level_file": "assets/levels/menu.json",
+        "level_file": "assets/levels/purchase.json",
         "group": "menu_items",
-        "state_name": "MenuState",
+        "state_name": "PurchaseState",
         "texture": "invite_image"
       },
       "type": "start_state_item"
@@ -119,29 +76,39 @@
     "music_item": {
       "position": {"x": 0.856, "y": 0.1},
       "properties": {
-        "level_file": "assets/levels/menu.json",
+        "level_file": "assets/levels/purchase.json",
         "group": "menu_items",
-        "state_name": "MenuState",
+        "state_name": "PurchaseState",
         "texture": "music_image"
       },
       "type": "start_state_item"
     },
-    "purchase_item": {
+    "purchase_gems_item": {
+      "position": {"x": 0.25, "y": 0.6},
+      "properties": {
+        "level_file": "assets/levels/gems.json",
+        "group": "menu_items",
+        "state_name": "GemsState",
+        "texture": "purchase_gems_image"
+      },
+      "type": "start_state_item"
+    },
+    "purchase_skills_item": {
       "position": {"x": 0.75, "y": 0.6},
       "properties": {
-        "texture": "purchase_image",
+        "level_file": "assets/levels/skills.json",
         "group": "menu_items",
-        "level_file": "assets/levels/purchase.json",
-        "state_name": "PurchaseState"
+        "state_name": "SkillsState",
+        "texture": "purchase_skills_image"
       },
       "type": "start_state_item"
     },
     "share_item": {
       "position": {"x": 0.262, "y": 0.1},
       "properties": {
-        "level_file": "assets/levels/menu.json",
+        "level_file": "assets/levels/purchase.json",
         "group": "menu_items",
-        "state_name": "MenuState",
+        "state_name": "PurchaseState",
         "texture": "share_image"
       },
       "type": "start_state_item"
