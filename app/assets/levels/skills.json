@@ -57,6 +57,18 @@
       },
       "type": "gem"
     },
+    "gems_quantity_item": {
+      "position": {"x": 0.06, "y": 0.05},
+      "properties": {
+        "text": "",
+        "group": "hud",
+        "style": {
+          "font": "30px Times New Roman",
+          "fill": "#2ED164"
+        }
+      },
+      "type": "gems_quantity"
+    },
     "information_item": {
       "position": {"x": 0.644, "y": 0.1},
       "properties": {
@@ -100,62 +112,68 @@
     "skills_heart_plus_one_infinite_item": {
       "position": {"x": 0.15, "y": 0.78},
       "properties": {
-        "level_file": "assets/levels/skills.json",
         "group": "menu_items",
-        "state_name": "SkillsState",
-        "texture": "skills_heart_plus_one_infinite_image"
+        "price": 100,
+        "texture": "skills_heart_plus_one_infinite_image",
+        "upgrade_properties": {"heart_plus_one_infinite": 1},
+        "upgrade_type": "extra_heart"
       },
-      "type": "start_state_item"
+      "type": "upgrade_item"
     },
     "skills_heart_plus_one_once_item": {
       "position": {"x": 0.15, "y": 0.4},
       "properties": {
-        "level_file": "assets/levels/skills.json",
         "group": "menu_items",
-        "state_name": "SkillsState",
-        "texture": "skills_heart_plus_one_once_image"
+        "price": 10,
+        "texture": "skills_heart_plus_one_once_image",
+        "upgrade_properties": {"heart_plus_one_once": 1},
+        "upgrade_type": "extra_heart"
       },
-      "type": "start_state_item"
+      "type": "upgrade_item"
     },
     "skills_jump_plus_one_infinite_item": {
       "position": {"x": 0.5, "y": 0.78},
       "properties": {
-        "level_file": "assets/levels/skills.json",
         "group": "menu_items",
-        "state_name": "SkillsState",
-        "texture": "skills_jump_plus_one_infinite_image"
+        "price": 100,
+        "texture": "skills_jump_plus_one_infinite_image",
+        "upgrade_properties": {"jump_plus_one_infinite": 2},
+        "upgrade_type": "extra_jump"
       },
-      "type": "start_state_item"
+      "type": "upgrade_item"
     },
     "skills_jump_plus_one_once_item": {
       "position": {"x": 0.5, "y": 0.4},
       "properties": {
-        "level_file": "assets/levels/skills.json",
         "group": "menu_items",
-        "state_name": "SkillsState",
-        "texture": "skills_jump_plus_one_once_image"
+        "price": 10,
+        "texture": "skills_jump_plus_one_once_image",
+        "upgrade_properties": {"jump_plus_one_once": 2},
+        "upgrade_type": "extra_jump"
       },
-      "type": "start_state_item"
+      "type": "upgrade_item"
     },
     "skills_speed_plus_one_infinite_item": {
       "position": {"x": 0.85, "y": 0.78},
       "properties": {
-        "level_file": "assets/levels/skills.json",
         "group": "menu_items",
-        "state_name": "SkillsState",
-        "texture": "skills_speed_plus_one_infinite_image"
+        "price": 100,
+        "texture": "skills_speed_plus_one_infinite_image",
+        "upgrade_properties": {"speed_plus_one_infinite": 2},
+        "upgrade_type": "extra_speed"
       },
-      "type": "start_state_item"
+      "type": "upgrade_item"
     },
     "skills_speed_plus_one_once_item": {
       "position": {"x": 0.85, "y": 0.4},
       "properties": {
-        "level_file": "assets/levels/skills.json",
         "group": "menu_items",
-        "state_name": "SkillsState",
-        "texture": "skills_speed_plus_one_once_image"
+        "price": 10,
+        "texture": "skills_speed_plus_one_once_image",
+        "upgrade_properties": {"speed_plus_one_once": 2},
+        "upgrade_type": "extra_speed"
       },
-      "type": "start_state_item"
+      "type": "upgrade_item"
     }
   }
 }

@@ -4,6 +4,8 @@
 # Intel XDK.
 plugins
 xdk
+intelxdk*
+*.xdk*
 
 # Dependencies.
 node_modules

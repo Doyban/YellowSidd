@@ -8,4 +8,5 @@ game.state.add('MenuState', new YellowSidd.MenuState()); // Create MenuState.
 game.state.add('PurchaseState', new YellowSidd.PurchaseState()); // Create PurchaseState.
 game.state.add('GemsState', new YellowSidd.GemsState()); // Create GemsState.
 game.state.add('SkillsState', new YellowSidd.SkillsState()); // Create SkillsState.
-game.state.start('BootState', true, false, 'assets/levels/menu.json', "MenuState"); // Start BootState state.
+game.state.add('GameOverState', new YellowSidd.GameOverState()); // Create GameOverState.
+game.state.start('BootState', true, false, 'assets/levels/menu.json', 'MenuState'); // Start BootState state.

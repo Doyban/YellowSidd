@@ -20,7 +20,7 @@ YellowSidd.Player = function (game_state, name, position, properties) {
 
   this.direction = "RIGHT";
 
-  this.animations.add('walking', [0, 1, 2, 1], 6, true); // Player walking animation.
+  this.animations.add('walking', [0, 1, 2, 3, 4, 5, 6, 7], 8, true); // Player walking animation.
 
   this.frame = 3;
 
@@ -51,13 +51,13 @@ YellowSidd.Player.prototype.update = function () {
     this.body.velocity.x = this.walking_speed;
     this.direction = "RIGHT";
     this.animations.play('walking');
-    this.scale.setTo(-1, 1);
+    this.scale.setTo(1, 1);
   } else if (this.cursors.left.isDown && this.body.velocity.x <= 0) {
     // Move left
     this.body.velocity.x = -this.walking_speed;
     this.direction = "LEFT";
     this.animations.play('walking');
-    this.scale.setTo(1, 1);
+    this.scale.setTo(-1, 1);
   } else {
     // Stop.
     this.body.velocity.x = 0;
@@ -105,7 +105,7 @@ YellowSidd.Player.prototype.die = function () {
   this.shooting = false;
 
   if (this.lives > 0) {
-    this.game_state.restart_level(); // Player lost 1 life, but stil have more then 0, so restart level eventually checkpoint.
+    this.game_state.restart_level(); // Player lost 1 life, but still have more then 0, so restart level eventually checkpoint.
   } else {
     this.game_state.game_over(); // Player lost all lives then game over.
   }
@@ -113,7 +113,8 @@ YellowSidd.Player.prototype.die = function () {
 
 YellowSidd.Player.prototype.shoot = function () {
   "use strict";
-  var fireball, fireball_position, fireball_properties;
+  var fireball, fireball_position, fireball_properties, name;
+  name = 'fireball';
 
   // Get the first dead fireball from the pool.
   fireball = this.game_state.groups.fireballs.getFirstDead();
@@ -122,7 +123,7 @@ YellowSidd.Player.prototype.shoot = function () {
   if (!fireball) {
     // If there is no dead fireball then create a new one.
     fireball_properties = {'texture': 'fireball_image', 'group': 'fireballs', 'direction': this.direction, 'speed': this.attack_speed};
-    fireball = new YellowSidd.Fireball(this.game_state, fireball_position, fireball_properties);
+    fireball = new YellowSidd.Fireball(this.game_state, name, fireball_position, fireball_properties);
   } else {
     // If there is a dead fireball then reset it in the new position.
     fireball.reset(fireball_position.x, fireball_position.y);

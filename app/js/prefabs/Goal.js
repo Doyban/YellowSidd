@@ -26,5 +26,5 @@ YellowSidd.Goal.prototype.reach_goal = function () {
   localStorage.player_lives = this.game_state.prefabs.player.lives;
   localStorage.player_score = this.game_state.prefabs.player.score;
 
-  this.game_state.state.start('BootState', true, false, this.next_level); // Start the next level.
+  this.game_state.state.start('BootState', true, false, this.next_level, 'GameState'); // Start the next level.
 };

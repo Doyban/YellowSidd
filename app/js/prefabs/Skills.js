@@ -17,6 +17,11 @@ YellowSidd.Skills.prototype.constructor = YellowSidd.Skills;
 
 YellowSidd.Skills.prototype.update = function () {
   "use strict";
+
+  /**
+   * Choose appropriate menu item.
+   * To get action on whole item dimensions while swiping, item needs to be get from anchor of itself and substract & add half of width & height to it, then whole item dimensions are on action for swiping.
+   */
   if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.audio_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.audio_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.audio_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.audio_item.position.y)) + 70 / 2)) {
     this.menu_items[0].select(); // Select first item.
   }

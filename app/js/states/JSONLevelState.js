@@ -49,7 +49,7 @@ YellowSidd.JSONLevelState.prototype.create_prefab = function (prefab_name, prefa
   if (this.prefab_classes.hasOwnProperty(prefab_data.type)) {
     // For percentage value of position.
     if (prefab_data.position.x > 0 && prefab_data.position.x <= 1) {
-      prefab_position = new Phaser.Point(prefab_data.position.x * this.game.world.width, prefab_data.position.y * this.game.world.height); // Set position relatively.
+      prefab_position = new Phaser.Point(prefab_data.position.x * this.game.width, prefab_data.position.y * this.game.height); // Set position relatively.
     }
     // For absolute (pixels) value of position.
     else {

@@ -8,7 +8,10 @@ YellowSidd.MenuState = function () {
   this.prefab_classes = {
     "background": YellowSidd.Prefab.prototype.constructor,
     "gem": YellowSidd.Prefab.prototype.constructor,
-    "start_state_item": YellowSidd.StartStateItem.prototype.constructor
+    "gems_quantity": YellowSidd.GemsQuantity.prototype.constructor,
+    "start_state_item": YellowSidd.StartStateItem.prototype.constructor,
+    "title": YellowSidd.TextPrefab.prototype.constructor,
+    "text": YellowSidd.TextPrefab.prototype.constructor
   };
 };
 
@@ -29,4 +32,7 @@ YellowSidd.MenuState.prototype.create = function () {
   }, this);
   menu_properties = {texture: '', group: 'background', menu_items: menu_items}; // Set properties of the Menu.
   menu = new YellowSidd.Menu(this, 'menu', menu_position, menu_properties); // Create Menu.
+
+  localStorage.gems = localStorage.gems || 10; // Initialize localStorage gems.
+  this.game.current_upgrades = this.game.current_upgrades || []; // Initialize current upgrades.
 };

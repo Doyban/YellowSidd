@@ -11,6 +11,7 @@ YellowSidd.Checkpoint = function (game_state, name, position, properties) {
   this.anchor.setTo(0.5);
 };
 
+// Set up constructor.
 YellowSidd.Checkpoint.prototype = Object.create(YellowSidd.Prefab.prototype);
 YellowSidd.Checkpoint.prototype.constructor = YellowSidd.Checkpoint;
 

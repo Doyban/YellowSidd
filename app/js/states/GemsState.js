@@ -8,7 +8,9 @@ YellowSidd.GemsState = function () {
   this.prefab_classes = {
     'background': YellowSidd.Prefab.prototype.constructor,
     'gem': YellowSidd.Prefab.prototype.constructor,
-    'start_state_item': YellowSidd.StartStateItem.prototype.constructor
+    'gems_quantity': YellowSidd.GemsQuantity.prototype.constructor,
+    'start_state_item': YellowSidd.StartStateItem.prototype.constructor,
+    'text': YellowSidd.TextPrefab.prototype.constructor
   };
 };
 

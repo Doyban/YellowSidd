@@ -7,6 +7,8 @@ YellowSidd.Fireball = function (game_state, name, position, properties) {
   this.direction = properties.direction;
   this.speed = +properties.speed;
 
+  this.name = name;
+
   // Create physical body.
   this.game_state.game.physics.arcade.enable(this);
   this.body.allowGravity = false;

@@ -106,6 +106,18 @@
       },
       "type": "start_state_item"
     },
+    "gems_quantity_item": {
+      "position": {"x": 0.06, "y": 0.05},
+      "properties": {
+        "text": "",
+        "group": "hud",
+        "style": {
+          "font": "30px Times New Roman",
+          "fill": "#2ED164"
+        }
+      },
+      "type": "gems_quantity"
+    },
     "information_item": {
       "position": {"x": 0.644, "y": 0.1},
       "properties": {

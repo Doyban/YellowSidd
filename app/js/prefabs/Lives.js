@@ -12,9 +12,11 @@ YellowSidd.Lives = function (game_state, name, position, properties) {
   this.fixedToCamera = true; // Must be fixed to camera to be visible while player moving.
   this.initial_position = new Phaser.Point(this.x, this.y); // Saving initial position if it gets changed by window scaling.
 
+  // this.lives = this.game_state.prefabs.player.lives; // Get number of lives.
+  // this.lives = properties.lives; // Get number of lives.
   this.lives = [];
   this.dead_life = null;
-  this.create_lives();
+  this.create_lives(this.lives);
 };
 
 YellowSidd.Lives.prototype = Object.create(YellowSidd.Prefab.prototype);
@@ -28,12 +30,12 @@ YellowSidd.Lives.prototype.update = function () {
   }
 };
 
-YellowSidd.Lives.prototype.create_lives = function () {
+YellowSidd.Lives.prototype.create_lives = function (number_of_lives) {
   "use strict";
   var life_index, life_position, life;
 
   // Create a sprite for each one of the player lives.
-  for (life_index = 0; life_index < this.game_state.prefabs.player.lives; life_index += 1) {
+  for (life_index = 0; life_index < number_of_lives; life_index += 1) {
     // Since the player live asset is already loaded we can use its width and the Lives prefab position to find the position for each live and draw then on the screen.
     life_position = new Phaser.Point(this.initial_position.x + (life_index * (this.width + this.spacing)), this.initial_position.y);
     life = new Phaser.Sprite(this.game_state.game, life_position.x, life_position.y, this.texture, this.frame);

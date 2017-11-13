@@ -10,7 +10,14 @@ YellowSidd.Prefab = function (game_state, name, position, properties) {
   this.name = name; // Save game state name.
 
   this.game_state.groups[properties.group].add(this); // Add itself to the groups.
-  this.frame = +properties.frame;
+
+  if (properties.frame) {
+    this.frame = +properties.frame; // Set frame property.
+  }
+
+  if (properties.anchor) {
+    this.anchor.setTo(properties.anchor.x, properties.anchor.y); // Set anchor property.
+  }
 
   this.game_state.prefabs[name] = this; // It will add itself to the prefabs list in the game state.
 };

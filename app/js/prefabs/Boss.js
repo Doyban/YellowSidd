@@ -1,5 +1,6 @@
 var YellowSidd = YellowSidd || {};
 
+// TODO: Remove Boss and change it on something else.
 YellowSidd.Boss = function (game_state, name, position, properties) {
   "use strict";
   YellowSidd.Prefab.call(this, game_state, name, position, properties);
@@ -39,13 +40,14 @@ YellowSidd.Boss.prototype.update = function () {
 YellowSidd.Boss.prototype.shoot = function () {
   "use strict";
   // Works the same way player shoot, but using a different pool group.
-  var fireball, fireball_position, fireball_properties;
+  var fireball, fireball_position, fireball_properties, name;
+  name = 'fireball';
 
   fireball = this.game_state.groups.enemy_fireballs.getFirstDead();
   fireball_position = new Phaser.Point(this.x, this.y);
   if (!fireball) {
     fireball_properties = {'texture': 'fireball_image', 'group': 'enemy_fireballs', 'direction': 'LEFT', 'speed': this.attack_speed};
-    fireball = new YellowSidd.Fireball(this.game_state, fireball_position, fireball_properties);
+    fireball = new YellowSidd.Fireball(this.game_state, name, fireball_position, fireball_properties);
   } else {
     fireball.reset(fireball_position.x, fireball_position.y);
     fireball.body.velocity.x = -this.attack_speed;

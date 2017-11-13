@@ -28,6 +28,8 @@ YellowSidd.TiledState.prototype.constructor = YellowSidd.TiledState;
 
 YellowSidd.TiledState.prototype.init = function (level_data) {
   "use strict";
+  YellowSidd.JSONLevelState.prototype.init.call(this, level_data);
+
   var tileset_index;
 
   this.level_data = level_data; // Save level data.
@@ -52,6 +54,7 @@ YellowSidd.TiledState.prototype.init = function (level_data) {
 
 YellowSidd.TiledState.prototype.create = function () {
   "use strict";
+  YellowSidd.JSONLevelState.prototype.create.call(this);
   var group_name, object_layer, collision_tiles;
 
   // Create map layers.
@@ -94,9 +97,12 @@ YellowSidd.TiledState.prototype.create = function () {
     }
   }
 
-  // this.init_hud(); // Init HUD.
+  this.init_hud(); // Init HUD.
 
   this.game.camera.follow(this.prefabs.player); // Camera will follow player position.
+
+  this.upgrades = this.game.plugins.add(YellowSidd.Upgrades, this); // Initialize Upgrades Plugin.
+  this.upgrades.apply_upgrades(this.game.current_upgrades); // Apply upgrade.
 };
 
 YellowSidd.TiledState.prototype.create_object = function (object) {
@@ -121,14 +127,16 @@ YellowSidd.TiledState.prototype.restart_level = function () {
     this.prefabs.player.x = this.prefabs.checkpoint.x;
     this.prefabs.player.y = this.prefabs.checkpoint.y;
   } else {
+    // localStorage.player_lives = this.prefabs.player.lives;
+    localStorage.clear(); // Clear localStorage (lives, score). // TODO: Clear only score and lives, not upgrades
     this.game.state.restart(true, false, this.level_data); // Restart TiledState state.
   }
 };
 
 YellowSidd.TiledState.prototype.game_over = function () {
   "use strict";
-  localStorage.clear(); // Clear localStorage (lives, score).
-  this.game.state.start('BootState', true, false, 'assets/levels/level1.json'); // Start first level.
+  localStorage.clear(); // Clear localStorage (lives, score). // TODO: Clear only score and lives, not upgrades
+  this.game.state.start('BootState', true, false, 'assets/levels/game_over.json', 'GameOverState'); // Start MenuState.
 };
 
 // Create the HUD objects in fixed positions instead of loading it from the Tiled map. It has been done because sometimes the Phaser world scaling could mess with the HUD objects positions when reloading the screen or updating the lives. The same reason with lives prefab initial position.
@@ -143,6 +151,6 @@ YellowSidd.TiledState.prototype.init_hud = function () {
 
   // Display lives in the HUD.
   lives_position = new Phaser.Point(this.game.world.width * 0.65, 20);
-  lives = new YellowSidd.Lives(this, name, lives_position, {'texture': 'player_spritesheet', 'group': 'hud', 'frame': 3, 'spacing': 16});
+  lives = new YellowSidd.Lives(this, name, lives_position, {'texture': 'life_image', 'group': 'hud', 'spacing': 2});
   this.prefabs['lives'] = lives;
 };
