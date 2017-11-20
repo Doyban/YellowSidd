@@ -31,6 +31,30 @@ YellowSidd.Player = function (game_state, name, position, properties) {
   // Create shoot timer.
   this.shoot_timer = this.game_state.game.time.create();
   this.shoot_timer.loop(Phaser.Timer.SECOND / this.attack_rate, this.shoot, this);
+
+  // Add extra lives according to made extra heart purchases.
+  if (localStorage.heart_plus_one_once === '1') {
+    this.game_state.prefabs.player.lives += 1;
+  }
+  if (localStorage.heart_plus_one_infinite === '1') {
+    this.game_state.prefabs.player.lives += 1;
+  }
+
+  // Add extra speed according to made extra speed purchases.
+  if (localStorage.speed_plus_one_once === '1') {
+    this.game_state.prefabs.player.walking_speed *= 1.5;
+  }
+  if (localStorage.speed_plus_one_infinite === '1') {
+    this.game_state.prefabs.player.walking_speed *= 1.5;
+  }
+
+  // Add extra jump according to made jump heart purchases.
+  if (localStorage.jump_plus_one_once === '1') {
+    this.game_state.prefabs.player.jumping_speed *= 1.5;
+  }
+  if (localStorage.jump_plus_one_infinite === '1') {
+    this.game_state.prefabs.player.jumping_speed *= 1.5;
+  }
 };
 
 YellowSidd.Player.prototype = Object.create(YellowSidd.Prefab.prototype);

@@ -12,10 +12,9 @@ YellowSidd.Lives = function (game_state, name, position, properties) {
   this.fixedToCamera = true; // Must be fixed to camera to be visible while player moving.
   this.initial_position = new Phaser.Point(this.x, this.y); // Saving initial position if it gets changed by window scaling.
 
-  // this.lives = this.game_state.prefabs.player.lives; // Get number of lives.
-  // this.lives = properties.lives; // Get number of lives.
-  this.lives = [];
+  this.lives = []; // Set up array for lives.
   this.dead_life = null;
+
   this.create_lives(this.lives);
 };
 
@@ -42,8 +41,8 @@ YellowSidd.Lives.prototype.create_lives = function (number_of_lives) {
 
     life.fixedToCamera = true; // Must be fixed to camera to be visible while player moving.
 
-    this.game_state.groups.hud.add(life); // Add life to the HUD.
     this.lives.push(life); // Fill an array with a sprite for each one of the player lives.
+    this.game_state.groups.hud.add(life); // Add life to the HUD.
   }
 };
 

@@ -1,8 +1,8 @@
 {
   "assets": {
     "map_tiles": {"type": "image", "source": "assets/spritesheets/tiles_spritesheet_level1.png"},
-    "player_spritesheet": {"type": "spritesheet", "source": "assets/spritesheets/player_spritesheet2.png", "frame_width": 40, "frame_height": 50, "frames": 8, "margin": 0, "spacing": 0},
-    "fly_spritesheet": {"type": "spritesheet", "source": "assets/spritesheets/fly_spritesheet.png", "frame_width": 40, "frame_height": 40, "frames": 2},
+    "player_spritesheet": {"type": "spritesheet", "source": "assets/spritesheets/player_spritesheet.png", "frame_width": 33, "frame_height": 41, "frames": 8, "margin": 0, "spacing": 0},
+    "fly_spritesheet": {"type": "spritesheet", "source": "assets/spritesheets/fly_spritesheet.png", "frame_width": 34, "frame_height": 34, "frames": 2},
     "ground_spritesheet": {"type": "spritesheet", "source": "assets/spritesheets/ground_spritesheet.png", "frame_width": 30, "frame_height": 16, "frames": 3},
     "goal_image": {"type": "image", "source": "assets/images/goal.png"},
     "life_image": {"type": "image", "source": "assets/images/life.png"},

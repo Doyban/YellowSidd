@@ -137,7 +137,7 @@
         "group": "menu_items",
         "price": 100,
         "texture": "skills_jump_plus_one_infinite_image",
-        "upgrade_properties": {"jump_plus_one_infinite": 2},
+        "upgrade_properties": {"jump_plus_one_infinite": 1},
         "upgrade_type": "extra_jump"
       },
       "type": "upgrade_item"
@@ -148,7 +148,7 @@
         "group": "menu_items",
         "price": 10,
         "texture": "skills_jump_plus_one_once_image",
-        "upgrade_properties": {"jump_plus_one_once": 2},
+        "upgrade_properties": {"jump_plus_one_once": 1},
         "upgrade_type": "extra_jump"
       },
       "type": "upgrade_item"
@@ -159,7 +159,7 @@
         "group": "menu_items",
         "price": 100,
         "texture": "skills_speed_plus_one_infinite_image",
-        "upgrade_properties": {"speed_plus_one_infinite": 2},
+        "upgrade_properties": {"speed_plus_one_infinite": 1},
         "upgrade_type": "extra_speed"
       },
       "type": "upgrade_item"
@@ -170,7 +170,7 @@
         "group": "menu_items",
         "price": 10,
         "texture": "skills_speed_plus_one_once_image",
-        "upgrade_properties": {"speed_plus_one_once": 2},
+        "upgrade_properties": {"speed_plus_one_once": 1},
         "upgrade_type": "extra_speed"
       },
       "type": "upgrade_item"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="20" height="100" tilewidth="35" tileheight="35" nextobjectid="1796">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="20" height="100" tilewidth="35" tileheight="35" nextobjectid="1855">
  <tileset firstgid="1" name="tiles_spritesheet_level1" tilewidth="35" tileheight="35" spacing="1" tilecount="168" columns="12">
   <image source="../spritesheets/tiles_spritesheet_level1.png" width="457" height="503"/>
   <terraintypes>
@@ -2708,47 +2708,47 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
    <tile gid="53"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -4073,6 +4073,12 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
+   <tile gid="141"/>
+   <tile gid="117"/>
+   <tile gid="141"/>
+   <tile gid="117"/>
+   <tile gid="141"/>
+   <tile gid="117"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -4093,14 +4099,8 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="141"/>
+   <tile gid="117"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -4143,20 +4143,20 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
    <tile gid="141"/>
    <tile gid="117"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -4735,19 +4735,6 @@
    <tile gid="69"/>
    <tile gid="69"/>
    <tile gid="0"/>
-   <tile gid="69"/>
-   <tile gid="0"/>
-   <tile gid="69"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="69"/>
@@ -4761,6 +4748,19 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="69"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
    <tile gid="69"/>
    <tile gid="69"/>
    <tile gid="0"/>
@@ -4775,20 +4775,20 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
    <tile gid="69"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -5302,7 +5302,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="81"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -5756,7 +5756,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="69"/>
-   <tile gid="69"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -6291,7 +6291,7 @@
     <property name="walking_speed" type="int" value="75"/>
    </properties>
   </object>
-  <object id="127" name="flying enemy" type="flying_enemy" gid="13" x="350.326" y="1084.32" width="35" height="35">
+  <object id="127" name="flying enemy" type="flying_enemy" gid="13" x="350.076" y="1084.94" width="35" height="35">
    <properties>
     <property name="direction" type="int" value="-1"/>
     <property name="group" value="enemies"/>
@@ -11388,20 +11388,6 @@
     <property name="texture" value="coin_image"/>
    </properties>
   </object>
-  <object id="984" name="coin" type="coin" gid="13" x="140.045" y="1820.17" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="985" name="coin" type="coin" gid="13" x="175.045" y="1820.17" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
   <object id="986" name="coin" type="coin" gid="13" x="210.045" y="1820.17" width="35" height="35">
    <properties>
     <property name="group" value="coins"/>
@@ -12242,49 +12228,7 @@
     <property name="texture" value="coin_image"/>
    </properties>
   </object>
-  <object id="1112" name="coin" type="coin" gid="13" x="385" y="1364.67" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1113" name="coin" type="coin" gid="13" x="350" y="1364.67" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1114" name="coin" type="coin" gid="13" x="350" y="1294.67" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1116" name="coin" type="coin" gid="13" x="385" y="1294.67" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
   <object id="1117" name="coin" type="coin" gid="13" x="350" y="1399.67" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1118" name="coin" type="coin" gid="13" x="385" y="1329.67" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1119" name="coin" type="coin" gid="13" x="350" y="1329.67" width="35" height="35">
    <properties>
     <property name="group" value="coins"/>
     <property name="score" type="int" value="1"/>
@@ -12326,13 +12270,6 @@
     <property name="texture" value="coin_image"/>
    </properties>
   </object>
-  <object id="1125" name="coin" type="coin" gid="13" x="315" y="1329.98" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
   <object id="1126" name="coin" type="coin" gid="13" x="245" y="1329.98" width="35" height="35">
    <properties>
     <property name="group" value="coins"/>
@@ -12341,13 +12278,6 @@
    </properties>
   </object>
   <object id="1127" name="coin" type="coin" gid="13" x="245" y="1294.98" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1128" name="coin" type="coin" gid="13" x="315" y="1294.98" width="35" height="35">
    <properties>
     <property name="group" value="coins"/>
     <property name="score" type="int" value="1"/>
@@ -15434,132 +15364,6 @@
     <property name="texture" value="coin_image"/>
    </properties>
   </object>
-  <object id="1636" name="coin" type="coin" gid="13" x="525.022" y="174.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1638" name="coin" type="coin" gid="13" x="665.022" y="209.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1639" name="coin" type="coin" gid="13" x="490.022" y="139.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1641" name="coin" type="coin" gid="13" x="490.022" y="174.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1643" name="coin" type="coin" gid="13" x="560.022" y="174.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1646" name="coin" type="coin" gid="13" x="595.022" y="139.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1647" name="coin" type="coin" gid="13" x="630.022" y="174.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1648" name="coin" type="coin" gid="13" x="665.022" y="139.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1650" name="coin" type="coin" gid="13" x="595.022" y="209.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1652" name="coin" type="coin" gid="13" x="560.022" y="139.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1653" name="coin" type="coin" gid="13" x="525.022" y="209.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1659" name="coin" type="coin" gid="13" x="560.022" y="209.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1660" name="coin" type="coin" gid="13" x="665.022" y="174.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1663" name="coin" type="coin" gid="13" x="595.022" y="174.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1666" name="coin" type="coin" gid="13" x="630.022" y="139.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1668" name="coin" type="coin" gid="13" x="490.022" y="209.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1670" name="coin" type="coin" gid="13" x="630.022" y="209.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1671" name="coin" type="coin" gid="13" x="525.022" y="139.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
   <object id="1672" name="coin" type="coin" gid="13" x="70.0222" y="69.9811" width="35" height="35">
    <properties>
     <property name="group" value="coins"/>
@@ -15672,13 +15476,6 @@
     <property name="texture" value="coin_image"/>
    </properties>
   </object>
-  <object id="1688" name="coin" type="coin" gid="13" x="315.022" y="104.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
   <object id="1689" name="coin" type="coin" gid="13" x="315.022" y="139.981" width="35" height="35">
    <properties>
     <property name="group" value="coins"/>
@@ -15686,21 +15483,7 @@
     <property name="texture" value="coin_image"/>
    </properties>
   </object>
-  <object id="1690" name="coin" type="coin" gid="13" x="385.022" y="104.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
   <object id="1691" name="coin" type="coin" gid="13" x="350.022" y="139.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1692" name="coin" type="coin" gid="13" x="350.022" y="104.981" width="35" height="35">
    <properties>
     <property name="group" value="coins"/>
     <property name="score" type="int" value="1"/>
@@ -15715,13 +15498,6 @@
    </properties>
   </object>
   <object id="1694" name="coin" type="coin" gid="13" x="385.022" y="139.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1695" name="coin" type="coin" gid="13" x="280.022" y="104.981" width="35" height="35">
    <properties>
     <property name="group" value="coins"/>
     <property name="score" type="int" value="1"/>
@@ -15743,13 +15519,6 @@
    </properties>
   </object>
   <object id="1700" name="coin" type="coin" gid="13" x="420.022" y="139.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1701" name="coin" type="coin" gid="13" x="420.022" y="104.981" width="35" height="35">
    <properties>
     <property name="group" value="coins"/>
     <property name="score" type="int" value="1"/>
@@ -15778,27 +15547,6 @@
    </properties>
   </object>
   <object id="1705" name="coin" type="coin" gid="13" x="385.022" y="209.981" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1706" name="coin" type="coin" gid="13" x="350.022" y="69.9811" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1707" name="coin" type="coin" gid="13" x="385.022" y="69.9811" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1708" name="coin" type="coin" gid="13" x="420.022" y="69.9811" width="35" height="35">
    <properties>
     <property name="group" value="coins"/>
     <property name="score" type="int" value="1"/>
@@ -16051,13 +15799,6 @@
    </properties>
   </object>
   <object id="1745" name="coin" type="coin" gid="13" x="245" y="1399.98" width="35" height="35">
-   <properties>
-    <property name="group" value="coins"/>
-    <property name="score" type="int" value="1"/>
-    <property name="texture" value="coin_image"/>
-   </properties>
-  </object>
-  <object id="1746" name="coin" type="coin" gid="13" x="315" y="1364.98" width="35" height="35">
    <properties>
     <property name="group" value="coins"/>
     <property name="score" type="int" value="1"/>
@@ -16322,6 +16063,349 @@
    </properties>
   </object>
   <object id="1794" name="coin" type="coin" gid="13" x="210" y="2904.67" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1796" name="coin" type="coin" gid="13" x="384.955" y="3044.95" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1797" name="coin" type="coin" gid="13" x="595.015" y="2239.97" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1798" name="coin" type="coin" gid="13" x="105" y="1365.08" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1807" name="coin" type="coin" gid="13" x="315.022" y="1189.98" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1808" name="coin" type="coin" gid="13" x="350.022" y="1224.98" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1809" name="coin" type="coin" gid="13" x="385.022" y="1224.98" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1810" name="coin" type="coin" gid="13" x="315.022" y="1224.98" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1811" name="coin" type="coin" gid="13" x="350.022" y="1189.98" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1812" name="coin" type="coin" gid="13" x="385.022" y="1189.98" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1813" name="coin" type="coin" gid="13" x="385.022" y="69.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1814" name="coin" type="coin" gid="13" x="385.022" y="34.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1815" name="coin" type="coin" gid="13" x="350.022" y="34.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1816" name="coin" type="coin" gid="13" x="420.022" y="34.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1817" name="coin" type="coin" gid="13" x="420.022" y="69.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1818" name="coin" type="coin" gid="13" x="350.022" y="69.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1819" name="coin" type="coin" gid="13" x="490.022" y="69.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1820" name="coin" type="coin" gid="13" x="455.022" y="34.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1821" name="coin" type="coin" gid="13" x="525.022" y="34.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1822" name="coin" type="coin" gid="13" x="525.022" y="69.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1823" name="coin" type="coin" gid="13" x="455.022" y="69.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1824" name="coin" type="coin" gid="13" x="490.022" y="34.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1825" name="coin" type="coin" gid="13" x="525.022" y="104.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1826" name="coin" type="coin" gid="13" x="490.022" y="104.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1828" name="coin" type="coin" gid="13" x="525.022" y="174.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1829" name="coin" type="coin" gid="13" x="560.022" y="209.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1830" name="coin" type="coin" gid="13" x="525.022" y="209.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1831" name="coin" type="coin" gid="13" x="490.022" y="209.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1832" name="coin" type="coin" gid="13" x="490.022" y="174.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1834" name="coin" type="coin" gid="13" x="595.022" y="209.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1835" name="coin" type="coin" gid="13" x="560.022" y="34.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1836" name="coin" type="coin" gid="13" x="595.022" y="104.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1837" name="coin" type="coin" gid="13" x="595.022" y="34.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1838" name="coin" type="coin" gid="13" x="560.022" y="104.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1839" name="coin" type="coin" gid="13" x="595.022" y="69.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1840" name="coin" type="coin" gid="13" x="560.022" y="69.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1841" name="coin" type="coin" gid="13" x="560.022" y="139.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1842" name="coin" type="coin" gid="13" x="560.022" y="174.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1843" name="coin" type="coin" gid="13" x="595.022" y="174.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1844" name="coin" type="coin" gid="13" x="595.022" y="139.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1845" name="coin" type="coin" gid="13" x="665.022" y="139.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1846" name="coin" type="coin" gid="13" x="630.022" y="174.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1847" name="coin" type="coin" gid="13" x="630.022" y="139.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1848" name="coin" type="coin" gid="13" x="630.022" y="69.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1849" name="coin" type="coin" gid="13" x="665.022" y="34.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1850" name="coin" type="coin" gid="13" x="630.022" y="104.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1851" name="coin" type="coin" gid="13" x="665.022" y="174.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1852" name="coin" type="coin" gid="13" x="665.022" y="104.981" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1853" name="coin" type="coin" gid="13" x="665.022" y="69.9811" width="35" height="35">
+   <properties>
+    <property name="group" value="coins"/>
+    <property name="score" type="int" value="1"/>
+    <property name="texture" value="coin_image"/>
+   </properties>
+  </object>
+  <object id="1854" name="coin" type="coin" gid="13" x="630.022" y="34.9811" width="35" height="35">
    <properties>
     <property name="group" value="coins"/>
     <property name="score" type="int" value="1"/>
