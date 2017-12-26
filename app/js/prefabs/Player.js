@@ -55,6 +55,13 @@ YellowSidd.Player = function (game_state, name, position, properties) {
   if (localStorage.jump_plus_one_infinite === '1') {
     this.game_state.prefabs.player.jumping_speed *= 1.5;
   }
+
+  // Add sounds.
+  this.fireball_sound = this.game.add.audio('fireball');
+  this.jump_sound = this.game.add.audio('jump');
+  this.kill_enemy_sound = this.game.add.audio('kill_enemy');
+  this.lost_heart_sound = this.game.add.audio('lost_heart');
+  this.walking_sound = this.game.add.audio('walking', .2);
 };
 
 YellowSidd.Player.prototype = Object.create(YellowSidd.Prefab.prototype);
@@ -74,13 +81,15 @@ YellowSidd.Player.prototype.update = function () {
     // Move right.
     this.body.velocity.x = this.walking_speed;
     this.direction = "RIGHT";
-    this.animations.play('walking');
+    this.animations.play('walking'); // Play walking animation.
+    this.walking_sound.play(); // Play walking sound.
     this.scale.setTo(1, 1);
   } else if (this.cursors.left.isDown && this.body.velocity.x <= 0) {
     // Move left
     this.body.velocity.x = -this.walking_speed;
     this.direction = "LEFT";
-    this.animations.play('walking');
+    this.walking_sound.play(); // Play walking sound.
+    this.animations.play('walking'); // Play walking animation.
     this.scale.setTo(-1, 1);
   } else {
     // Stop.
@@ -92,6 +101,7 @@ YellowSidd.Player.prototype.update = function () {
   // Jump only if touching a tile.
   if (this.cursors.up.isDown && this.body.blocked.down) {
     this.body.velocity.y = -this.jumping_speed;
+    this.jump_sound.play(); // Play jump sound.
   }
 
   // Dies if touches the end of the screen.
@@ -105,6 +115,7 @@ YellowSidd.Player.prototype.update = function () {
       // Start a timer which will call the shoot method in a loop.
       this.shoot();
       this.shoot_timer.start();
+      this.fireball_sound.play(); // Play jump sound.
     }
   } else {
     this.shoot_timer.stop(false);
@@ -116,8 +127,9 @@ YellowSidd.Player.prototype.hit_enemy = function (player, enemy) {
   // If the player is above the enemy, the enemy is killed, otherwise the player dies.
   if (enemy.body.touching.up) {
     this.score += enemy.score; // Add points to score.
-    enemy.kill();
+    enemy.kill(); // Kill enemy.
     player.y -= this.bouncing;
+    this.kill_enemy_sound.play(); // Play kill enemy sound.
   } else {
     this.die(); // Restart level.
   }
@@ -126,6 +138,7 @@ YellowSidd.Player.prototype.hit_enemy = function (player, enemy) {
 YellowSidd.Player.prototype.die = function () {
   "use strict";
   this.lives -= 1;
+  this.lost_heart_sound.play(); // Play lost heart sound.
   this.shooting = false;
 
   if (this.lives > 0) {

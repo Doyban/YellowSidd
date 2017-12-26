@@ -35,6 +35,64 @@ YellowSidd.LoadingState.prototype.preload = function () {
       }
     }
   }
+
+  // Load sound and audio.
+  this.load.audio('background', [
+    'assets/audios/background.ogg',
+    'assets/audios/background.mp3'
+  ]);
+  this.load.audio('checkpoint', [
+    'assets/audios/checkpoint.ogg',
+    'assets/audios/checkpoint.mp3'
+  ]);
+  this.load.audio('coin', [
+    'assets/audios/coin.ogg',
+    'assets/audios/coin.mp3'
+  ]);
+  this.load.audio('error', [
+    'assets/audios/error.ogg',
+    'assets/audios/error.mp3'
+  ]);
+  this.load.audio('fireball', [
+    'assets/audios/fireball.ogg',
+    'assets/audios/fireball.mp3'
+  ]);
+  this.load.audio('game_over', [
+    'assets/audios/game_over.mp3',
+    'assets/audios/game_over.ogg'
+  ]);
+  this.load.audio('get_fireball', [
+    'assets/audios/get_fireball.ogg',
+    'assets/audios/get_fireball.mp3'
+  ]);
+  this.load.audio('get_life', [
+    'assets/audios/get_life.ogg',
+    'assets/audios/get_life.mp3'
+  ]);
+  this.load.audio('jump', [
+    'assets/audios/jump.ogg',
+    'assets/audios/jump.mp3'
+  ]);
+  this.load.audio('kill_enemy', [
+    'assets/audios/kill_enemy.ogg',
+    'assets/audios/kill_enemy.mp3'
+  ]);
+  this.load.audio('lost_heart', [
+    'assets/audios/lost_heart.ogg',
+    'assets/audios/lost_heart.mp3'
+  ]);
+  this.load.audio('walking', [
+    'assets/audios/walking.ogg',
+    'assets/audios/walking.mp3'
+  ]);
+  this.load.audio('reach_goal', [
+    'assets/audios/reach_goal.ogg',
+    'assets/audios/reach_goal.mp3'
+  ]);
+  this.load.audio('upgrade', [
+    'assets/audios/upgrade.ogg',
+    'assets/audios/upgrade.mp3'
+  ]);
 };
 
 YellowSidd.LoadingState.prototype.create = function () {

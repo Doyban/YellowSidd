@@ -11,6 +11,8 @@ YellowSidd.Coin = function (game_state, name, position, properties) {
   this.body.allowGravity = false;
 
   this.anchor.setTo(0.5);
+
+  this.coin_sound = this.game.add.audio('coin'); // Add sound.
 };
 
 YellowSidd.Coin.prototype = Object.create(YellowSidd.Prefab.prototype);
@@ -27,4 +29,6 @@ YellowSidd.Coin.prototype.collect_coin = function (coin, player) {
   // Kill coin and increase score.
   this.kill();
   player.score += this.score;
+
+  this.coin_sound.play(); // Play coin sound.
 };

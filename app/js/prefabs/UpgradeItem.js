@@ -14,6 +14,10 @@ YellowSidd.UpgradeItem = function (game_state, name, position, properties) {
 
   this.level_file = properties.level_file; // Save level file.
   this.state_name = properties.state_name; // Save state name.
+
+  // Add sounds.
+  this.error_sound = this.game.add.audio('error');
+  this.upgrade_sound = this.game.add.audio('upgrade');
 };
 
 // Set up constructor.
@@ -28,10 +32,11 @@ YellowSidd.UpgradeItem.prototype.select = function () {
     localStorage.gems -= this.price; // Decrease price of item from current gems of player.
     this.game_state.game.current_upgrades.push({type: this.upgrade_type, properties: this.upgrade_properties}); // Push upgrade type & upgrade properties to the current upgrades.
     this.selected = true; // Player bought upgrade in this game, upgrade is selected.
+    this.upgrade_sound.play(); // Play upgrade sound.
 
     this.game_state.state.start('BootState', true, false, this.level_file, 'SkillsState'); // Start next Phaser state.
   } else {
-    // Not enough gems to buy upgrade.
-    alert("You don't have enough gems to buy this upgrade.");
+    this.error_sound.play(); // Play error sound.
+    alert("You don't have enough gems to buy this upgrade."); // Not enough gems to buy upgrade.
   }
 };

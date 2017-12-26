@@ -9,6 +9,14 @@ YellowSidd.Menu = function (game_state, name, position, properties) {
   this.menu_items = properties.menu_items; // List of menu items.
 
   this.swipe = this.game.input.activePointer; // Allow player to navigate by swiping.
+
+  this.background_sound = this.game.add.audio('background', .3, true); // Add sound.
+
+  // Avoid to new track, while changing states.
+  if (!PLAY_MUSIC) {
+    this.background_sound.play(); // Play background sound.
+    PLAY_MUSIC = true;
+  }
 };
 
 // Set up constructor.
@@ -17,7 +25,6 @@ YellowSidd.Menu.prototype.constructor = YellowSidd.Menu;
 
 YellowSidd.Menu.prototype.update = function () {
   "use strict";
-
   /**
    * Choose appropriate menu item.
    * To get action on whole item dimensions while swiping, item needs to be get from anchor of itself and substract & add half of width & height to it, then whole item dimensions are on action for swiping.

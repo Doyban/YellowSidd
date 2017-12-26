@@ -50,6 +50,8 @@ YellowSidd.TiledState.prototype.init = function (level_data) {
     this.map.addTilesetImage(tileset.name, level_data.map.tilesets[tileset_index]);
     tileset_index += 1;
   }, this);
+
+  this.game_over_sound = this.game.add.audio('game_over'); // Add sound.
 };
 
 YellowSidd.TiledState.prototype.create = function () {
@@ -142,6 +144,8 @@ YellowSidd.TiledState.prototype.game_over = function () {
   localStorage.removeItem('speed_plus_one_once'); // Remove speed_plus_one_once from localStorage.
 
   this.game.state.start('BootState', true, false, 'assets/levels/game_over.json', 'GameOverState'); // Start MenuState.
+
+  this.game_over_sound.play(); // Play game over sound.
 };
 
 // Create the HUD objects in fixed positions instead of loading it from the Tiled map. It has been done because sometimes the Phaser world scaling could mess with the HUD objects positions when reloading the screen or updating the lives. The same reason with lives prefab initial position.

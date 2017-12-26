@@ -1,4 +1,5 @@
 var YellowSidd = YellowSidd || {};
+var PLAY_MUSIC = false;
 
 var game = new Phaser.Game(800, 400, Phaser.CANVAS);
 game.state.add('BootState', new YellowSidd.BootState()); // Loads a JSON file with the level information and starts the Loading State.

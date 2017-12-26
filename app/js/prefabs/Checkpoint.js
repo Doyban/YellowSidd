@@ -9,6 +9,10 @@ YellowSidd.Checkpoint = function (game_state, name, position, properties) {
   this.game_state.game.physics.arcade.enable(this);
 
   this.anchor.setTo(0.5);
+
+  this.checkpoint_sound = this.game.add.audio('checkpoint'); // Add sound.
+
+  this.play_sound = false;
 };
 
 // Set up constructor.
@@ -24,4 +28,10 @@ YellowSidd.Checkpoint.prototype.update = function () {
 YellowSidd.Checkpoint.prototype.reach_checkpoint = function () {
   "use strict";
   this.checkpoint_reached = true; // Checkpoint was reached.
+  // this.checkpoint_sound.play(); // Play checkpoint sound.
+
+  if (!this.play_sound) {
+    this.checkpoint_sound.play();
+    this.play_sound = true;
+  }
 };
