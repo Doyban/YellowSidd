@@ -102,9 +102,6 @@ YellowSidd.TiledState.prototype.create = function () {
   this.init_hud(); // Init HUD.
 
   this.game.camera.follow(this.prefabs.player); // Camera will follow player position.
-
-  this.upgrades = this.game.plugins.add(YellowSidd.Upgrades, this); // Initialize Upgrades Plugin.
-  this.upgrades.apply_upgrades(this.game.current_upgrades); // Apply upgrade.
 };
 
 YellowSidd.TiledState.prototype.create_object = function (object) {
@@ -129,23 +126,18 @@ YellowSidd.TiledState.prototype.restart_level = function () {
     this.prefabs.player.x = this.prefabs.checkpoint.x;
     this.prefabs.player.y = this.prefabs.checkpoint.y;
   } else {
-    localStorage.removeItem('heart_plus_one_once'); // Remove heart_plus_one_once from localStorage.
-    localStorage.removeItem('jump_plus_one_once'); // Remove jump_plus_one_once from localStorage.
-    localStorage.removeItem('speed_plus_one_once'); // Remove speed_plus_one_once from localStorage.
-
     this.game.state.restart(true, false, this.level_data); // Restart TiledState state.
   }
 };
 
 YellowSidd.TiledState.prototype.game_over = function () {
   "use strict";
-  localStorage.removeItem('heart_plus_one_once'); // Remove heart_plus_one_once from localStorage.
-  localStorage.removeItem('jump_plus_one_once'); // Remove jump_plus_one_once from localStorage.
-  localStorage.removeItem('speed_plus_one_once'); // Remove speed_plus_one_once from localStorage.
+  this.game.state.start('BootState', true, false, 'assets/levels/menu.json', 'MenuState'); // Start BootState state.
 
-  this.game.state.start('BootState', true, false, 'assets/levels/game_over.json', 'GameOverState'); // Start MenuState.
-
-  this.game_over_sound.play(); // Play game over sound.
+  // Play sound only if player left button sound as on mode.
+  if (PLAY_SOUND) {
+    this.game_over_sound.play(); // Play game over sound.
+  }
 };
 
 // Create the HUD objects in fixed positions instead of loading it from the Tiled map. It has been done because sometimes the Phaser world scaling could mess with the HUD objects positions when reloading the screen or updating the lives. The same reason with lives prefab initial position.

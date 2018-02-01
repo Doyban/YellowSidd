@@ -14,5 +14,9 @@ YellowSidd.LifeItem.prototype.collect_item = function (item, player) {
   "use strict";
   YellowSidd.Item.prototype.collect_item.call(this);
   player.lives += 1; // Increase the player number of lives after calling the original "collect_item" method.
-  this.get_life_sound.play(); // Play get life sound.
+
+  // Play sound only if player left button sound as on mode.
+  if (PLAY_SOUND) {
+    this.get_life_sound.play(); // Play get life sound.
+  }
 };

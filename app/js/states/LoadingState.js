@@ -49,10 +49,6 @@ YellowSidd.LoadingState.prototype.preload = function () {
     'assets/audios/coin.ogg',
     'assets/audios/coin.mp3'
   ]);
-  this.load.audio('error', [
-    'assets/audios/error.ogg',
-    'assets/audios/error.mp3'
-  ]);
   this.load.audio('fireball', [
     'assets/audios/fireball.ogg',
     'assets/audios/fireball.mp3'
@@ -89,10 +85,10 @@ YellowSidd.LoadingState.prototype.preload = function () {
     'assets/audios/reach_goal.ogg',
     'assets/audios/reach_goal.mp3'
   ]);
-  this.load.audio('upgrade', [
-    'assets/audios/upgrade.ogg',
-    'assets/audios/upgrade.mp3'
-  ]);
+
+  // Load sound and audio spritesheets.
+  this.game.load.spritesheet('audio', 'assets/spritesheets/audio_spritesheet.png', 70, 70);
+  this.game.load.spritesheet('music', 'assets/spritesheets/music_spritesheet.png', 70, 70);
 };
 
 YellowSidd.LoadingState.prototype.create = function () {
