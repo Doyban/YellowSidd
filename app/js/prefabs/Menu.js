@@ -16,9 +16,9 @@ YellowSidd.Menu = function (game_state, name, position, properties) {
   this.coin_sound = this.game.add.audio('coin'); // Add sound.
 
   // Sound and audio buttons.
-  this.buttonAudio = this.game.add.button(this.game.world.width * 0.38, this.game.world.height * 0.06, 'audio', this.toggleGameAudio, this);
+  this.buttonAudio = this.game.add.button(this.game.width * 0.38, this.game.height * 0.06, 'audio', this.toggleGameAudio, this);
   this.buttonAudioToggle = false;
-  this.buttonMusic = this.game.add.button(this.game.world.width * 0.54, this.game.world.height * 0.06, 'music', this.toggleBackgroundMusic, this);
+  this.buttonMusic = this.game.add.button(this.game.width * 0.54, this.game.height * 0.06, 'music', this.toggleBackgroundMusic, this);
   this.buttonMusicToggle = false;
 
   // Avoid to new track, while changing states.

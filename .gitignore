@@ -1,5 +1,5 @@
 # PhpStorm:
-.idea
+.idea*
 
 # Intel XDK.
 plugins
@@ -10,5 +10,11 @@ intelxdk*
 # Dependencies.
 node_modules
 
+# Distribution version.
+dist*
+
 # Distribution zipped version.
 dist.zip
+
+# Others.
+package-lock.json
