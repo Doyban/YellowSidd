@@ -1,6 +1,5 @@
 {
   "assets": {
-    "audio_image": {"type": "image", "source": "assets/images/audio-on.png"},
     "background_image": {"type": "image", "source": "assets/images/background.png"},
     "exit_image": {"type": "image", "source": "assets/images/button-exit.png"},
     "firebase_facebook_image": {"type": "image", "source": "assets/images/firebase-button-facebook.png"},
@@ -10,7 +9,6 @@
     "gem_image": {"type": "image", "source": "assets/images/gem.png"},
     "information_image": {"type": "image", "source": "assets/images/button-information.png"},
     "invite_image": {"type": "image", "source": "assets/images/button-invite.png"},
-    "music_image": {"type": "image", "source": "assets/images/button-music-on.png"},
     "purchase_image": {"type": "image", "source": "assets/images/button-purchase.png"},
     "share_image": {"type": "image", "source": "assets/images/button-share.png"}
   },

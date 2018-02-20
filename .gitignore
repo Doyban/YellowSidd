@@ -1,5 +1,5 @@
 # PhpStorm:
-.idea*
+.idea
 
 # Intel XDK.
 plugins
@@ -18,3 +18,4 @@ dist.zip
 
 # Others.
 package-lock.json
+.idea/workspace.xml
