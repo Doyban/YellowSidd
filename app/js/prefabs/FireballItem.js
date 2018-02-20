@@ -14,5 +14,9 @@ YellowSidd.FireballItem.prototype.collect_item = function (item, player) {
   "use strict";
   YellowSidd.Item.prototype.collect_item.call(this);
   player.shooting = true; // Set shooting variable in the Player prefab to true.
-  this.get_fireball_sound.play(); // Play get fireball sound.
+
+  // Play sound only if player left button sound as on mode.
+  if (PLAY_SOUND) {
+    this.get_fireball_sound.play(); // Play get fireball sound.
+  }
 };

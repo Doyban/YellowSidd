@@ -31,7 +31,10 @@ YellowSidd.Checkpoint.prototype.reach_checkpoint = function () {
   // this.checkpoint_sound.play(); // Play checkpoint sound.
 
   if (!this.play_sound) {
-    this.checkpoint_sound.play();
+    // Play sound only if player left button sound as on mode.
+    if (PLAY_SOUND) {
+      this.checkpoint_sound.play();
+    }
     this.play_sound = true;
   }
 };
