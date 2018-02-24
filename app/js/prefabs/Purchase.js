@@ -24,21 +24,11 @@ YellowSidd.Purchase.prototype.update = function () {
    */
   if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.exit_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.exit_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.exit_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.exit_item.position.y)) + 70 / 2)) {
     this.menu_items[0].select(); // Select second item.
-    // this.background_sound.stop(); // Stop background sound.
-  }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.information_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.information_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.information_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.information_item.position.y)) + 70 / 2)) {
-    this.menu_items[1].select(); // Select third item.
-  }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.invite_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.invite_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.invite_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.invite_item.position.y)) + 70 / 2)) {
-    this.menu_items[2].select(); // Select fourth item.
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.purchase_gems_item.position.x) - 250 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.purchase_gems_item.position.x)) + 250 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.purchase_gems_item.position.y) - 250 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.purchase_gems_item.position.y)) + 250 / 2)) {
-    this.menu_items[3].select(); // Select sixth item.
+    this.menu_items[1].select(); // Select sixth item.
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.purchase_skills_item.position.x) - 250 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.purchase_skills_item.position.x)) + 250 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.purchase_skills_item.position.y) - 250 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.purchase_skills_item.position.y)) + 250 / 2)) {
-    this.menu_items[4].select(); // Select seventh item.
-  }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.share_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.share_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.share_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.share_item.position.y)) + 70 / 2)) {
-    this.menu_items[5].select(); // Select eighth item.
+    this.menu_items[2].select(); // Select seventh item.
   }
 };

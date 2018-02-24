@@ -19,3 +19,4 @@ dist.zip
 # Others.
 package-lock.json
 .idea/workspace.xml
+.DS_STORE

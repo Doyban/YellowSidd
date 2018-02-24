@@ -10,9 +10,9 @@ YellowSidd.Gems = function (game_state, name, position, properties) {
 
   this.swipe = this.game.input.activePointer; // Allow player to navigate by swiping.
 
-  // Add sounds.
-  this.error_sound = this.game.add.audio('error'); // TODO: Add error sound when no enough money.
-  this.upgrade_sound = this.game.add.audio('upgrade'); // TODO: Add upgrade sound when purchased.
+  // Add sounds..
+  this.error_sound = this.game.add.audio('error');
+  this.upgrade_sound = this.game.add.audio('upgrade');
 };
 
 // Set up constructor.
@@ -48,14 +48,5 @@ YellowSidd.Gems.prototype.update = function () {
     this.menu_items[5].select(); // Select seventh item.
     localStorage.gems = parseInt(localStorage.gems) + 200; // Add 200 gems.
     this.upgrade_sound.play(); // Play upgrade sound.
-  }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.information_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.information_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.information_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.information_item.position.y)) + 70 / 2)) {
-    this.menu_items[6].select(); // Select eighth item.
-  }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.invite_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.invite_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.invite_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.invite_item.position.y)) + 70 / 2)) {
-    this.menu_items[7].select(); // Select ninth item.
-  }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.share_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.share_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.share_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.share_item.position.y)) + 70 / 2)) {
-    this.menu_items[8].select(); // Select eleventh item.
   }
 };

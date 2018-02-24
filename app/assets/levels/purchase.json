@@ -53,26 +53,6 @@
       },
       "type": "gems_quantity"
     },
-    "information_item": {
-      "position": {"x": 0.644, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/purchase.json",
-        "group": "menu_items",
-        "state_name": "PurchaseState",
-        "texture": "information_image"
-      },
-      "type": "start_state_item"
-    },
-    "invite_item": {
-      "position": {"x": 0.356, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/purchase.json",
-        "group": "menu_items",
-        "state_name": "PurchaseState",
-        "texture": "invite_image"
-      },
-      "type": "start_state_item"
-    },
     "purchase_gems_item": {
       "position": {"x": 0.25, "y": 0.6},
       "properties": {
@@ -90,16 +70,6 @@
         "group": "menu_items",
         "state_name": "SkillsState",
         "texture": "purchase_skills_image"
-      },
-      "type": "start_state_item"
-    },
-    "share_item": {
-      "position": {"x": 0.262, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/purchase.json",
-        "group": "menu_items",
-        "state_name": "PurchaseState",
-        "texture": "share_image"
       },
       "type": "start_state_item"
     }

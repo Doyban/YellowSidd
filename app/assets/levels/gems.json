@@ -7,10 +7,7 @@
     "gems_20_image": {"type": "image", "source": "assets/images/button-gems-20.png"},
     "gems_50_image": {"type": "image", "source": "assets/images/button-gems-50.png"},
     "gems_100_image": {"type": "image", "source": "assets/images/button-gems-100.png"},
-    "gems_200_image": {"type": "image", "source": "assets/images/button-gems-200.png"},
-    "information_image": {"type": "image", "source": "assets/images/button-information.png"},
-    "invite_image": {"type": "image", "source": "assets/images/button-invite.png"},
-    "share_image": {"type": "image", "source": "assets/images/button-share.png"}
+    "gems_200_image": {"type": "image", "source": "assets/images/button-gems-200.png"}
   },
   "groups": [
     "background",
@@ -105,36 +102,6 @@
         }
       },
       "type": "gems_quantity"
-    },
-    "information_item": {
-      "position": {"x": 0.644, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/gems.json",
-        "group": "menu_items",
-        "state_name": "GemsState",
-        "texture": "information_image"
-      },
-      "type": "start_state_item"
-    },
-    "invite_item": {
-      "position": {"x": 0.356, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/gems.json",
-        "group": "menu_items",
-        "state_name": "GemsState",
-        "texture": "invite_image"
-      },
-      "type": "start_state_item"
-    },
-    "share_item": {
-      "position": {"x": 0.262, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/gems.json",
-        "group": "menu_items",
-        "state_name": "GemsState",
-        "texture": "share_image"
-      },
-      "type": "start_state_item"
     }
   }
 }
