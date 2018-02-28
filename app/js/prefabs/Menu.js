@@ -46,35 +46,8 @@ YellowSidd.Menu.prototype.update = function () {
       FIRST_PLAYED = false;
     }
   }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.firebase_facebook_item.position.x) - 64 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.firebase_facebook_item.position.x)) + 64 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.firebase_facebook_item.position.y) - 64 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.firebase_facebook_item.position.y)) + 64 / 2)) {
-    this.menu_items[1].select(); // Select third item.
-
-    // Stop background music and prepare to play again once Menu will be called again.
-    if (PLAY_MUSIC) {
-      this.background_sound.stop();
-      FIRST_PLAYED = false;
-    }
-  }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.firebase_google_item.position.x) - 57 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.firebase_google_item.position.x)) + 57 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.firebase_google_item.position.y) - 64 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.firebase_google_item.position.y)) + 64 / 2)) {
-    this.menu_items[2].select(); // Select fourth item.
-
-    // Stop background music and prepare to play again once Menu will be called again.
-    if (PLAY_MUSIC) {
-      this.background_sound.stop();
-      FIRST_PLAYED = false;
-    }
-  }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.firebase_twitter_item.position.x) - 64 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.firebase_twitter_item.position.x)) + 64 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.firebase_twitter_item.position.y) - 64 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.firebase_twitter_item.position.y)) + 64 / 2)) {
-    this.menu_items[3].select(); // Select fifth item.
-
-    // Stop background music and prepare to play again once Menu will be called again.
-    if (PLAY_MUSIC) {
-      this.background_sound.stop();
-      FIRST_PLAYED = false;
-    }
-  }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.game_item.position.x) - 240 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.game_item.position.x)) + 240 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.game_item.position.y) - 240 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.game_item.position.y)) + 240 / 2)) {
-    this.menu_items[4].select(); // Select sixth item.
+    this.menu_items[1].select(); // Select sixth item.
 
     // Stop background music and prepare to play again once Menu will be called again.
     if (PLAY_MUSIC) {
@@ -83,7 +56,7 @@ YellowSidd.Menu.prototype.update = function () {
     }
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.information_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.information_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.information_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.information_item.position.y)) + 70 / 2)) {
-    this.menu_items[5].select(); // Select seventh item.
+    this.menu_items[2].select(); // Select seventh item.
 
     // Stop background music and prepare to play again once Menu will be called again.
     if (PLAY_MUSIC) {
@@ -92,7 +65,7 @@ YellowSidd.Menu.prototype.update = function () {
     }
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.invite_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.invite_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.invite_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.invite_item.position.y)) + 70 / 2)) {
-    this.menu_items[6].select(); // Select eighth item.
+    this.menu_items[3].select(); // Select eighth item.
 
     // Stop background music and prepare to play again once Menu will be called again.
     if (PLAY_MUSIC) {
@@ -101,7 +74,7 @@ YellowSidd.Menu.prototype.update = function () {
     }
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.purchase_item.position.x) - 240 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.purchase_item.position.x)) + 240 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.purchase_item.position.y) - 240 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.purchase_item.position.y)) + 240 / 2)) {
-    this.menu_items[7].select(); // Select tenth item.
+    this.menu_items[4].select(); // Select tenth item.
 
     // Stop background music and prepare to play again once Menu will be called again.
     if (PLAY_MUSIC) {
@@ -110,7 +83,7 @@ YellowSidd.Menu.prototype.update = function () {
     }
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.share_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.share_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.share_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.share_item.position.y)) + 70 / 2)) {
-    this.menu_items[8].select(); // Select eleventh item.
+    this.menu_items[5].select(); // Select eleventh item.
 
     // Stop background music and prepare to play again once Menu will be called again.
     if (PLAY_MUSIC) {
