@@ -170,6 +170,7 @@ YellowSidd.Player.prototype.die = function () {
   if (this.lives > 0) {
     this.game_state.restart_level(); // Player lost 1 life, but still have more then 0, so restart level eventually checkpoint.
   } else {
+    localStorage.lastScore = this.score;
     this.game_state.game_over(); // Player lost all lives then game over.
   }
 };

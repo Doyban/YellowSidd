@@ -37,6 +37,6 @@ YellowSidd.UpgradeItem.prototype.select = function () {
     this.game_state.state.start('BootState', true, false, this.level_file, 'SkillsState'); // Start next Phaser state.
   } else {
     this.error_sound.play(); // Play error sound.
-    alert("You don't have enough gems to buy this upgrade."); // Not enough gems to buy upgrade.
+    alert("You don't have enough gems to buy this upgrade. The price for that is " + this.price + " gems."); // Not enough gems to buy upgrade.
   }
 };

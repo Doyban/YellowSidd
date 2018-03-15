@@ -9,6 +9,8 @@ YellowSidd.GameOver = function (game_state, name, position, properties) {
   this.menu_items = properties.menu_items; // List of menu items.
 
   this.swipe = this.game.input.activePointer; // Allow player to navigate by swiping.
+
+  this.score = localStorage.getItem('player_score');
 };
 
 // Set up constructor.
@@ -27,5 +29,6 @@ YellowSidd.GameOver.prototype.update = function () {
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.share_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.share_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.share_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.share_item.position.y)) + 70 / 2)) {
     this.menu_items[1].select(); // Select second item.
+    YellowSidd.FacebookAPI.prototype.shareScore(localStorage.lastScore); // Share score.
   }
 };

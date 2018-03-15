@@ -33,6 +33,6 @@ YellowSidd.MenuState.prototype.create = function () {
   menu_properties = {texture: '', group: 'background', menu_items: menu_items}; // Set properties of the Menu.
   menu = new YellowSidd.Menu(this, 'menu', menu_position, menu_properties); // Create Menu.
 
-  localStorage.gems = localStorage.gems || 5; // Initialize localStorage gems. TODO: Change to 5
+  localStorage.gems = localStorage.gems || 5; // Initialize localStorage gems.
   this.game.current_upgrades = this.game.current_upgrades || []; // Initialize current upgrades.
 };
