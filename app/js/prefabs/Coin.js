@@ -30,5 +30,8 @@ YellowSidd.Coin.prototype.collect_coin = function (coin, player) {
   this.kill();
   player.score += this.score;
 
-  this.coin_sound.play(); // Play coin sound.
+  // Play sound only if player left button sound as on mode.
+  if (PLAY_SOUND) {
+    this.coin_sound.play(); // Play coin sound.
+  }
 };

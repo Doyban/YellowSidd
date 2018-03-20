@@ -1,6 +1,5 @@
 {
   "assets": {
-    "audio_image": {"type": "image", "source": "assets/images/audio-on.png"},
     "background_image": {"type": "image", "source": "assets/images/background.png"},
     "exit_image": {"type": "image", "source": "assets/images/button-exit.png"},
     "gem_image": {"type": "image", "source": "assets/images/gem.png"},
@@ -11,7 +10,6 @@
     "gems_200_image": {"type": "image", "source": "assets/images/button-gems-200.png"},
     "information_image": {"type": "image", "source": "assets/images/button-information.png"},
     "invite_image": {"type": "image", "source": "assets/images/button-invite.png"},
-    "music_image": {"type": "image", "source": "assets/images/button-music-on.png"},
     "share_image": {"type": "image", "source": "assets/images/button-share.png"}
   },
   "groups": [
@@ -20,16 +18,6 @@
     "menu_items"
   ],
   "prefabs": {
-    "audio_item": {
-      "position": {"x": 0.738, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/gems.json",
-        "group": "menu_items",
-        "state_name": "GemsState",
-        "texture": "audio_image"
-      },
-      "type": "start_state_item"
-    },
     "background_item": {
       "position": {"x": 0, "y": 0},
       "properties": {
@@ -135,16 +123,6 @@
         "group": "menu_items",
         "state_name": "GemsState",
         "texture": "invite_image"
-      },
-      "type": "start_state_item"
-    },
-    "music_item": {
-      "position": {"x": 0.856, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/gems.json",
-        "group": "menu_items",
-        "state_name": "GemsState",
-        "texture": "music_image"
       },
       "type": "start_state_item"
     },

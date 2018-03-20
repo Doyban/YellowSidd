@@ -1,5 +1,7 @@
 var YellowSidd = YellowSidd || {};
-var PLAY_MUSIC = false;
+var PLAY_MUSIC = true; // Global variable to toggle background music.
+var PLAY_SOUND = true; // Global variable to toggle game sounds.
+var FIRST_PLAYED = false; // Global variable to check if background music has been played for the first time.
 
 var game = new Phaser.Game(800, 400, Phaser.CANVAS);
 game.state.add('BootState', new YellowSidd.BootState()); // Loads a JSON file with the level information and starts the Loading State.

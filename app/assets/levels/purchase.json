@@ -1,12 +1,10 @@
 {
   "assets": {
-    "audio_image": {"type": "image", "source": "assets/images/audio-on.png"},
     "background_image": {"type": "image", "source": "assets/images/background.png"},
     "exit_image": {"type": "image", "source": "assets/images/button-exit.png"},
     "gem_image": {"type": "image", "source": "assets/images/gem.png"},
     "information_image": {"type": "image", "source": "assets/images/button-information.png"},
     "invite_image": {"type": "image", "source": "assets/images/button-invite.png"},
-    "music_image": {"type": "image", "source": "assets/images/button-music-on.png"},
     "purchase_gems_image": {"type": "image", "source": "assets/images/button-purchase-gems.png"},
     "purchase_skills_image": {"type": "image", "source": "assets/images/button-purchase-skills.png"},
     "share_image": {"type": "image", "source": "assets/images/button-share.png"}
@@ -17,16 +15,6 @@
     "menu_items"
   ],
   "prefabs": {
-    "audio_item": {
-      "position": {"x": 0.738, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/purchase.json",
-        "group": "menu_items",
-        "state_name": "PurchaseState",
-        "texture": "audio_image"
-      },
-      "type": "start_state_item"
-    },
     "background_item": {
       "position": {"x": 0, "y": 0},
       "properties": {
@@ -82,16 +70,6 @@
         "group": "menu_items",
         "state_name": "PurchaseState",
         "texture": "invite_image"
-      },
-      "type": "start_state_item"
-    },
-    "music_item": {
-      "position": {"x": 0.856, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/purchase.json",
-        "group": "menu_items",
-        "state_name": "PurchaseState",
-        "texture": "music_image"
       },
       "type": "start_state_item"
     },

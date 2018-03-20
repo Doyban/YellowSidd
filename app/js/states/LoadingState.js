@@ -93,6 +93,10 @@ YellowSidd.LoadingState.prototype.preload = function () {
     'assets/audios/upgrade.ogg',
     'assets/audios/upgrade.mp3'
   ]);
+
+  // Load sound and audio spritesheets.
+  this.game.load.spritesheet('audio', 'assets/spritesheets/audio_spritesheet.png', 70, 70);
+  this.game.load.spritesheet('music', 'assets/spritesheets/music_spritesheet.png', 70, 70);
 };
 
 YellowSidd.LoadingState.prototype.create = function () {

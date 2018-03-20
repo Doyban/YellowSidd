@@ -30,7 +30,7 @@ gulp.task('serve-dist', [], function () {
 
 // Use JSHint.
 gulp.task('jshint', function() {
-  gulp.src('./app/js/*.js')
+  gulp.src('./app/js/*.js', '!./app/js/phaser.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
@@ -56,7 +56,7 @@ gulp.task('minify-css', function() {
 
 // Uglify JavaScript code.
 gulp.task('compress', function() {
-  return gulp.src('./app/js/*.js')
+  return gulp.src('./app/js/**/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js'))
 });
@@ -70,9 +70,9 @@ gulp.task('concat', function () {
 
 // Minify images.
 gulp.task('compress-images', function() {
-  return gulp.src('./app/asset/**/*') // source in pre-images folder, match all images
+  return gulp.src('./app/assets/**/*') // source in pre-images folder, match all images
     .pipe(imagemin({ optimizationLevel: 7 }))
-    .pipe(gulp.dest('./dist/asset'));
+    .pipe(gulp.dest('./dist/assets'));
 });
 
 gulp.task('default', ['serve-dev']); // Default task.

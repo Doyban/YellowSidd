@@ -21,16 +21,6 @@
     "menu_items"
   ],
   "prefabs": {
-    "audio_item": {
-      "position": {"x": 0.738, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/skills.json",
-        "group": "menu_items",
-        "state_name": "SkillsState",
-        "texture": "audio_image"
-      },
-      "type": "start_state_item"
-    },
     "background_item": {
       "position": {"x": 0, "y": 0},
       "properties": {
@@ -86,16 +76,6 @@
         "group": "menu_items",
         "state_name": "SkillsState",
         "texture": "invite_image"
-      },
-      "type": "start_state_item"
-    },
-    "music_item": {
-      "position": {"x": 0.856, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/skills.json",
-        "group": "menu_items",
-        "state_name": "SkillsState",
-        "texture": "music_image"
       },
       "type": "start_state_item"
     },

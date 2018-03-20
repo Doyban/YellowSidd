@@ -145,7 +145,10 @@ YellowSidd.TiledState.prototype.game_over = function () {
 
   this.game.state.start('BootState', true, false, 'assets/levels/game_over.json', 'GameOverState'); // Start MenuState.
 
-  this.game_over_sound.play(); // Play game over sound.
+  // Play sound only if player left button sound as on mode.
+  if (PLAY_SOUND) {
+    this.game_over_sound.play(); // Play game over sound.
+  }
 };
 
 // Create the HUD objects in fixed positions instead of loading it from the Tiled map. It has been done because sometimes the Phaser world scaling could mess with the HUD objects positions when reloading the screen or updating the lives. The same reason with lives prefab initial position.
