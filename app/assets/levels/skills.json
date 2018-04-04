@@ -1,12 +1,10 @@
 {
   "assets": {
-    "audio_image": {"type": "image", "source": "assets/images/audio-on.png"},
     "background_image": {"type": "image", "source": "assets/images/background.png"},
     "exit_image": {"type": "image", "source": "assets/images/button-exit.png"},
     "gem_image": {"type": "image", "source": "assets/images/gem.png"},
     "information_image": {"type": "image", "source": "assets/images/button-information.png"},
     "invite_image": {"type": "image", "source": "assets/images/button-invite.png"},
-    "music_image": {"type": "image", "source": "assets/images/button-music-on.png"},
     "share_image": {"type": "image", "source": "assets/images/button-share.png"},
     "skills_heart_plus_one_infinite_image": {"type": "image", "source": "assets/images/button-skills-heart-plus-one-infinite.png"},
     "skills_heart_plus_one_once_image": {"type": "image", "source": "assets/images/button-skills-heart-plus-one-once.png"},

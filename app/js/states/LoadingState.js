@@ -97,6 +97,8 @@ YellowSidd.LoadingState.prototype.preload = function () {
   // Load sound and audio spritesheets.
   this.game.load.spritesheet('audio', 'assets/spritesheets/audio_spritesheet.png', 70, 70);
   this.game.load.spritesheet('music', 'assets/spritesheets/music_spritesheet.png', 70, 70);
+
+  this.load.atlas('generic', 'assets/joystick/generic-joystick.png', 'assets/joystick/generic-joystick.json'); // Load VirtualJoystick plugin's assets.
 };
 
 YellowSidd.LoadingState.prototype.create = function () {

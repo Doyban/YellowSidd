@@ -62,6 +62,12 @@ YellowSidd.Player = function (game_state, name, position, properties) {
   this.kill_enemy_sound = this.game.add.audio('kill_enemy');
   this.lost_heart_sound = this.game.add.audio('lost_heart');
   this.walking_sound = this.game.add.audio('walking', .2);
+
+  this.pad = this.game.plugins.add(Phaser.VirtualJoystick); // Initialize VirtualJoystick Plugin.
+  this.stick = this.pad.addStick(60, 340, 45, 'generic'); // Add stick for Virtual Joystick.
+
+  // Add buttons for VirtualStick.
+  this.buttonFireball = this.pad.addButton(670, 370, 'generic', 'button1-up', 'button1-down');
 };
 
 YellowSidd.Player.prototype = Object.create(YellowSidd.Prefab.prototype);
@@ -77,10 +83,22 @@ YellowSidd.Player.prototype.update = function () {
   this.game_state.game.physics.arcade.overlap(this, this.game_state.groups.invincible_enemies, this.die, null, this);
   this.game_state.game.physics.arcade.overlap(this, this.game_state.groups.enemy_fireballs, this.die, null, this);
 
-  if (this.cursors.right.isDown && this.body.velocity.x >= 0) {
-    // Move right.
-    this.body.velocity.x = this.walking_speed;
-    this.direction = "RIGHT";
+  if (this.stick.isDown) {
+    // console.log(this.stick.forceX);
+
+    if (this.stick.forceX >= 0) {
+      // Move right.
+      this.body.velocity.x = this.walking_speed;
+      this.direction = "RIGHT";
+      this.scale.setTo(1, 1);
+    }
+    else if (this.stick.forceX < 0) {
+      // Move left.
+      this.body.velocity.x = -this.walking_speed;
+      this.direction = "LEFT";
+      this.scale.setTo(-1, 1);
+    }
+
     this.animations.play('walking'); // Play walking animation.
 
     // Play sound only if player button sound is as "on" mode.
@@ -88,34 +106,20 @@ YellowSidd.Player.prototype.update = function () {
       this.walking_sound.play(); // Play walking sound.
     }
 
-    this.scale.setTo(1, 1);
-  } else if (this.cursors.left.isDown && this.body.velocity.x <= 0) {
-    // Move left
-    this.body.velocity.x = -this.walking_speed;
-    this.direction = "LEFT";
+    if (this.body.blocked.down) {
+      this.body.velocity.y = this.stick.forceY * this.jumping_speed;
 
-    // Play sound only if player left button sound as on mode.
-    if (PLAY_SOUND) {
-      this.walking_sound.play(); // Play walking sound.
+      // Play sound only if player left button sound as on mode.
+      if (PLAY_SOUND && this.stick.angleFull > 210 && this.stick.angleFull < 330) {
+        this.jump_sound.play(); // Play jump sound.
+      }
     }
-
-    this.animations.play('walking'); // Play walking animation.
-    this.scale.setTo(-1, 1);
-  } else {
+  }
+  else {
     // Stop.
     this.body.velocity.x = 0;
     this.animations.stop();
     this.frame = 3;
-  }
-
-  // Jump only if touching a tile.
-  if (this.cursors.up.isDown && this.body.blocked.down) {
-    this.body.velocity.y = -this.jumping_speed;
-
-    // Play sound only if player left button sound as on mode.
-    if (PLAY_SOUND) {
-      this.jump_sound.play(); // Play jump sound.
-    }
   }
 
   // Dies if touches the end of the screen.
@@ -161,6 +165,12 @@ YellowSidd.Player.prototype.die = function () {
   "use strict";
   this.lives -= 1;
   this.shooting = false;
+
+  // Destroy VirtualJoystick elements.
+  this.stick.visible = 0;
+  this.buttonFireball.visible = 0;
+  // this.stick.destroy();
+  // this.buttonFireball.destroy();
 
   // Play sound only if player left button sound as on mode.
   if (PLAY_SOUND) {

@@ -133,6 +133,8 @@ YellowSidd.TiledState.prototype.restart_level = function () {
     localStorage.removeItem('jump_plus_one_once'); // Remove jump_plus_one_once from localStorage.
     localStorage.removeItem('speed_plus_one_once'); // Remove speed_plus_one_once from localStorage.
 
+
+
     this.game.state.restart(true, false, this.level_data); // Restart TiledState state.
   }
 };
