@@ -107,7 +107,7 @@ YellowSidd.Player.prototype.update = function () {
     }
 
     if (this.body.blocked.down) {
-      this.body.velocity.y = this.stick.forceY * this.jumping_speed;
+      this.body.velocity.y = this.stick.forceY * this.jumping_speed * 1.5; // Increase jumping_speed for mobile.
 
       // Play sound only if player left button sound as on mode.
       if (PLAY_SOUND && this.stick.angleFull > 210 && this.stick.angleFull < 330) {
@@ -128,7 +128,8 @@ YellowSidd.Player.prototype.update = function () {
   }
 
   // If the player is able to shoot and the shooting button is pressed then start shooting.
-  if (this.shooting && this.game_state.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)) {
+  // if (this.shooting && this.game_state.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)) {
+  if (this.shooting && this.buttonFireball.isDown) {
     if (!this.shoot_timer.running) {
       // Start a timer which will call the shoot method in a loop.
       this.shoot();
@@ -166,11 +167,9 @@ YellowSidd.Player.prototype.die = function () {
   this.lives -= 1;
   this.shooting = false;
 
-  // Destroy VirtualJoystick elements.
+  // Avoid duplication of stick and button.
   this.stick.visible = 0;
   this.buttonFireball.visible = 0;
-  // this.stick.destroy();
-  // this.buttonFireball.destroy();
 
   // Play sound only if player left button sound as on mode.
   if (PLAY_SOUND) {

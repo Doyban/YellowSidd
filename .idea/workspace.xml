@@ -2,129 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab21d31-1dad-4f5d-ba75-673a6f878691" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/audios/coin.ogg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/audios/get_fireball.ogg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/audios/jump.ogg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/audios/kill_enemy.ogg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/background.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/background.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/checkpoint.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/checkpoint.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/checkpoint.ogg" afterPath="$PROJECT_DIR$/app/assets/audios/checkpoint.ogg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/coin.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/coin.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/error.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/error.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/error.ogg" afterPath="$PROJECT_DIR$/app/assets/audios/error.ogg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/fireball.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/fireball.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/fireball.ogg" afterPath="$PROJECT_DIR$/app/assets/audios/fireball.ogg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/game_over.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/game_over.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/game_over.ogg" afterPath="$PROJECT_DIR$/app/assets/audios/game_over.ogg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/get_fireball.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/get_fireball.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/get_life.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/get_life.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/jump.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/jump.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/kill_enemy.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/kill_enemy.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/lost_heart.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/lost_heart.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/reach_goal.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/reach_goal.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/upgrade.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/upgrade.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/upgrade.ogg" afterPath="$PROJECT_DIR$/app/assets/audios/upgrade.ogg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/walking.mp3" afterPath="$PROJECT_DIR$/app/assets/audios/walking.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/audios/walking.ogg" afterPath="$PROJECT_DIR$/app/assets/audios/walking.ogg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-exit.png" afterPath="$PROJECT_DIR$/app/assets/images/button-exit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-game.png" afterPath="$PROJECT_DIR$/app/assets/images/button-game.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-gems-100.png" afterPath="$PROJECT_DIR$/app/assets/images/button-gems-100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-gems-20.png" afterPath="$PROJECT_DIR$/app/assets/images/button-gems-20.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-gems-200.png" afterPath="$PROJECT_DIR$/app/assets/images/button-gems-200.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-gems-5.png" afterPath="$PROJECT_DIR$/app/assets/images/button-gems-5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-gems-50.png" afterPath="$PROJECT_DIR$/app/assets/images/button-gems-50.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-information.png" afterPath="$PROJECT_DIR$/app/assets/images/button-information.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-invite.png" afterPath="$PROJECT_DIR$/app/assets/images/button-invite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-purchase-gems.png" afterPath="$PROJECT_DIR$/app/assets/images/button-purchase-gems.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-purchase-skills.png" afterPath="$PROJECT_DIR$/app/assets/images/button-purchase-skills.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-purchase.png" afterPath="$PROJECT_DIR$/app/assets/images/button-purchase.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-share.png" afterPath="$PROJECT_DIR$/app/assets/images/button-share.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-skills-heart-plus-one-infinite.png" afterPath="$PROJECT_DIR$/app/assets/images/button-skills-heart-plus-one-infinite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-skills-heart-plus-one-once.png" afterPath="$PROJECT_DIR$/app/assets/images/button-skills-heart-plus-one-once.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-skills-jump-plus-one-infinite.png" afterPath="$PROJECT_DIR$/app/assets/images/button-skills-jump-plus-one-infinite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-skills-jump-plus-one-once.png" afterPath="$PROJECT_DIR$/app/assets/images/button-skills-jump-plus-one-once.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-skills-speed-plus-one-infinite.png" afterPath="$PROJECT_DIR$/app/assets/images/button-skills-speed-plus-one-infinite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/button-skills-speed-plus-one-once.png" afterPath="$PROJECT_DIR$/app/assets/images/button-skills-speed-plus-one-once.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/firebase-button-facebook.png" afterPath="$PROJECT_DIR$/app/assets/images/firebase-button-facebook.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/firebase-button-google.png" afterPath="$PROJECT_DIR$/app/assets/images/firebase-button-google.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/firebase-button-twitter.png" afterPath="$PROJECT_DIR$/app/assets/images/firebase-button-twitter.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gem.png" afterPath="$PROJECT_DIR$/app/assets/images/gem.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/life.png" afterPath="$PROJECT_DIR$/app/assets/images/life.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/audio_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/audio_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/enemy14_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/enemy14_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/enemy15_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/enemy15_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/enemy16_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/enemy16_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/enemy1_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/enemy1_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/enemy21_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/enemy21_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/enemy22_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/enemy22_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/enemy24_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/enemy24_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/enemy3_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/enemy3_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/enemy4_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/enemy4_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/enemy5_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/enemy5_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/enemy7_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/enemy7_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/enemy8_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/enemy8_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/enemy9_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/enemy9_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/fly_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/fly_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/fly_spritesheet3.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/fly_spritesheet3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/ground_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/ground_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/level11_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/level11_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/level11_spritesheet2.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/level11_spritesheet2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/music_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/music_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/spritesheets/player_spritesheet.png" afterPath="$PROJECT_DIR$/app/assets/spritesheets/player_spritesheet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/xcf/button-skills-heart-plus-one-infinitexcf.xcf" afterPath="$PROJECT_DIR$/app/assets/xcf/button-skills-heart-plus-one-infinitexcf.xcf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/xcf/button-skills-jump-plus-one-infinite.xcf" afterPath="$PROJECT_DIR$/app/assets/xcf/button-skills-jump-plus-one-infinite.xcf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/xcf/button-skills-speed-plus-one-infinite.xcf" afterPath="$PROJECT_DIR$/app/assets/xcf/button-skills-speed-plus-one-infinite.xcf" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/audios/coin5.ogg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/audios/hurt2.ogg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/audios/jump3.ogg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/audios/upgrade1.ogg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/joystick/arcade-joystick.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/joystick/arcade-joystick.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/levels/game_over.json" afterPath="$PROJECT_DIR$/app/assets/levels/game_over.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/levels/gems.json" afterPath="$PROJECT_DIR$/app/assets/levels/gems.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/levels/level1.json" afterPath="$PROJECT_DIR$/app/assets/levels/level1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/levels/level2.json" afterPath="$PROJECT_DIR$/app/assets/levels/level2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/levels/menu.json" afterPath="$PROJECT_DIR$/app/assets/levels/menu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/levels/purchase.json" afterPath="$PROJECT_DIR$/app/assets/levels/purchase.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/levels/skills.json" afterPath="$PROJECT_DIR$/app/assets/levels/skills.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/maps/level1.json" afterPath="$PROJECT_DIR$/app/assets/maps/level1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/maps/level1.tmx" afterPath="$PROJECT_DIR$/app/assets/maps/level1.tmx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/main.js" afterPath="$PROJECT_DIR$/app/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/phaser.js" afterPath="$PROJECT_DIR$/app/js/phaser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Boss.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Boss.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Checkpoint.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Checkpoint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Coin.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Coin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Enemy.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Enemy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Fireball.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Fireball.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/FireballItem.js" afterPath="$PROJECT_DIR$/app/js/prefabs/FireballItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/FlyingEnemy.js" afterPath="$PROJECT_DIR$/app/js/prefabs/FlyingEnemy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/GameOver.js" afterPath="$PROJECT_DIR$/app/js/prefabs/GameOver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Gems.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Gems.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/GemsQuantity.js" afterPath="$PROJECT_DIR$/app/js/prefabs/GemsQuantity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Goal.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Goal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/GroundEnemy.js" afterPath="$PROJECT_DIR$/app/js/prefabs/GroundEnemy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/LifeItem.js" afterPath="$PROJECT_DIR$/app/js/prefabs/LifeItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Lives.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Lives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Menu.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/MenuItem.js" afterPath="$PROJECT_DIR$/app/js/prefabs/MenuItem.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Player.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Player.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Prefab.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Prefab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Purchase.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Purchase.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Skills.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Skills.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/StartStateItem.js" afterPath="$PROJECT_DIR$/app/js/prefabs/StartStateItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/UpgradeItem.js" afterPath="$PROJECT_DIR$/app/js/prefabs/UpgradeItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/states/BootState.js" afterPath="$PROJECT_DIR$/app/js/states/BootState.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/states/FirebaseState.js" afterPath="$PROJECT_DIR$/app/js/states/FirebaseState.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/states/GameOverState.js" afterPath="$PROJECT_DIR$/app/js/states/GameOverState.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/states/GemsState.js" afterPath="$PROJECT_DIR$/app/js/states/GemsState.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/states/JSONLevelState.js" afterPath="$PROJECT_DIR$/app/js/states/JSONLevelState.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/states/LoadingState.js" afterPath="$PROJECT_DIR$/app/js/states/LoadingState.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/states/MenuState.js" afterPath="$PROJECT_DIR$/app/js/states/MenuState.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/states/PurchaseState.js" afterPath="$PROJECT_DIR$/app/js/states/PurchaseState.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/states/SkillsState.js" afterPath="$PROJECT_DIR$/app/js/states/SkillsState.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/states/TiledState.js" afterPath="$PROJECT_DIR$/app/js/states/TiledState.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/upgrades/ExtraHeart.js" afterPath="$PROJECT_DIR$/app/js/upgrades/ExtraHeart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/upgrades/ExtraJump.js" afterPath="$PROJECT_DIR$/app/js/upgrades/ExtraJump.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/upgrades/ExtraSpeed.js" afterPath="$PROJECT_DIR$/app/js/upgrades/ExtraSpeed.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/upgrades/Upgrade.js" afterPath="$PROJECT_DIR$/app/js/upgrades/Upgrade.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/upgrades/Upgrades.js" afterPath="$PROJECT_DIR$/app/js/upgrades/Upgrades.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -134,12 +20,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Player.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/js/prefabs/Player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="163" column="47" lean-forward="true" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
+            <state relative-caret-position="545">
+              <caret line="135" column="31" lean-forward="true" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -158,7 +44,7 @@
       <file leaf-file-name="TiledState.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/states/TiledState.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
+            <state relative-caret-position="2835">
               <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
               <folding />
             </state>
@@ -168,7 +54,7 @@
       <file leaf-file-name="LoadingState.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/states/LoadingState.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
+            <state relative-caret-position="2100">
               <caret line="100" column="46" lean-forward="false" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
               <folding />
             </state>
@@ -188,12 +74,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ph</find>
-      <find>add sound.</find>
-      <find>upgrade_sound</find>
-      <find>audio_item</find>
-      <find>TODO:</find>
-      <find>// TODO:</find>
       <find>you don't have</find>
       <find>phas</find>
       <find>music-on</find>
@@ -211,13 +91,19 @@
       <find>cs.start</find>
       <find>buttonju</find>
       <find>die(</find>
-      <find>player</find>
       <find>restart_level</find>
       <find>stic</find>
       <find>enable</find>
       <find>generic-jo</find>
-      <find>restart</find>
       <find>destr</find>
+      <find>hit_enemy</find>
+      <find>restart</find>
+      <find>player</find>
+      <find>firebal</find>
+      <find>shoot</find>
+      <find>jump</find>
+      <find>this.pad.</find>
+      <find>buttonfire</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app</dir>
@@ -339,66 +225,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="joystick" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="prefabs" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="states" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Changed Files">
           <expand>
@@ -500,6 +326,66 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="joystick" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="prefabs" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="states" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -516,7 +402,7 @@
     <property name="JavaScriptPreferStrict" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -711,12 +597,14 @@
       <workItem from="1522667018858" duration="122000" />
       <workItem from="1522667158250" duration="890000" />
       <workItem from="1522777820100" duration="16000" />
-      <workItem from="1522861478672" duration="2302000" />
+      <workItem from="1522861478672" duration="2973000" />
+      <workItem from="1522922575297" duration="402000" />
+      <workItem from="1523191366881" duration="756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228090000" />
+    <option name="totallyTimeSpent" value="229919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="2560" height="1440" extended-state="0" />
@@ -726,7 +614,6 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3227147" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32805756" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -738,6 +625,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32805756" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -754,20 +642,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/js/prefabs/Boss.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/prefabs/Enemy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/prefabs/FlyingEnemy.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -867,7 +741,6 @@
     <entry file="file://$PROJECT_DIR$/dist/js/prefabs/UpgradeItem.js" />
     <entry file="file://$PROJECT_DIR$/app/js/prefabs/UpgradeItem.js" />
     <entry file="file://$PROJECT_DIR$/app/js/prefabs/Skills.js" />
-    <entry file="file://$PROJECT_DIR$/app/assets/joystick/arcade-joystick.json" />
     <entry file="file://$PROJECT_DIR$/dist/index.html" />
     <entry file="file://$PROJECT_DIR$/app/assets/levels/skills.json" />
     <entry file="file://$PROJECT_DIR$/app/assets/levels/menu.json" />
@@ -899,16 +772,8 @@
     <entry file="file://$PROJECT_DIR$/dist/js/prefabs/Player.js" />
     <entry file="file://$PROJECT_DIR$/app/js/states/LoadingState.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
+        <state relative-caret-position="2100">
           <caret line="100" column="46" lean-forward="false" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/states/TiledState.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -921,10 +786,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/states/TiledState.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2835">
+          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/joystick/generic-joystick.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/joystick/arcade-joystick.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/joystick/arcade-joystick.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/prefabs/Player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="163" column="47" lean-forward="true" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
+        <state relative-caret-position="545">
+          <caret line="135" column="31" lean-forward="true" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
           <folding />
         </state>
       </provider>
