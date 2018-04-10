@@ -26,7 +26,7 @@ YellowSidd.Player = function (game_state, name, position, properties) {
 
   this.anchor.setTo(0.5);
 
-  this.cursors = this.game_state.game.input.keyboard.createCursorKeys(); // Enable cursors.
+  this.swipe = this.game.input.activePointer; // Allow player to navigate by swiping.
 
   // Create shoot timer.
   this.shoot_timer = this.game_state.game.time.create();
@@ -128,7 +128,6 @@ YellowSidd.Player.prototype.update = function () {
   }
 
   // If the player is able to shoot and the shooting button is pressed then start shooting.
-  // if (this.shooting && this.game_state.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)) {
   if (this.shooting && this.buttonFireball.isDown) {
     if (!this.shoot_timer.running) {
       // Start a timer which will call the shoot method in a loop.

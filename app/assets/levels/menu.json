@@ -31,8 +31,7 @@
       "properties": {
         "level_file": "assets/levels/menu.json",
         "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "exit_image"
+        "state_name": "MenuState"
       },
       "type": "start_state_item"
     },
@@ -41,8 +40,7 @@
       "properties": {
         "level_file": "assets/levels/menu.json",
         "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "firebase_facebook_image"
+        "state_name": "MenuState"
       },
       "type": "start_state_item"
     },
@@ -51,8 +49,7 @@
       "properties": {
         "level_file": "assets/levels/menu.json",
         "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "firebase_google_image"
+        "state_name": "MenuState"
       },
       "type": "start_state_item"
     },
@@ -61,8 +58,7 @@
       "properties": {
         "level_file": "assets/levels/menu.json",
         "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "firebase_twitter_image"
+        "state_name": "MenuState"
       },
       "type": "start_state_item"
     },
@@ -77,7 +73,6 @@
     "game_item": {
       "position": {"x": 0.25, "y": 0.6},
       "properties": {
-        "texture": "game_image",
         "group": "menu_items",
         "level_file": "assets/levels/level1.json",
         "state_name": "GameState"
@@ -101,8 +96,7 @@
       "properties": {
         "level_file": "assets/levels/menu.json",
         "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "information_image"
+        "state_name": "MenuState"
       },
       "type": "start_state_item"
     },
@@ -111,15 +105,13 @@
       "properties": {
         "level_file": "assets/levels/menu.json",
         "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "invite_image"
+        "state_name": "MenuState"
       },
       "type": "start_state_item"
     },
     "purchase_item": {
       "position": {"x": 0.75, "y": 0.6},
       "properties": {
-        "texture": "purchase_image",
         "group": "menu_items",
         "level_file": "assets/levels/purchase.json",
         "state_name": "PurchaseState"
@@ -131,8 +123,7 @@
       "properties": {
         "level_file": "assets/levels/menu.json",
         "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "share_image"
+        "state_name": "MenuState"
       },
       "type": "start_state_item"
     }
