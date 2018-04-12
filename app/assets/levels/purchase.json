@@ -3,11 +3,8 @@
     "background_image": {"type": "image", "source": "assets/images/background.png"},
     "exit_image": {"type": "image", "source": "assets/images/button-exit.png"},
     "gem_image": {"type": "image", "source": "assets/images/gem.png"},
-    "information_image": {"type": "image", "source": "assets/images/button-information.png"},
-    "invite_image": {"type": "image", "source": "assets/images/button-invite.png"},
     "purchase_gems_image": {"type": "image", "source": "assets/images/button-purchase-gems.png"},
-    "purchase_skills_image": {"type": "image", "source": "assets/images/button-purchase-skills.png"},
-    "share_image": {"type": "image", "source": "assets/images/button-share.png"}
+    "purchase_skills_image": {"type": "image", "source": "assets/images/button-purchase-skills.png"}
   },
   "groups": [
     "background",
@@ -24,7 +21,7 @@
       "type": "background"
     },
     "exit_item": {
-      "position": {"x": 0.95, "y": 0.1},
+      "position": {"x": 0.94, "y": 0.11},
       "properties": {
         "level_file": "assets/levels/menu.json",
         "group": "menu_items",
@@ -42,7 +39,7 @@
       "type": "gem"
     },
     "gems_quantity_item": {
-      "position": {"x": 0.06, "y": 0.05},
+      "position": {"x": 0.08, "y": 0.05},
       "properties": {
         "text": "",
         "group": "hud",
@@ -52,26 +49,6 @@
         }
       },
       "type": "gems_quantity"
-    },
-    "information_item": {
-      "position": {"x": 0.644, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/purchase.json",
-        "group": "menu_items",
-        "state_name": "PurchaseState",
-        "texture": "information_image"
-      },
-      "type": "start_state_item"
-    },
-    "invite_item": {
-      "position": {"x": 0.356, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/purchase.json",
-        "group": "menu_items",
-        "state_name": "PurchaseState",
-        "texture": "invite_image"
-      },
-      "type": "start_state_item"
     },
     "purchase_gems_item": {
       "position": {"x": 0.25, "y": 0.6},
@@ -90,16 +67,6 @@
         "group": "menu_items",
         "state_name": "SkillsState",
         "texture": "purchase_skills_image"
-      },
-      "type": "start_state_item"
-    },
-    "share_item": {
-      "position": {"x": 0.262, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/purchase.json",
-        "group": "menu_items",
-        "state_name": "PurchaseState",
-        "texture": "share_image"
       },
       "type": "start_state_item"
     }

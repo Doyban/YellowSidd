@@ -64,10 +64,10 @@ YellowSidd.Player = function (game_state, name, position, properties) {
   this.walking_sound = this.game.add.audio('walking', .2);
 
   this.pad = this.game.plugins.add(Phaser.VirtualJoystick); // Initialize VirtualJoystick Plugin.
-  this.stick = this.pad.addStick(60, 340, 45, 'generic'); // Add stick for Virtual Joystick.
+  this.stick = this.pad.addStick(80, 280, 45, 'generic'); // Add stick for Virtual Joystick.
 
   // Add buttons for VirtualStick.
-  this.buttonFireball = this.pad.addButton(670, 370, 'generic', 'button1-up', 'button1-down');
+  this.buttonFireball = this.pad.addButton(620, 280, 'generic', 'button1-up', 'button1-down');
 };
 
 YellowSidd.Player.prototype = Object.create(YellowSidd.Prefab.prototype);
@@ -107,7 +107,7 @@ YellowSidd.Player.prototype.update = function () {
     }
 
     if (this.body.blocked.down) {
-      this.body.velocity.y = this.stick.forceY * this.jumping_speed * 1.5; // Increase jumping_speed for mobile.
+      this.body.velocity.y = this.stick.forceY * this.jumping_speed * 1.2; // Increase speed for mobile.
 
       // Play sound only if player left button sound as on mode.
       if (PLAY_SOUND && this.stick.angleFull > 210 && this.stick.angleFull < 330) {

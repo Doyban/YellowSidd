@@ -7,10 +7,7 @@
     "gems_20_image": {"type": "image", "source": "assets/images/button-gems-20.png"},
     "gems_50_image": {"type": "image", "source": "assets/images/button-gems-50.png"},
     "gems_100_image": {"type": "image", "source": "assets/images/button-gems-100.png"},
-    "gems_200_image": {"type": "image", "source": "assets/images/button-gems-200.png"},
-    "information_image": {"type": "image", "source": "assets/images/button-information.png"},
-    "invite_image": {"type": "image", "source": "assets/images/button-invite.png"},
-    "share_image": {"type": "image", "source": "assets/images/button-share.png"}
+    "gems_200_image": {"type": "image", "source": "assets/images/button-gems-200.png"}
   },
   "groups": [
     "background",
@@ -27,7 +24,7 @@
       "type": "background"
     },
     "exit_item": {
-      "position": {"x": 0.95, "y": 0.1},
+      "position": {"x": 0.94, "y": 0.11},
       "properties": {
         "level_file": "assets/levels/purchase.json",
         "group": "menu_items",
@@ -45,7 +42,7 @@
       "type": "gem"
     },
     "gems_5_item": {
-      "position": {"x": 0.1, "y": 0.4},
+      "position": {"x": 0.1, "y": 0.41},
       "properties": {
         "level_file": "assets/levels/gems.json",
         "group": "menu_items",
@@ -55,7 +52,7 @@
       "type": "start_state_item"
     },
     "gems_20_item": {
-      "position": {"x": 0.5, "y": 0.4},
+      "position": {"x": 0.5, "y": 0.41},
       "properties": {
         "level_file": "assets/levels/gems.json",
         "group": "menu_items",
@@ -65,7 +62,7 @@
       "type": "start_state_item"
     },
     "gems_50_item": {
-      "position": {"x": 0.9, "y": 0.4},
+      "position": {"x": 0.9, "y": 0.41},
       "properties": {
         "level_file": "assets/levels/gems.json",
         "group": "menu_items",
@@ -95,7 +92,7 @@
       "type": "start_state_item"
     },
     "gems_quantity_item": {
-      "position": {"x": 0.06, "y": 0.05},
+      "position": {"x": 0.08, "y": 0.05},
       "properties": {
         "text": "",
         "group": "hud",
@@ -105,36 +102,6 @@
         }
       },
       "type": "gems_quantity"
-    },
-    "information_item": {
-      "position": {"x": 0.644, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/gems.json",
-        "group": "menu_items",
-        "state_name": "GemsState",
-        "texture": "information_image"
-      },
-      "type": "start_state_item"
-    },
-    "invite_item": {
-      "position": {"x": 0.356, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/gems.json",
-        "group": "menu_items",
-        "state_name": "GemsState",
-        "texture": "invite_image"
-      },
-      "type": "start_state_item"
-    },
-    "share_item": {
-      "position": {"x": 0.262, "y": 0.1},
-      "properties": {
-        "level_file": "assets/levels/gems.json",
-        "group": "menu_items",
-        "state_name": "GemsState",
-        "texture": "share_image"
-      },
-      "type": "start_state_item"
     }
   }
 }
