@@ -2,9 +2,6 @@
   "assets": {
     "background_image": {"type": "image", "source": "assets/images/background.png"},
     "exit_image": {"type": "image", "source": "assets/images/button-exit.png"},
-    "firebase_facebook_image": {"type": "image", "source": "assets/images/firebase-button-facebook.png"},
-    "firebase_google_image": {"type": "image", "source": "assets/images/firebase-button-google.png"},
-    "firebase_twitter_image": {"type": "image", "source": "assets/images/firebase-button-twitter.png"},
     "game_image": {"type": "image", "source": "assets/images/button-game.png"},
     "gem_image": {"type": "image", "source": "assets/images/gem.png"},
     "information_image": {"type": "image", "source": "assets/images/button-information.png"},
@@ -28,33 +25,6 @@
     },
     "exit_item": {
       "position": {"x": 0.89, "y": 0.012},
-      "properties": {
-        "level_file": "assets/levels/menu.json",
-        "group": "menu_items",
-        "state_name": "MenuState"
-      },
-      "type": "start_state_item"
-    },
-    "firebase_facebook_item": {
-      "position": {"x": 0.46, "y": 0.32},
-      "properties": {
-        "level_file": "assets/levels/menu.json",
-        "group": "menu_items",
-        "state_name": "MenuState"
-      },
-      "type": "start_state_item"
-    },
-    "firebase_google_item": {
-      "position": {"x": 0.46, "y": 0.52},
-      "properties": {
-        "level_file": "assets/levels/menu.json",
-        "group": "menu_items",
-        "state_name": "MenuState"
-      },
-      "type": "start_state_item"
-    },
-    "firebase_twitter_item": {
-      "position": {"x": 0.46, "y": 0.72},
       "properties": {
         "level_file": "assets/levels/menu.json",
         "group": "menu_items",

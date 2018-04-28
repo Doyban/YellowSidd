@@ -102,9 +102,6 @@ YellowSidd.LoadingState.prototype.preload = function () {
   // Loading for next states is not required, only for the first state it's required to have buttons instead of defined textures in JSON.
   this.load.image('exit', 'assets/images/button-exit.png', 70, 70);
   this.load.image('game', 'assets/images/button-game.png', 240, 240);
-  this.load.image('firebase-facebook', 'assets/images/firebase-button-facebook.png', 64, 64);
-  this.load.image('firebase-google', 'assets/images/firebase-button-google.png', 64, 64);
-  this.load.image('firebase-twitter', 'assets/images/firebase-button-twitter.png', 64, 64);
   this.load.image('information', 'assets/images/button-information.png', 70, 70);
   this.load.image('invite', 'assets/images/button-invite.png', 70, 70);
   this.load.image('purchase', 'assets/images/button-purchase.png', 240, 240);

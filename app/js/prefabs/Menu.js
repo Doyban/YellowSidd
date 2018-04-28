@@ -20,9 +20,6 @@ YellowSidd.Menu = function (game_state, name, position, properties) {
   this.buttonMusic.frame = PLAY_MUSIC ? 0 : 1; // Show appropriate background music button.
   // Other buttons.
   this.exitButton = this.game.add.button(this.game.world.width * 0.89, this.game.world.height * 0.012, 'exit', this.startExit, this);
-  this.firebaseFacebookButton = this.game.add.button(this.game.world.width * 0.46, this.game.world.height * 0.32, 'firebase-facebook', this.startFirebaseFacebook, this);
-  this.firebaseGoogleButton = this.game.add.button(this.game.world.width * 0.46, this.game.world.height * 0.52, 'firebase-google', this.startFirebaseGoogle, this);
-  this.firebaseTwitterButton = this.game.add.button(this.game.world.width * 0.46, this.game.world.height * 0.72, 'firebase-twitter', this.startFirebaseTwitter, this);
   this.gameButton = this.game.add.button(this.game.world.width * 0.08, this.game.world.height * 0.3, 'game', this.startGame, this);
   this.informationButton = this.game.add.button(this.game.world.width * 0.455, this.game.world.height * 0.012, 'information', this.startInformation, this);
   this.inviteButton = this.game.add.button(this.game.world.width * 0.324, this.game.world.height * 0.012, 'invite', this.startInvite, this);
@@ -43,47 +40,11 @@ YellowSidd.Menu.prototype.constructor = YellowSidd.Menu;
 
 YellowSidd.Menu.prototype.startExit = function () {
   alert('Exit');
-  // navigator.app.exitApp();
-};
-
-YellowSidd.Menu.prototype.startFirebaseFacebook = function () {
-  alert('Firebase Facebook');
-
-  this.menu_items[1].select(); // Select second item.
-
-  // Stop background music and prepare to play again once Menu will be called again.
-  if (PLAY_MUSIC) {
-    this.background_sound.stop();
-    FIRST_PLAYED = false;
-  }
-};
-
-YellowSidd.Menu.prototype.startFirebaseGoogle = function () {
-  alert('Firebase Google');
-
-  this.menu_items[2].select(); // Select third item.
-
-  // Stop background music and prepare to play again once Menu will be called again.
-  if (PLAY_MUSIC) {
-    this.background_sound.stop();
-    FIRST_PLAYED = false;
-  }
-};
-
-YellowSidd.Menu.prototype.startFirebaseTwitter = function () {
-  alert('Firebase Twitter');
-
-  this.menu_items[3].select(); // Select fourth item.
-
-  // Stop background music and prepare to play again once Menu will be called again.
-  if (PLAY_MUSIC) {
-    this.background_sound.stop();
-    FIRST_PLAYED = false;
-  }
+  navigator.app.exitApp();
 };
 
 YellowSidd.Menu.prototype.startGame = function () {
-  this.menu_items[4].select(); // Select fifth item.
+  this.menu_items[1].select(); // Select fifth item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {
@@ -96,7 +57,7 @@ YellowSidd.Menu.prototype.startInformation = function () {
   alert('information');
   window.open("https://doyban.com/yellowsidd");
 
-  this.menu_items[5].select(); // Select sixth item.
+  this.menu_items[2].select(); // Select sixth item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {
@@ -120,7 +81,7 @@ YellowSidd.Menu.prototype.startInvite = function () {
 
   facebookConnectPlugin.showDialog(this.options, this.onSuccess, this.onError);
 
-  this.menu_items[6].select(); // Select seventh item.
+  this.menu_items[3].select(); // Select seventh item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {
@@ -129,6 +90,15 @@ YellowSidd.Menu.prototype.startInvite = function () {
   }
 };
 
+YellowSidd.Menu.prototype.startPurchase = function () {
+  this.menu_items[4].select(); // Select eighth item.
+
+  // Stop background music and prepare to play again once Menu will be called again.
+  if (PLAY_MUSIC) {
+    this.background_sound.stop();
+    FIRST_PLAYED = false;
+  }
+};
 
 YellowSidd.Menu.prototype.startShare = function () {
  alert("share");
@@ -137,7 +107,7 @@ YellowSidd.Menu.prototype.startShare = function () {
     message: 'Play YellowSidd!', // not supported on some apps (Facebook, Instagram)
     subject: 'Play YellowSidd!', // fi. for email
     files: ['assets/images/yellowsidd.png'], // an array of filenames either locally or remotely
-    url: 'http://doyban.com/yellowsidd/'
+    url: 'https://doyban.com/yellowsidd/'
   };
   this.onSuccess = function(result) {
    alert("Share completed? " + result.completed); // On Android apps mostly return false even while it's true
@@ -149,17 +119,7 @@ YellowSidd.Menu.prototype.startShare = function () {
 
   window.plugins.socialsharing.shareWithOptions(this.options, this.onSuccess, this.onError);
 
-  this.menu_items[8].select(); // Select ninth item.
-
-  // Stop background music and prepare to play again once Menu will be called again.
-  if (PLAY_MUSIC) {
-    this.background_sound.stop();
-    FIRST_PLAYED = false;
-  }
-};
-
-YellowSidd.Menu.prototype.startPurchase = function () {
-  this.menu_items[7].select(); // Select eighth item.
+  this.menu_items[5].select(); // Select ninth item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {

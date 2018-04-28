@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab21d31-1dad-4f5d-ba75-673a6f878691" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/firebase-button-facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/firebase-button-google.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/firebase-button-twitter.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.zip" afterPath="$PROJECT_DIR$/app.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/joystick/generic-joystick.png" afterPath="$PROJECT_DIR$/app/assets/joystick/generic-joystick.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/joystick/generic-joystick.json" afterPath="$PROJECT_DIR$/app/assets/joystick/generic-joystick.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/levels/gems.json" afterPath="$PROJECT_DIR$/app/assets/levels/gems.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/levels/menu.json" afterPath="$PROJECT_DIR$/app/assets/levels/menu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/levels/purchase.json" afterPath="$PROJECT_DIR$/app/assets/levels/purchase.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/levels/skills.json" afterPath="$PROJECT_DIR$/app/assets/levels/skills.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/maps/level1.json" afterPath="$PROJECT_DIR$/app/assets/maps/level1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/maps/level1.tmx" afterPath="$PROJECT_DIR$/app/assets/maps/level1.tmx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/main.js" afterPath="$PROJECT_DIR$/app/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Gems.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Gems.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Menu.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Player.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Player.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Purchase.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Purchase.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/prefabs/Skills.js" afterPath="$PROJECT_DIR$/app/js/prefabs/Skills.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/states/LoadingState.js" afterPath="$PROJECT_DIR$/app/js/states/LoadingState.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,21 +21,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Player.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/js/prefabs/Player.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="62" column="40" lean-forward="false" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+            <state relative-caret-position="761">
+              <caret line="67" column="78" lean-forward="false" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/main.js">
+      <file leaf-file-name="LoadingState.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/states/LoadingState.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+            <state relative-caret-position="383">
+              <caret line="103" column="69" lean-forward="false" selection-start-line="103" selection-start-column="69" selection-end-line="103" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Menu.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/js/prefabs/Menu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-349">
+              <caret line="100" column="2" lean-forward="false" selection-start-line="100" selection-start-column="2" selection-end-line="100" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -51,68 +54,8 @@
       <file leaf-file-name="menu.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/levels/menu.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="65" column="40" lean-forward="false" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="purchase.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/levels/purchase.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="861">
-              <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Purchase.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/prefabs/Purchase.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gems.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/prefabs/Gems.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gems.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/levels/gems.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1974">
-              <caret line="94" column="39" lean-forward="false" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Skills.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/prefabs/Skills.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="skills.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/levels/skills.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2016">
-              <caret line="96" column="36" lean-forward="false" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
+            <state relative-caret-position="-690">
+              <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -131,10 +74,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>destr</find>
-      <find>hit_enemy</find>
-      <find>restart</find>
-      <find>player</find>
       <find>firebal</find>
       <find>shoot</find>
       <find>this.pad.</find>
@@ -161,6 +100,10 @@
       <find>gems_quantity</find>
       <find>skills_heart_plus_one_infinite_item</find>
       <find>jumping_sp</find>
+      <find>http://doyban</find>
+      <find>firebase</find>
+      <find>facebookConnectPlugin</find>
+      <find>exit</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app</dir>
@@ -208,14 +151,10 @@
         <option value="$PROJECT_DIR$/app/js/prefabs/Checkpoint.js" />
         <option value="$PROJECT_DIR$/app/js/prefabs/UpgradeItem.js" />
         <option value="$PROJECT_DIR$/dist/index.html" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/js/phaser-virtual-joystick.js" />
         <option value="$PROJECT_DIR$/app/js/phaser.js" />
-        <option value="$PROJECT_DIR$/app/js/states/LoadingState.js" />
         <option value="$PROJECT_DIR$/app/js/states/TiledState.js" />
         <option value="$PROJECT_DIR$/app/js/main.js" />
-        <option value="$PROJECT_DIR$/app/js/prefabs/Menu.js" />
-        <option value="$PROJECT_DIR$/app/assets/levels/menu.json" />
         <option value="$PROJECT_DIR$/app/js/prefabs/Purchase.js" />
         <option value="$PROJECT_DIR$/app/assets/levels/purchase.json" />
         <option value="$PROJECT_DIR$/app/assets/levels/gems.json" />
@@ -223,6 +162,10 @@
         <option value="$PROJECT_DIR$/app/assets/levels/skills.json" />
         <option value="$PROJECT_DIR$/app/js/prefabs/Skills.js" />
         <option value="$PROJECT_DIR$/app/js/prefabs/Player.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/js/states/LoadingState.js" />
+        <option value="$PROJECT_DIR$/app/assets/levels/menu.json" />
+        <option value="$PROJECT_DIR$/app/js/prefabs/Menu.js" />
       </list>
     </option>
   </component>
@@ -249,9 +192,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1440" />
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -287,79 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="levels" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="prefabs" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="states" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Changed Files">
           <expand>
@@ -461,6 +330,59 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="YellowSidd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YellowSidd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="prefabs" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -484,19 +406,19 @@
     <property name="js.phonegap.settings.workdir" value="$USER_HOME$/cordova" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/js" />
-      <recent name="$PROJECT_DIR$/app/js/upgrades" />
-      <recent name="$PROJECT_DIR$/app/assets/spritesheets" />
-      <recent name="$PROJECT_DIR$/app/assets" />
-      <recent name="$PROJECT_DIR$/app/js/states" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/assets/images" />
       <recent name="$PROJECT_DIR$/app/assets/joystick" />
       <recent name="$PROJECT_DIR$/app/js" />
       <recent name="$PROJECT_DIR$/app/assets/spritesheets" />
       <recent name="$PROJECT_DIR$/app/assets/audios" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/js" />
+      <recent name="$PROJECT_DIR$/app/js/upgrades" />
+      <recent name="$PROJECT_DIR$/app/assets/spritesheets" />
+      <recent name="$PROJECT_DIR$/app/assets" />
+      <recent name="$PROJECT_DIR$/app/js/states" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -688,32 +610,35 @@
       <workItem from="1523448217940" duration="3248000" />
       <workItem from="1523522454573" duration="1556000" />
       <workItem from="1523524766071" duration="141000" />
+      <workItem from="1524412853927" duration="866000" />
+      <workItem from="1524719719914" duration="102000" />
+      <workItem from="1524917190427" duration="482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244711000" />
+    <option name="totallyTimeSpent" value="246161000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="0" width="2560" height="1440" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16523437" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3013889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3227147" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32705882" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37194246" sideWeight="0.49722221" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37176472" sideWeight="0.49722221" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32805756" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -730,7 +655,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/js/prefabs/FireballItem.js" />
     <entry file="file://$PROJECT_DIR$/app/js/prefabs/Goal.js" />
     <entry file="file://$PROJECT_DIR$/app/js/prefabs/LifeItem.js" />
     <entry file="file://$PROJECT_DIR$/app/js/prefabs/Coin.js" />
@@ -847,13 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/states/LoadingState.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="102" column="61" lean-forward="true" selection-start-line="102" selection-start-column="61" selection-end-line="102" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/states/TiledState.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -861,24 +778,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/levels/level1.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/prefabs/Menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="29" column="103" lean-forward="false" selection-start-line="29" selection-start-column="100" selection-end-line="29" selection-end-column="103" />
         </state>
       </provider>
     </entry>
@@ -896,27 +799,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/levels/menu.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="65" column="40" lean-forward="false" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/levels/skills.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2016">
           <caret line="96" column="36" lean-forward="false" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/prefabs/Skills.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +810,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1974">
           <caret line="94" column="39" lean-forward="false" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="39" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/levels/purchase.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/prefabs/Player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="54" column="52" lean-forward="false" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -940,30 +846,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="67" column="78" lean-forward="false" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/levels/purchase.json">
+    <entry file="file://$PROJECT_DIR$/app/js/states/LoadingState.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="39" />
+        <state relative-caret-position="383">
+          <caret line="103" column="69" lean-forward="false" selection-start-line="103" selection-start-column="69" selection-end-line="103" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/main.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/levels/menu.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+        <state relative-caret-position="-690">
+          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/prefabs/Player.js">
+    <entry file="file://$PROJECT_DIR$/app/js/prefabs/Score.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="62" column="40" lean-forward="false" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/prefabs/Skills.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/prefabs/Menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-349">
+          <caret line="100" column="2" lean-forward="false" selection-start-line="100" selection-start-column="2" selection-end-line="100" selection-end-column="2" />
           <folding />
         </state>
       </provider>
