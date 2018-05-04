@@ -13,7 +13,8 @@ node_modules
 # Distribution version.
 dist*
 
-# Distribution zipped version.
+# Zipped versions.
+app.zip
 dist.zip
 
 # Others.

@@ -107,6 +107,12 @@ YellowSidd.LoadingState.prototype.preload = function () {
   this.load.image('purchase', 'assets/images/button-purchase.png', 240, 240);
   this.load.image('share', 'assets/images/button-share.png', 70, 70);
 
+  this.load.image('gems5', 'assets/images/button-gems-5.png', 140, 140);
+  this.load.image('gems20', 'assets/images/button-gems-20.png', 140, 140);
+  this.load.image('gems50', 'assets/images/button-gems-50.png', 140, 140);
+  this.load.image('gems100', 'assets/images/button-gems-100.png', 140, 140);
+  this.load.image('gems200', 'assets/images/button-gems-200.png', 140, 140);
+
   this.load.atlas('generic', 'assets/joystick/generic-joystick.png', 'assets/joystick/generic-joystick.json'); // Load VirtualJoystick plugin's assets.
 };
 

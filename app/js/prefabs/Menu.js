@@ -39,12 +39,12 @@ YellowSidd.Menu.prototype = Object.create(YellowSidd.Prefab.prototype);
 YellowSidd.Menu.prototype.constructor = YellowSidd.Menu;
 
 YellowSidd.Menu.prototype.startExit = function () {
-  alert('Exit');
+  // alert('Exit');
   navigator.app.exitApp();
 };
 
 YellowSidd.Menu.prototype.startGame = function () {
-  this.menu_items[1].select(); // Select fifth item.
+  this.menu_items[1].select(); // Select second item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {
@@ -54,10 +54,10 @@ YellowSidd.Menu.prototype.startGame = function () {
 };
 
 YellowSidd.Menu.prototype.startInformation = function () {
-  alert('information');
+  // alert('information');
   window.open("https://doyban.com/yellowsidd");
 
-  this.menu_items[2].select(); // Select sixth item.
+  this.menu_items[2].select(); // Select third item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {
@@ -67,21 +67,21 @@ YellowSidd.Menu.prototype.startInformation = function () {
 };
 
 YellowSidd.Menu.prototype.startInvite = function () {
- alert("invite");
+ // alert("invite");
   this.options = {
     method: 'apprequests',
     message: 'Play YellowSidd with me!'
   };
   this.onSuccess = function(result) {
-   alert("Success with invite, result: " + result);
+   // alert("Success with invite, result: " + result);
   };
   this.onError = function(msg) {
-   alert("Failed with invite, msg: " + msg);
+   // alert("Failed with invite, msg: " + msg);
   };
 
   facebookConnectPlugin.showDialog(this.options, this.onSuccess, this.onError);
 
-  this.menu_items[3].select(); // Select seventh item.
+  this.menu_items[3].select(); // Select fourth item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {
@@ -91,7 +91,7 @@ YellowSidd.Menu.prototype.startInvite = function () {
 };
 
 YellowSidd.Menu.prototype.startPurchase = function () {
-  this.menu_items[4].select(); // Select eighth item.
+  this.menu_items[4].select(); // Select fifth item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {
@@ -101,25 +101,25 @@ YellowSidd.Menu.prototype.startPurchase = function () {
 };
 
 YellowSidd.Menu.prototype.startShare = function () {
- alert("share");
+ // alert("share");
 
   this.options = {
     message: 'Play YellowSidd!', // not supported on some apps (Facebook, Instagram)
     subject: 'Play YellowSidd!', // fi. for email
-    files: ['assets/images/yellowsidd.png'], // an array of filenames either locally or remotely
+    files: ['https://doyban.com/wp-content/uploads/2018/04/yellowsidd.png', 'https://doyban.com/logos/yellowsidd.png'], // an array of filenames either locally or remotely
     url: 'https://doyban.com/yellowsidd/'
   };
   this.onSuccess = function(result) {
-   alert("Share completed? " + result.completed); // On Android apps mostly return false even while it's true
-   alert("Shared to app: " + result.app); // On Android result.app is currently empty. On iOS it's empty when sharing is cancelled (result.completed=false)
+   // alert("Share completed? " + result.completed); // On Android apps mostly return false even while it's true
+   // alert("Shared to app: " + result.app); // On Android result.app is currently empty. On iOS it's empty when sharing is cancelled (result.completed=false)
   };
   this.onError = function(msg) {
-   alert("Sharing failed with message: " + msg);
+   // alert("Sharing failed with message: " + msg);
   };
 
   window.plugins.socialsharing.shareWithOptions(this.options, this.onSuccess, this.onError);
 
-  this.menu_items[5].select(); // Select ninth item.
+  this.menu_items[5].select(); // Select sixth item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {
