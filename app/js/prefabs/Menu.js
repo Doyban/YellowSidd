@@ -32,6 +32,8 @@ YellowSidd.Menu = function (game_state, name, position, properties) {
     this.background_sound.play(); // Play background sound.
     FIRST_PLAYED = true;
   }
+
+  initAd(); // Initialize AdMob.
 };
 
 // Set up constructor.
