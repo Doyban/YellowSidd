@@ -135,7 +135,7 @@ YellowSidd.TiledState.prototype.restart_level = function () {
     localStorage.removeItem('jump_plus_one_once'); // Remove jump_plus_one_once from localStorage.
     localStorage.removeItem('speed_plus_one_once'); // Remove speed_plus_one_once from localStorage.
 
-    // showInterstitialFunc(); // Display the AdMob interstitial ads. // TODO: Put back
+    showInterstitialFunc(); // Display the AdMob interstitial ads.
 
     this.game.state.restart(true, false, this.level_data); // Restart TiledState state.
   }
@@ -147,7 +147,7 @@ YellowSidd.TiledState.prototype.game_over = function () {
   localStorage.removeItem('jump_plus_one_once'); // Remove jump_plus_one_once from localStorage.
   localStorage.removeItem('speed_plus_one_once'); // Remove speed_plus_one_once from localStorage.
 
-  // showInterstitialFunc(); // Display the AdMob interstitial ads. // TODO: Put back
+  showInterstitialFunc(); // Display the AdMob interstitial ads.
 
   this.game.state.start('BootState', true, false, 'assets/levels/game_over.json', 'GameOverState'); // Start MenuState.
 

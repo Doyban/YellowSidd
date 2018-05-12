@@ -63,11 +63,16 @@ YellowSidd.Player = function (game_state, name, position, properties) {
   this.lost_heart_sound = this.game.add.audio('lost_heart');
   this.walking_sound = this.game.add.audio('walking', .2);
 
-  this.pad = this.game.plugins.add(Phaser.VirtualJoystick); // Initialize VirtualJoystick Plugin.
-  this.stick = this.pad.addStick(80, 280, 45, 'generic'); // Add stick for Virtual Joystick.
+  // Load stick only at the beginning of the game.
+  if (!GAME_START) {
+    this.pad = this.game.plugins.add(Phaser.VirtualJoystick); // Initialize VirtualJoystick Plugin.
+    this.stick = this.pad.addStick(80, 280, 45, 'generic'); // Add stick for Virtual Joystick.
 
-  // Add buttons for VirtualStick.
-  this.buttonFireball = this.pad.addButton(620, 280, 'generic', 'button1-up', 'button1-down');
+    // Add buttons for VirtualStick.
+    this.buttonFireball = this.pad.addButton(620, 280, 'generic', 'button1-up', 'button1-down');
+
+    GAME_START = true;
+  }
 };
 
 YellowSidd.Player.prototype = Object.create(YellowSidd.Prefab.prototype);
@@ -166,10 +171,6 @@ YellowSidd.Player.prototype.die = function () {
   this.lives -= 1;
   this.shooting = false;
 
-  // Avoid duplication of stick and button.
-  this.stick.visible = 0;
-  this.buttonFireball.visible = 0;
-
   // Play sound only if player left button sound as on mode.
   if (PLAY_SOUND) {
     this.lost_heart_sound.play(); // Play lost heart sound.
@@ -177,8 +178,16 @@ YellowSidd.Player.prototype.die = function () {
 
   if (this.lives > 0) {
     this.game_state.restart_level(); // Player lost 1 life, but still have more then 0, so restart level eventually checkpoint.
+
+    GAME_START = false; // Variable to toggle pad/stick displaying.
   } else {
     this.game_state.game_over(); // Player lost all lives then game over.
+
+    // Avoid duplication of stick and button.
+    this.stick.visible = 0;
+    this.buttonFireball.visible = 0;
+
+    GAME_START = false; // Variable to toggle pad/stick displaying.
   }
 };
 

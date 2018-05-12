@@ -14,12 +14,12 @@ YellowSidd.Gems = function (game_state, name, position, properties) {
   this.error_sound = this.game.add.audio('error');
   this.upgrade_sound = this.game.add.audio('upgrade');
 
-  this.exitButton = this.game.add.button(this.game.world.width * 0.89, this.game.world.height * 0.012, 'exit', this.startExit, this);
-  this.gems5Button = this.game.add.button(this.game.world.width * 0.0001, this.game.world.height * 0.2155, 'gems5', this.startPaymentGems5, this);
-  this.gems20Button = this.game.add.button(this.game.world.width * 0.4001, this.game.world.height * 0.2155, 'gems20', this.startPaymentGems20, this);
-  this.gems50Button = this.game.add.button(this.game.world.width * 0.8001, this.game.world.height * 0.2155, 'gems50', this.startPaymentGems50, this);
-  this.gems100Button = this.game.add.button(this.game.world.width * 0.2, this.game.world.height * 0.605, 'gems100', this.startPaymentGems100, this);
-  this.gems200Button = this.game.add.button(this.game.world.width * 0.6, this.game.world.height * 0.605, 'gems200', this.startPaymentGems200, this);
+  this.exitButton = this.game.add.button(this.game.width * 0.89, this.game.height * 0.012, 'exit', this.startExit, this);
+  this.gems5Button = this.game.add.button(this.game.width * 0.0001, this.game.height * 0.2155, 'gems5', this.startPaymentGems5, this);
+  this.gems20Button = this.game.add.button(this.game.width * 0.4001, this.game.height * 0.2155, 'gems20', this.startPaymentGems20, this);
+  this.gems50Button = this.game.add.button(this.game.width * 0.8001, this.game.height * 0.2155, 'gems50', this.startPaymentGems50, this);
+  this.gems100Button = this.game.add.button(this.game.width * 0.2, this.game.height * 0.605, 'gems100', this.startPaymentGems100, this);
+  this.gems200Button = this.game.add.button(this.game.width * 0.6, this.game.height * 0.605, 'gems200', this.startPaymentGems200, this);
 };
 
 // Set up constructor.

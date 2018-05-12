@@ -6689,7 +6689,7 @@
     <property name="texture" value="coin_image"/>
    </properties>
   </object>
-  <object id="1765" name="player" type="player" gid="13" x="116.03" y="1459.05" width="35" height="35">
+  <object id="1765" name="player" type="player" gid="13" x="17.03" y="3451.05" width="35" height="35">
    <properties>
     <property name="attack_rate" type="int" value="1"/>
     <property name="attack_speed" type="int" value="500"/>
