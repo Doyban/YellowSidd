@@ -19,12 +19,12 @@ YellowSidd.Menu = function (game_state, name, position, properties) {
   this.buttonMusic = this.game.add.button(this.game.width * 0.708, this.game.height * 0.012, 'music', this.toggleBackgroundMusic, this);
   this.buttonMusic.frame = PLAY_MUSIC ? 0 : 1; // Show appropriate background music button.
   // Other buttons.
-  this.exitButton = this.game.add.button(this.game.world.width * 0.89, this.game.world.height * 0.012, 'exit', this.startExit, this);
-  this.gameButton = this.game.add.button(this.game.world.width * 0.08, this.game.world.height * 0.3, 'game', this.startGame, this);
-  this.informationButton = this.game.add.button(this.game.world.width * 0.455, this.game.world.height * 0.012, 'information', this.startInformation, this);
-  this.inviteButton = this.game.add.button(this.game.world.width * 0.324, this.game.world.height * 0.012, 'invite', this.startInvite, this);
-  this.purchaseButton = this.game.add.button(this.game.world.width * 0.58, this.game.world.height * 0.3, 'purchase', this.startPurchase, this);
-  this.shareButton = this.game.add.button(this.game.world.width * 0.196, this.game.world.height * 0.012, 'share', this.startShare, this);
+  this.exitButton = this.game.add.button(this.game.width * 0.89, this.game.height * 0.012, 'exit', this.startExit, this);
+  this.gameButton = this.game.add.button(this.game.width * 0.08, this.game.height * 0.3, 'game', this.startGame, this);
+  this.informationButton = this.game.add.button(this.game.width * 0.455, this.game.height * 0.012, 'information', this.startInformation, this);
+  this.inviteButton = this.game.add.button(this.game.width * 0.324, this.game.height * 0.012, 'invite', this.startInvite, this);
+  this.purchaseButton = this.game.add.button(this.game.width * 0.58, this.game.height * 0.3, 'purchase', this.startPurchase, this);
+  this.shareButton = this.game.add.button(this.game.width * 0.196, this.game.height * 0.012, 'share', this.startShare, this);
 
 
   // Avoid to new track, while changing states.
@@ -108,7 +108,7 @@ YellowSidd.Menu.prototype.startShare = function () {
   this.options = {
     message: 'Play YellowSidd!', // not supported on some apps (Facebook, Instagram)
     subject: 'Play YellowSidd!', // fi. for email
-    files: ['https://doyban.com/wp-content/uploads/2018/04/yellowsidd.png', 'https://doyban.com/logos/yellowsidd.png'], // an array of filenames either locally or remotely
+    files: 'https://doyban.com/logos/yellowsidd.png', // an array of filenames either locally or remotely
     url: 'https://doyban.com/yellowsidd/'
   };
   this.onSuccess = function(result) {
