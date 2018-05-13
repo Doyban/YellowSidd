@@ -179,6 +179,10 @@ YellowSidd.Player.prototype.die = function () {
   if (this.lives > 0) {
     this.game_state.restart_level(); // Player lost 1 life, but still have more then 0, so restart level eventually checkpoint.
 
+    // Avoid duplication of stick and button.
+    this.stick.visible = 0;
+    this.buttonFireball.visible = 0;
+
     GAME_START = false; // Variable to toggle pad/stick displaying.
   } else {
     this.game_state.game_over(); // Player lost all lives then game over.
