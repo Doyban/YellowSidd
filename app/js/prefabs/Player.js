@@ -177,13 +177,16 @@ YellowSidd.Player.prototype.die = function () {
   }
 
   if (this.lives > 0) {
+    // Check if checkpoint has been reached to display correctly pad/stick.
+    if (!CHECKPOINT_REACHED) {
+      // Avoid duplication of stick and button.
+      this.stick.visible = 0;
+      this.buttonFireball.visible = 0;
+
+      GAME_START = false; // Variable to toggle pad/stick displaying.
+    }
+
     this.game_state.restart_level(); // Player lost 1 life, but still have more then 0, so restart level eventually checkpoint.
-
-    // Avoid duplication of stick and button.
-    this.stick.visible = 0;
-    this.buttonFireball.visible = 0;
-
-    GAME_START = false; // Variable to toggle pad/stick displaying.
   } else {
     this.game_state.game_over(); // Player lost all lives then game over.
 
@@ -192,6 +195,7 @@ YellowSidd.Player.prototype.die = function () {
     this.buttonFireball.visible = 0;
 
     GAME_START = false; // Variable to toggle pad/stick displaying.
+    // }
   }
 };
 
@@ -206,7 +210,12 @@ YellowSidd.Player.prototype.shoot = function () {
 
   if (!fireball) {
     // If there is no dead fireball then create a new one.
-    fireball_properties = {'texture': 'fireball_image', 'group': 'fireballs', 'direction': this.direction, 'speed': this.attack_speed};
+    fireball_properties = {
+      'texture': 'fireball_image',
+      'group': 'fireballs',
+      'direction': this.direction,
+      'speed': this.attack_speed
+    };
     fireball = new YellowSidd.Fireball(this.game_state, name, fireball_position, fireball_properties);
   } else {
     // If there is a dead fireball then reset it in the new position.

@@ -128,14 +128,12 @@ YellowSidd.TiledState.prototype.restart_level = function () {
     // Respawn the player in the last reached checkpoint.
     this.prefabs.player.x = this.prefabs.checkpoint.x;
     this.prefabs.player.y = this.prefabs.checkpoint.y;
-
-
   } else {
     localStorage.removeItem('heart_plus_one_once'); // Remove heart_plus_one_once from localStorage.
     localStorage.removeItem('jump_plus_one_once'); // Remove jump_plus_one_once from localStorage.
     localStorage.removeItem('speed_plus_one_once'); // Remove speed_plus_one_once from localStorage.
 
-    showInterstitialFunc(); // Display the AdMob interstitial ads.
+    // showInterstitialFunc(); // Display the AdMob interstitial ads.
 
     this.game.state.restart(true, false, this.level_data); // Restart TiledState state.
   }
@@ -147,7 +145,7 @@ YellowSidd.TiledState.prototype.game_over = function () {
   localStorage.removeItem('jump_plus_one_once'); // Remove jump_plus_one_once from localStorage.
   localStorage.removeItem('speed_plus_one_once'); // Remove speed_plus_one_once from localStorage.
 
-  showInterstitialFunc(); // Display the AdMob interstitial ads.
+  // showInterstitialFunc(); // Display the AdMob interstitial ads.
 
   this.game.state.start('BootState', true, false, 'assets/levels/game_over.json', 'GameOverState'); // Start MenuState.
 

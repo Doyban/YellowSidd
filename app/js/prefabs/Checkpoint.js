@@ -27,7 +27,9 @@ YellowSidd.Checkpoint.prototype.update = function () {
 
 YellowSidd.Checkpoint.prototype.reach_checkpoint = function () {
   "use strict";
-  this.checkpoint_reached = true; // Checkpoint was reached.
+  // Checkpoint was reached.
+  this.checkpoint_reached = true;
+  CHECKPOINT_REACHED = true;
 
   // Avoid playing looped sound when player is on place of checkpoint.
   if (!this.play_sound) {
