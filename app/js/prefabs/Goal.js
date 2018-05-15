@@ -33,5 +33,5 @@ YellowSidd.Goal.prototype.reach_goal = function () {
     this.reach_goal_sound.play(); // Play reach goal sound.
   }
 
-  this.game_state.state.start('BootState', true, false, this.next_level, 'GameState'); // Start the next level.
+  REACHED_NEXT_LEVEL = true;
 };

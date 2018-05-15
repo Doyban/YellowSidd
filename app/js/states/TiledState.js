@@ -147,7 +147,7 @@ YellowSidd.TiledState.prototype.game_over = function () {
 
   showInterstitialFunc(); // Display the AdMob interstitial ads.
 
-  this.game.state.start('BootState', true, false, 'assets/levels/game_over.json', 'GameOverState'); // Start MenuState.
+  this.game.state.start('BootState', true, false, 'assets/levels/game_over.json', 'GameOverState'); // Start GameOverState.
 
   // Play sound only if player left button sound as on mode.
   if (PLAY_SOUND) {

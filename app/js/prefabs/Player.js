@@ -68,10 +68,9 @@ YellowSidd.Player = function (game_state, name, position, properties) {
     this.pad = this.game.plugins.add(Phaser.VirtualJoystick); // Initialize VirtualJoystick Plugin.
     this.stick = this.pad.addStick(80, 280, 45, 'generic'); // Add stick for Virtual Joystick.
 
-    // Add buttons for VirtualStick.
-    this.buttonFireball = this.pad.addButton(620, 280, 'generic', 'button1-up', 'button1-down');
+    this.buttonFireball = this.pad.addButton(620, 280, 'generic', 'button1-up', 'button1-down'); // Add buttons for VirtualStick.
 
-    GAME_START = true;
+    GAME_START = true; // Variable to toggle pad/stick displaying.
   }
 };
 
@@ -147,6 +146,18 @@ YellowSidd.Player.prototype.update = function () {
   } else {
     this.shoot_timer.stop(false);
   }
+
+  // Avoid displaying pad/stick once goal will be reached.
+  if (REACHED_NEXT_LEVEL) {
+    this.game_state.restart_level();
+
+    // Avoid duplication of stick and button.
+    this.stick.visible = 0;
+    this.buttonFireball.visible = 0;
+
+    REACHED_NEXT_LEVEL = false; // Variable to toggle visibility of pad/stick on next level.
+    GAME_START = false; // Variable to toggle pad/stick displaying.
+  }
 };
 
 YellowSidd.Player.prototype.hit_enemy = function (player, enemy) {
@@ -173,7 +184,7 @@ YellowSidd.Player.prototype.die = function () {
 
   // Play sound only if player left button sound as on mode.
   if (PLAY_SOUND) {
-    this.lost_heart_sound.play(); // Play lost heart sound.
+    // this.lost_heart_sound.play(); // Play lost heart sound.
   }
 
   if (this.lives > 0) {
