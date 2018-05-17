@@ -149,14 +149,19 @@ YellowSidd.Player.prototype.update = function () {
 
   // Avoid displaying pad/stick once goal will be reached.
   if (REACHED_NEXT_LEVEL) {
-    this.game_state.restart_level();
+    // Check if checkpoint has been reached to display correctly pad/stick.
+    if (!CHECKPOINT_REACHED) {
+      // Avoid duplication of stick and button.
+      this.stick.visible = 0;
+      this.buttonFireball.visible = 0;
 
-    // Avoid duplication of stick and button.
-    this.stick.visible = 0;
-    this.buttonFireball.visible = 0;
+      GAME_START = false; // Variable to toggle pad/stick displaying.
+    }
 
     REACHED_NEXT_LEVEL = false; // Variable to toggle visibility of pad/stick on next level.
     GAME_START = false; // Variable to toggle pad/stick displaying.
+
+    this.game_state.restart_level();
   }
 };
 
@@ -184,7 +189,7 @@ YellowSidd.Player.prototype.die = function () {
 
   // Play sound only if player left button sound as on mode.
   if (PLAY_SOUND) {
-    // this.lost_heart_sound.play(); // Play lost heart sound.
+    this.lost_heart_sound.play(); // Play lost heart sound.
   }
 
   if (this.lives > 0) {
@@ -206,7 +211,6 @@ YellowSidd.Player.prototype.die = function () {
     this.buttonFireball.visible = 0;
 
     GAME_START = false; // Variable to toggle pad/stick displaying.
-    // }
   }
 };
 
