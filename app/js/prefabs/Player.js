@@ -155,9 +155,8 @@ YellowSidd.Player.prototype.update = function () {
       this.stick.visible = 0;
       this.buttonFireball.visible = 0;
 
-      GAME_START = false; // Variable to toggle pad/stick displaying.
+      // GAME_START = false; // Variable to toggle pad/stick displaying.
     }
-
     REACHED_NEXT_LEVEL = false; // Variable to toggle visibility of pad/stick on next level.
     GAME_START = false; // Variable to toggle pad/stick displaying.
 
@@ -198,19 +197,19 @@ YellowSidd.Player.prototype.die = function () {
       // Avoid duplication of stick and button.
       this.stick.visible = 0;
       this.buttonFireball.visible = 0;
-
-      GAME_START = false; // Variable to toggle pad/stick displaying.
     }
+
+    GAME_START = false; // Variable to toggle pad/stick displaying.
 
     this.game_state.restart_level(); // Player lost 1 life, but still have more then 0, so restart level eventually checkpoint.
   } else {
-    this.game_state.game_over(); // Player lost all lives then game over.
-
     // Avoid duplication of stick and button.
     this.stick.visible = 0;
     this.buttonFireball.visible = 0;
 
     GAME_START = false; // Variable to toggle pad/stick displaying.
+
+    this.game_state.game_over(); // Player lost all lives then game over.
   }
 };
 
