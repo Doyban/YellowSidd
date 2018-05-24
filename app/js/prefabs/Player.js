@@ -185,6 +185,10 @@ YellowSidd.Player.prototype.die = function () {
   "use strict";
   this.lives -= 1;
   this.shooting = false;
+  this.lastScore = this.score; // Get last score.
+
+  localStorage.setItem('lastScore', this.game.lastScore); // Set last score.
+
 
   // Play sound only if player left button sound as on mode.
   if (PLAY_SOUND) {

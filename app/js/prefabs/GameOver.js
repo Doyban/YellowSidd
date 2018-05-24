@@ -13,6 +13,8 @@ YellowSidd.GameOver = function (game_state, name, position, properties) {
   GAME_START = false; // Variable to toggle pad/stick displaying.
   REACHED_NEXT_LEVEL = false; // Variable to toggle visibility of pad/stick on next level.
   CHECKPOINT_REACHED = false; // Variable to toggle if checkpoint has been reached.
+
+  this.lastScore = global.localStorage.getItem('lastScore'); // Get last score from localStorage.
 };
 
 // Set up constructor.
@@ -31,5 +33,21 @@ YellowSidd.GameOver.prototype.update = function () {
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.share_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.share_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.share_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.share_item.position.y)) + 70 / 2)) {
     this.menu_items[1].select(); // Select second item.
+
+    this.options = {
+      message: 'Play YellowSidd!', // not supported on some apps (Facebook, Instagram)
+      subject: 'My score in YellowSidd is ' + this.lastScore + "!", // fi. for email
+      files: ['https://doyban.com/logos/yellowsidd.png'], // an array of filenames either locally or remotely
+      url: 'https://doyban.com/yellowsidd/'
+    };
+    this.onSuccess = function(result) {
+      // alert("Share completed? " + result.completed); // On Android apps mostly return false even while it's true
+      // alert("Shared to app: " + result.app); // On Android result.app is currently empty. On iOS it's empty when sharing is cancelled (result.completed=false)
+    };
+    this.onError = function(msg) {
+      // alert("Sharing failed with message: " + msg);
+    };
+
+    window.plugins.socialsharing.shareWithOptions(this.options, this.onSuccess, this.onError); // Share score.
   }
 };
