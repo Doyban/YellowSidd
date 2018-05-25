@@ -14,7 +14,7 @@ YellowSidd.GameOver = function (game_state, name, position, properties) {
   REACHED_NEXT_LEVEL = false; // Variable to toggle visibility of pad/stick on next level.
   CHECKPOINT_REACHED = false; // Variable to toggle if checkpoint has been reached.
 
-  this.lastScore = global.localStorage.getItem('lastScore'); // Get last score from localStorage.
+  this.lastScore = localStorage.getItem('lastScore'); // Get last score from localStorage.
 };
 
 // Set up constructor.
