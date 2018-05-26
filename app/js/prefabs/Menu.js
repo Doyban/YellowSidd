@@ -108,7 +108,7 @@ YellowSidd.Menu.prototype.startShare = function () {
   this.options = {
     message: 'Play YellowSidd!', // not supported on some apps (Facebook, Instagram)
     subject: 'Play YellowSidd!', // fi. for email
-    files: 'https://doyban.com/logos/yellowsidd.png', // an array of filenames either locally or remotely
+    files: ['https://doyban.com/logos/yellowsidd.png'], // an array of filenames either locally or remotely
     url: 'https://doyban.com/yellowsidd/'
   };
   this.onSuccess = function(result) {

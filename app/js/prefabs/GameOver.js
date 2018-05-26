@@ -15,6 +15,7 @@ YellowSidd.GameOver = function (game_state, name, position, properties) {
   CHECKPOINT_REACHED = false; // Variable to toggle if checkpoint has been reached.
 
   this.lastScore = localStorage.getItem('lastScore'); // Get last score from localStorage.
+  // console.log(this.lastScore);
 };
 
 // Set up constructor.
