@@ -18,3 +18,4 @@ dist.zip
 
 # Others.
 package-lock.json
+.DS_Store
