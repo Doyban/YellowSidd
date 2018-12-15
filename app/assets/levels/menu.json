@@ -24,12 +24,11 @@
       "type": "background"
     },
     "exit_item": {
-      "position": {"x": 0.95, "y": 0.1},
+      "position": {"x": 0.89, "y": 0.012},
       "properties": {
         "level_file": "assets/levels/menu.json",
         "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "exit_image"
+        "state_name": "MenuState"
       },
       "type": "start_state_item"
     },
@@ -42,9 +41,8 @@
       "type": "gem"
     },
     "game_item": {
-      "position": {"x": 0.25, "y": 0.6},
+      "position": {"x": 0.08, "y": 0.3},
       "properties": {
-        "texture": "game_image",
         "group": "menu_items",
         "level_file": "assets/levels/level1.json",
         "state_name": "GameState"
@@ -52,7 +50,7 @@
       "type": "start_state_item"
     },
     "gems_quantity": {
-      "position": {"x": 0.06, "y": 0.05},
+      "position": {"x": 0.08, "y": 0.05},
       "properties": {
         "text": "",
         "group": "hud",
@@ -64,29 +62,26 @@
       "type": "gems_quantity"
     },
     "information_item": {
-      "position": {"x": 0.644, "y": 0.1},
+      "position": {"x": 0.455, "y": 0.012},
       "properties": {
         "level_file": "assets/levels/menu.json",
         "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "information_image"
+        "state_name": "MenuState"
       },
       "type": "start_state_item"
     },
     "invite_item": {
-      "position": {"x": 0.356, "y": 0.1},
+      "position": {"x": 0.324, "y": 0.012},
       "properties": {
         "level_file": "assets/levels/menu.json",
         "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "invite_image"
+        "state_name": "MenuState"
       },
       "type": "start_state_item"
     },
     "purchase_item": {
-      "position": {"x": 0.75, "y": 0.6},
+      "position": {"x": 0.58, "y": 0.3},
       "properties": {
-        "texture": "purchase_image",
         "group": "menu_items",
         "level_file": "assets/levels/purchase.json",
         "state_name": "PurchaseState"
@@ -94,12 +89,11 @@
       "type": "start_state_item"
     },
     "share_item": {
-      "position": {"x": 0.262, "y": 0.1},
+      "position": {"x": 0.196, "y": 0.012},
       "properties": {
         "level_file": "assets/levels/menu.json",
         "group": "menu_items",
-        "state_name": "MenuState",
-        "texture": "share_image"
+        "state_name": "MenuState"
       },
       "type": "start_state_item"
     }

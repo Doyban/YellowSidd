@@ -97,6 +97,23 @@ YellowSidd.LoadingState.prototype.preload = function () {
   // Load sound and audio spritesheets.
   this.game.load.spritesheet('audio', 'assets/spritesheets/audio_spritesheet.png', 70, 70);
   this.game.load.spritesheet('music', 'assets/spritesheets/music_spritesheet.png', 70, 70);
+
+  // Load images for menu.
+  // Loading for next states is not required, only for the first state it's required to have buttons instead of defined textures in JSON.
+  this.load.image('exit', 'assets/images/button-exit.png', 70, 70);
+  this.load.image('game', 'assets/images/button-game.png', 240, 240);
+  this.load.image('information', 'assets/images/button-information.png', 70, 70);
+  this.load.image('invite', 'assets/images/button-invite.png', 70, 70);
+  this.load.image('purchase', 'assets/images/button-purchase.png', 240, 240);
+  this.load.image('share', 'assets/images/button-share.png', 70, 70);
+
+  this.load.image('gems5', 'assets/images/button-gems-5.png', 140, 140);
+  this.load.image('gems20', 'assets/images/button-gems-20.png', 140, 140);
+  this.load.image('gems50', 'assets/images/button-gems-50.png', 140, 140);
+  this.load.image('gems100', 'assets/images/button-gems-100.png', 140, 140);
+  this.load.image('gems200', 'assets/images/button-gems-200.png', 140, 140);
+
+  this.load.atlas('generic', 'assets/joystick/generic-joystick.png', 'assets/joystick/generic-joystick.json'); // Load VirtualJoystick plugin's assets.
 };
 
 YellowSidd.LoadingState.prototype.create = function () {

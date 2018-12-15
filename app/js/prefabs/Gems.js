@@ -14,8 +14,9 @@ YellowSidd.Gems = function (game_state, name, position, properties) {
   this.error_sound = this.game.add.audio('error');
   this.upgrade_sound = this.game.add.audio('upgrade');
 
-  YellowSidd.FacebookAPI.prototype.showProducts(); // Show products.
-  YellowSidd.FacebookAPI.prototype.showPurchases(); // Show purchases.
+  // TODO: Remove.
+  // YellowSidd.FacebookAPI.prototype.showProducts(); // Show products.
+  // YellowSidd.FacebookAPI.prototype.showPurchases(); // Show purchases.
 };
 
 // Set up constructor.

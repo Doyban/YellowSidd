@@ -10,7 +10,11 @@ YellowSidd.GameOver = function (game_state, name, position, properties) {
 
   this.swipe = this.game.input.activePointer; // Allow player to navigate by swiping.
 
-  this.score = localStorage.getItem('player_score');
+  GAME_START = false; // Variable to toggle pad/stick displaying.
+  REACHED_NEXT_LEVEL = false; // Variable to toggle visibility of pad/stick on next level.
+  CHECKPOINT_REACHED = false; // Variable to toggle if checkpoint has been reached.
+
+  this.lastScore = localStorage.getItem('lastScore'); // Get last score from localStorage.
 };
 
 // Set up constructor.

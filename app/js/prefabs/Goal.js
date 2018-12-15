@@ -31,8 +31,7 @@ YellowSidd.Goal.prototype.reach_goal = function () {
   // Play sound only if player left button sound as on mode.
   if (PLAY_SOUND) {
     this.reach_goal_sound.play(); // Play reach goal sound.
-    // console.log(localStorage.player_score);
   }
 
-  this.game_state.state.start('BootState', true, false, this.next_level, 'GameState'); // Start the next level.
+  REACHED_NEXT_LEVEL = true;
 };

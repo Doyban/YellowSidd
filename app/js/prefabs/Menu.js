@@ -13,8 +13,20 @@ YellowSidd.Menu = function (game_state, name, position, properties) {
   this.background_sound = this.game.add.audio('background', .3, true); // Add sound.
 
   // Sound buttons.
-  this.buttonAudio = this.game.add.button(this.game.width * 0.694, this.game.height * 0.012, 'audio', this.toggleGameAudio, this);
+  this.buttonAudio = this.game.add.button(this.game.width * 0.58, this.game.height * 0.012, 'audio', this.toggleGameAudio, this);
   this.buttonAudio.frame = PLAY_SOUND ? 0 : 1; // Show appropriate background music button.
+  // Audio buttons.
+  this.buttonMusic = this.game.add.button(this.game.width * 0.708, this.game.height * 0.012, 'music', this.toggleBackgroundMusic, this);
+  this.buttonMusic.frame = PLAY_MUSIC ? 0 : 1; // Show appropriate background music button.
+  // Other buttons.
+  this.exitButton = this.game.add.button(this.game.width * 0.89, this.game.height * 0.012, 'exit', this.startExit, this);
+  this.gameButton = this.game.add.button(this.game.width * 0.08, this.game.height * 0.3, 'game', this.startGame, this);
+  this.informationButton = this.game.add.button(this.game.width * 0.455, this.game.height * 0.012, 'information', this.startInformation, this);
+  this.inviteButton = this.game.add.button(this.game.width * 0.324, this.game.height * 0.012, 'invite', this.startInvite, this);
+  // TODO: Add this.
+  // this.purchaseButton = this.game.add.button(this.game.width * 0.58, this.game.height * 0.3, 'purchase', this.startPurchase, this);
+  this.shareButton = this.game.add.button(this.game.width * 0.196, this.game.height * 0.012, 'share', this.startShare, this);
+
 
   // Avoid to new track, while changing states.
   if (!FIRST_PLAYED) {
@@ -22,60 +34,42 @@ YellowSidd.Menu = function (game_state, name, position, properties) {
     FIRST_PLAYED = true;
   }
 
-  // Audio buttons.
-  this.buttonMusic = this.game.add.button(this.game.width * 0.812, this.game.height * 0.012, 'music', this.toggleBackgroundMusic, this);
-  this.buttonMusic.frame = PLAY_MUSIC ? 0 : 1; // Show appropriate background music button.
+  initAds(); // Initialize ads.
 };
 
 // Set up constructor.
 YellowSidd.Menu.prototype = Object.create(YellowSidd.Prefab.prototype);
 YellowSidd.Menu.prototype.constructor = YellowSidd.Menu;
 
-YellowSidd.Menu.prototype.update = function () {
-  "use strict";
-  /**
-   * Choose appropriate menu item.
-   * To get action on whole item dimensions while swiping, item needs to be get from anchor of itself and substract & add half of width & height to it, then whole item dimensions are on action for swiping.
-   */
-  if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.exit_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.exit_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.exit_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.exit_item.position.y)) + 70 / 2)) {
-    alert('exit');
-    window.open("https://facebook.com");
-  }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.game_item.position.x) - 240 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.game_item.position.x)) + 240 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.game_item.position.y) - 240 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.game_item.position.y)) + 240 / 2)) {
-    this.menu_items[1].select(); // Select second item.
+YellowSidd.Menu.prototype.startExit = function () {
+  exitGame();
+};
 
-    // Stop background music and prepare to play again once Menu will be called again.
-    if (PLAY_MUSIC) {
-      this.background_sound.stop();
-      FIRST_PLAYED = false;
-    }
-  }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.information_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.information_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.information_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.information_item.position.y)) + 70 / 2)) {
-    // alert('Go to Doyban');
-    window.open("https://doyban.com/yellowsidd");
-  }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.invite_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.invite_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.invite_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.invite_item.position.y)) + 70 / 2)) {
-    this.menu_items[3].select(); // Select fourth item.
+YellowSidd.Menu.prototype.startGame = function () {
+  this.menu_items[1].select(); // Select second item.
 
-    // Stop background music and prepare to play again once Menu will be called again.
-    if (PLAY_MUSIC) {
-      this.background_sound.stop();
-      FIRST_PLAYED = false;
-    }
-
-    YellowSidd.FacebookAPI.prototype.inviteFriends(); // Invite friends.
+  // Stop background music and prepare to play again once Menu will be called again.
+  if (PLAY_MUSIC) {
+    this.background_sound.stop();
+    FIRST_PLAYED = false;
   }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.purchase_item.position.x) - 240 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.purchase_item.position.x)) + 240 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.purchase_item.position.y) - 240 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.purchase_item.position.y)) + 240 / 2)) {
-    this.menu_items[4].select(); // Select fifth item.
+};
 
-    // Stop background music and prepare to play again once Menu will be called again.
-    if (PLAY_MUSIC) {
-      this.background_sound.stop();
-      FIRST_PLAYED = false;
-    }
+YellowSidd.Menu.prototype.startInformation = function () {
+  // alert('information');
+  window.open("https://doyban.com/yellowsidd");
+
+  this.menu_items[2].select(); // Select third item.
+
+  // Stop background music and prepare to play again once Menu will be called again.
+  if (PLAY_MUSIC) {
+    this.background_sound.stop();
+    FIRST_PLAYED = false;
   }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.share_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.share_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.share_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.share_item.position.y)) + 70 / 2)) {
-    this.menu_items[5].select(); // Select sixth item.
+};
+
+YellowSidd.Menu.prototype.startInvite = function () {
+  this.menu_items[3].select(); // Select fourth item.
 
     // Stop background music and prepare to play again once Menu will be called again.
     if (PLAY_MUSIC) {
@@ -83,8 +77,28 @@ YellowSidd.Menu.prototype.update = function () {
       FIRST_PLAYED = false;
     }
 
-    YellowSidd.FacebookAPI.prototype.shareGame(); // Share game.
+  YellowSidd.FacebookAPI.prototype.inviteFriends(); // Invite friends.
+};
+
+// TODO: Add this.
+// YellowSidd.Menu.prototype.startPurchase = function () {
+//   this.menu_items[4].select(); // Select fifth item.
+
+//     // Stop background music and prepare to play again once Menu will be called again.
+//     if (PLAY_MUSIC) {
+//       this.background_sound.stop();
+//       FIRST_PLAYED = false;
+//     }
+// };
+
+YellowSidd.Menu.prototype.startShare = function () {
+  // Stop background music and prepare to play again once Menu will be called again.
+  if (PLAY_MUSIC) {
+    this.background_sound.stop();
+    FIRST_PLAYED = false;
   }
+
+  YellowSidd.FacebookAPI.prototype.shareGame(); // Share game.
 };
 
 // Toggle background music.

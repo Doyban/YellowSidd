@@ -3,38 +3,41 @@ var YellowSidd = YellowSidd || {};
 YellowSidd.FacebookAPI = function () {};
 
 YellowSidd.FacebookAPI.prototype.shareGame = function () {
-  // Share game.
-  FB.ui({
-    method: "share",
-    href: "https://apps.facebook.com/yellowsidd/",
-    quote: "Play YellowSidd!"
-  }, function (response) {
-    // console.log(response);
+  FBInstant.shareAsync({
+    intent: 'SHARE',
+    image: 'https://doyban.com/logos/yellowsidd.png',
+    text: 'Play PirateBay on Messenger!',
+    data: { myReplayData: '...' }
+  }).then(function() {
+    // continue with the game.
   });
+
 };
 
 YellowSidd.FacebookAPI.prototype.shareScore = function (score) {
-  // Share game score.
-  FB.ui({
-    method: "share",
-    href: "https://apps.facebook.com/yellowsidd/",
-    quote: "My score in YellowSidd is " + score + "."
-  }, function (response) {
-    // console.log(response);
+  FBInstant.shareAsync({
+    intent: 'SHARE',
+    image: 'https://doyban.com/logos/yellowsidd.png',
+    text: 'My score in YellowSidd is ' + score + '.',
+    data: { myReplayData: '...' }
+  }).then(function() {
+    // continue with the game.
   });
 };
 
 
 YellowSidd.FacebookAPI.prototype.inviteFriends = function () {
-  // Invite Facebook friends.
-  FB.ui({
-    method: 'apprequests',
-    message: 'Play YellowSidd with me!'
-  }, function (response) {
-    // console.log(response);
+  FBInstant.shareAsync({
+    intent: 'INVITE',
+    image: 'https://doyban.com/logos/yellowsidd.png',
+    text: 'Play YellowSidd on Messenger!',
+    data: { myReplayData: '...' }
+  }).then(function() {
+    // continue with the game.
   });
 };
 
+// TODO: Think about it.
 YellowSidd.FacebookAPI.prototype.showProducts = function () {
   // Show Facebook products to purchase in that game.
   FB.api(
@@ -47,6 +50,7 @@ YellowSidd.FacebookAPI.prototype.showProducts = function () {
   );
 };
 
+// TODO: Think about it.
 YellowSidd.FacebookAPI.prototype.showPurchases = function () {
   // Show Facebook purchases in that game.
   var that = this;
@@ -67,6 +71,7 @@ YellowSidd.FacebookAPI.prototype.showPurchases = function () {
   );
 };
 
+// TODO: Think about it.
 YellowSidd.FacebookAPI.prototype.consumePurchase = function (purchase_token, product_id) {
   // Consume Facebook purchases in that game.
   var that = this;
@@ -88,6 +93,7 @@ YellowSidd.FacebookAPI.prototype.consumePurchase = function (purchase_token, pro
   );
 };
 
+// TODO: Think about it.
 YellowSidd.FacebookAPI.prototype.check_purchase = function (extraGems, response) {
   var that = this;
   // console.log(response);
@@ -103,6 +109,7 @@ YellowSidd.FacebookAPI.prototype.check_purchase = function (extraGems, response)
   }
 };
 
+// TODO: Think about it.
 YellowSidd.FacebookAPI.prototype.gems5 = function () {
   var that = this;
 
@@ -120,6 +127,7 @@ YellowSidd.FacebookAPI.prototype.gems5 = function () {
   );
 };
 
+// TODO: Think about it.
 YellowSidd.FacebookAPI.prototype.gems20 = function () {
   var that = this;
 
@@ -137,6 +145,7 @@ YellowSidd.FacebookAPI.prototype.gems20 = function () {
   );
 };
 
+// TODO: Think about it.
 YellowSidd.FacebookAPI.prototype.gems50 = function () {
   var that = this;
 
@@ -154,6 +163,7 @@ YellowSidd.FacebookAPI.prototype.gems50 = function () {
   );
 };
 
+// TODO: Think about it.
 YellowSidd.FacebookAPI.prototype.gems100 = function () {
   var that = this;
 
@@ -171,6 +181,7 @@ YellowSidd.FacebookAPI.prototype.gems100 = function () {
   );
 };
 
+// TODO: Think about it.
 YellowSidd.FacebookAPI.prototype.gems200 = function () {
   var that = this;
 
