@@ -16,6 +16,7 @@
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		2513BA3181684273BDEA0F6E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47309DA081B4EF5B3D6B03C /* FBSDKShareKit.framework */; };
+		25845B843E03479DABC295D3 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 510C288246F8470791F6C11D /* CDVStatusBar.m */; };
 		25F0211D40CA4B468CF59A48 /* SKProduct+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 019D04DADEE947F4A1284265 /* SKProduct+LocalizedPrice.m */; };
 		26906F0B11344A3A99F2381A /* FileUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C0870CFEBA48F9B1FFD150 /* FileUtility.m */; };
 		2FD73EC7DCB04155865047DD /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8EDC7B59264A07AC3D66E4 /* GoogleMobileAds.framework */; };
@@ -115,6 +116,7 @@
 		39A94A27F6CC4FF18029162A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "YellowSidd/Plugins/cordova-plugin-facebook4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		3FE0BF2CA20F412AAC1869B5 /* AVFoundation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		429B51A5F83F4D4FA2DAB96B /* CDVInvokedUrlCommand+CULPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "CDVInvokedUrlCommand+CULPlugin.m"; path = "cordova-universal-links-plugin/JS/CDVInvokedUrlCommand+CULPlugin.m"; sourceTree = "<group>"; };
+		510C288246F8470791F6C11D /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
 		523D649065D34788A81B457B /* CULXmlTags.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CULXmlTags.h; path = "cordova-universal-links-plugin/Parser/CULXmlTags.h"; sourceTree = "<group>"; };
 		52E24A07429E4366AAF0FD73 /* Foundation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		57D27F70EF9847159E268385 /* SKProduct+LocalizedPrice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "SKProduct+LocalizedPrice.h"; path = "cc.fovea.cordova.purchase/SKProduct+LocalizedPrice.h"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		A47309DA081B4EF5B3D6B03C /* FBSDKShareKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "YellowSidd/Plugins/cordova-plugin-facebook4/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 		A7151CF3006D4B9E8ACCF4DF /* CDVInAppBrowser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVInAppBrowser.h; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; };
 		A8A8143FB2564213819610FC /* CULConfigXmlParser.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CULConfigXmlParser.m; path = "cordova-universal-links-plugin/Parser/CULConfigXmlParser.m"; sourceTree = "<group>"; };
+		A8F8EEAFBADF4A84A9CEE571 /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
 		B0A629AF13EA4E03BEBCACB0 /* CULConfigXmlParser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CULConfigXmlParser.h; path = "cordova-universal-links-plugin/Parser/CULConfigXmlParser.h"; sourceTree = "<group>"; };
 		B2D32EB17640408FB6D42751 /* AppDelegate+CULPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+CULPlugin.m"; path = "cordova-universal-links-plugin/AppDelegate+CULPlugin.m"; sourceTree = "<group>"; };
 		B4F41904C6EE43889703AF16 /* CoreBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -350,6 +353,8 @@
 				A7151CF3006D4B9E8ACCF4DF /* CDVInAppBrowser.h */,
 				97E1B4E4FFB64E6795A1D59A /* CDVAdMob.m */,
 				73A5E1B38BF8427ABA32E78B /* CDVAdMob.h */,
+				510C288246F8470791F6C11D /* CDVStatusBar.m */,
+				A8F8EEAFBADF4A84A9CEE571 /* CDVStatusBar.h */,
 			);
 			name = Plugins;
 			path = YellowSidd/Plugins;
@@ -500,6 +505,7 @@
 				73E589E817644C6F9D1DD442 /* NSBundle+CULPlugin.m in Sources */,
 				FDB9A664257749C3B8F72385 /* CDVInAppBrowser.m in Sources */,
 				33F4AD1F7E834B56B4478492 /* CDVAdMob.m in Sources */,
+				25845B843E03479DABC295D3 /* CDVStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

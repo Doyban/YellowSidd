@@ -6,7 +6,7 @@ var GAME_START = false; // Global variable to check if player has started a game
 var CHECKPOINT_REACHED = false; // Global variable to check if checkpoint has been reached.
 var REACHED_NEXT_LEVEL = false; // Global variable to toggle visibility of pad/stick on next level.
 
-var game = new Phaser.Game(700, 360, Phaser.CANVAS);
+var game = new Phaser.Game(700, 360, Phaser.AUTO);
 game.state.add('BootState', new YellowSidd.BootState()); // Loads a JSON file with the level information and starts the Loading State.
 game.state.add('LoadingState', new YellowSidd.LoadingState()); // Loads all the game assets, and starts the Level State.
 game.state.add('GameState', new YellowSidd.TiledState()); // Creates the map and all game objects.

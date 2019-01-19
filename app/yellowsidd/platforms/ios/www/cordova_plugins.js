@@ -54,6 +54,14 @@ module.exports = [
     "clobbers": [
       "window.plugins.AdMob"
     ]
+  },
+  {
+    "id": "cordova-plugin-statusbar.statusbar",
+    "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+    "pluginId": "cordova-plugin-statusbar",
+    "clobbers": [
+      "window.StatusBar"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -67,7 +75,8 @@ module.exports.metadata =
   "cordova-universal-links-plugin": "1.2.1",
   "cordova-plugin-inappbrowser": "3.0.0",
   "cordova-admob-sdklibs": "2.1.6",
-  "cordova-plugin-admob-simple": "3.3.8"
+  "cordova-plugin-admob-simple": "3.3.8",
+  "cordova-plugin-statusbar": "2.4.2"
 };
 // BOTTOM OF METADATA
 });
