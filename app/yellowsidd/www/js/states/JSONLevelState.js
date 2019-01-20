@@ -18,7 +18,7 @@ YellowSidd.JSONLevelState.prototype.init = function (level_data) {
   this.level_data = level_data; // Save level data.
 
   // Set up scale.
-  this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+  this.scale.scaleMode = Phaser.ScaleManager.EXACT_FIT;
   this.scale.pageAlignHorizontally = true;
   this.scale.pageAlignVertically = true;
 };
