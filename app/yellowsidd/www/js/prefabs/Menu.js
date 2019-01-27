@@ -19,7 +19,6 @@ YellowSidd.Menu = function (game_state, name, position, properties) {
   this.buttonMusic = this.game.add.button(this.game.width * 0.708, this.game.height * 0.012, 'music', this.toggleBackgroundMusic, this);
   this.buttonMusic.frame = PLAY_MUSIC ? 0 : 1; // Show appropriate background music button.
   // Other buttons.
-  this.exitButton = this.game.add.button(this.game.width * 0.89, this.game.height * 0.012, 'exit', this.startExit, this);
   this.gameButton = this.game.add.button(this.game.width * 0.08, this.game.height * 0.3, 'game', this.startGame, this);
   this.informationButton = this.game.add.button(this.game.width * 0.455, this.game.height * 0.012, 'information', this.startInformation, this);
   this.inviteButton = this.game.add.button(this.game.width * 0.324, this.game.height * 0.012, 'invite', this.startInvite, this);
@@ -40,13 +39,8 @@ YellowSidd.Menu = function (game_state, name, position, properties) {
 YellowSidd.Menu.prototype = Object.create(YellowSidd.Prefab.prototype);
 YellowSidd.Menu.prototype.constructor = YellowSidd.Menu;
 
-YellowSidd.Menu.prototype.startExit = function () {
-  // alert('Exit');
-  navigator.app.exitApp();
-};
-
 YellowSidd.Menu.prototype.startGame = function () {
-  this.menu_items[1].select(); // Select second item.
+  this.menu_items[0].select(); // Select first item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {
@@ -59,7 +53,7 @@ YellowSidd.Menu.prototype.startInformation = function () {
   // alert('information');
   window.open("https://doyban.com/yellowsidd");
 
-  this.menu_items[2].select(); // Select third item.
+  this.menu_items[1].select(); // Select second item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {
@@ -83,7 +77,7 @@ YellowSidd.Menu.prototype.startInvite = function () {
 
   facebookConnectPlugin.showDialog(this.options, this.onSuccess, this.onError);
 
-  this.menu_items[3].select(); // Select fourth item.
+  this.menu_items[2].select(); // Select third item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {
@@ -93,7 +87,7 @@ YellowSidd.Menu.prototype.startInvite = function () {
 };
 
 YellowSidd.Menu.prototype.startPurchase = function () {
-  this.menu_items[4].select(); // Select fifth item.
+  this.menu_items[3].select(); // Select fourth item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {
@@ -121,7 +115,7 @@ YellowSidd.Menu.prototype.startShare = function () {
 
   window.plugins.socialsharing.shareWithOptions(this.options, this.onSuccess, this.onError);
 
-  this.menu_items[5].select(); // Select sixth item.
+  this.menu_items[4].select(); // Select fifth item.
 
   // Stop background music and prepare to play again once Menu will be called again.
   if (PLAY_MUSIC) {

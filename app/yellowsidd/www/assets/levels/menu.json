@@ -1,7 +1,6 @@
 {
   "assets": {
     "background_image": {"type": "image", "source": "assets/images/background.png"},
-    "exit_image": {"type": "image", "source": "assets/images/button-exit.png"},
     "game_image": {"type": "image", "source": "assets/images/button-game.png"},
     "gem_image": {"type": "image", "source": "assets/images/gem.png"},
     "information_image": {"type": "image", "source": "assets/images/button-information.png"},
@@ -22,15 +21,6 @@
         "texture": "background_image"
       },
       "type": "background"
-    },
-    "exit_item": {
-      "position": {"x": 0.89, "y": 0.012},
-      "properties": {
-        "level_file": "assets/levels/menu.json",
-        "group": "menu_items",
-        "state_name": "MenuState"
-      },
-      "type": "start_state_item"
     },
     "gem_item": {
       "position": {"x": 0.01, "y": 0.06},

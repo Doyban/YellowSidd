@@ -33,10 +33,10 @@ YellowSidd.Gems.prototype.startExit = function () {
 
 YellowSidd.Gems.prototype.startPaymentGems5 = function () {
   'use strict';
-  // alert('gems 5');
+   alert('gems 5');
   var that = this;
 
-  // store.verbosity = store.INFO;
+   store.verbosity = store.INFO;
 
   // Prepare product.
   store.register({
@@ -56,16 +56,16 @@ YellowSidd.Gems.prototype.startPaymentGems5 = function () {
     localStorage.gems = parseInt(localStorage.gems) + 5; // Add 5 gems.
     that.upgrade_sound.play(); // Play upgrade sound.
     that.game.state.start("GemsState");
-    // that.menu_items[1].select(); // Select second item.
+    that.menu_items[1].select(); // Select second item.
   });
 };
 
 YellowSidd.Gems.prototype.startPaymentGems20 = function () {
   'use strict';
-  // alert('gems 20');
+   alert('gems 20');
   var that = this;
 
-  // store.verbosity = store.INFO;
+   store.verbosity = store.INFO;
 
   // Prepare product.
   store.register({
@@ -90,10 +90,10 @@ YellowSidd.Gems.prototype.startPaymentGems20 = function () {
 
 YellowSidd.Gems.prototype.startPaymentGems50 = function () {
   'use strict';
-  // alert('gems 50');
+   alert('gems 50');
   var that = this;
 
-  // store.verbosity = store.INFO;
+   store.verbosity = store.INFO;
 
   // Prepare product.
   store.register({
@@ -110,7 +110,7 @@ YellowSidd.Gems.prototype.startPaymentGems50 = function () {
     store.refresh();
 
     // Add extra gems.
-    localStorage.gems = parseInt(localStorage.gems) + 50; // Add 20 gems.
+    localStorage.gems = parseInt(localStorage.gems) + 50; // Add 50 gems.
     that.upgrade_sound.play(); // Play upgrade sound.
     that.menu_items[3].select(); // Select fourth item.
   });
@@ -118,10 +118,10 @@ YellowSidd.Gems.prototype.startPaymentGems50 = function () {
 
 YellowSidd.Gems.prototype.startPaymentGems100 = function () {
   'use strict';
-  // alert('gems 100');
+   alert('gems 100');
   var that = this;
 
-  // store.verbosity = store.INFO;
+   store.verbosity = store.INFO;
 
   // Prepare product.
   store.register({
@@ -138,7 +138,7 @@ YellowSidd.Gems.prototype.startPaymentGems100 = function () {
     store.refresh();
 
     // Add extra gems.
-    localStorage.gems = parseInt(localStorage.gems) + 100; // Add 20 gems.
+    localStorage.gems = parseInt(localStorage.gems) + 100; // Add 100 gems.
     that.upgrade_sound.play(); // Play upgrade sound.
     that.menu_items[4].select(); // Select fifth item.
   });
@@ -146,14 +146,14 @@ YellowSidd.Gems.prototype.startPaymentGems100 = function () {
 
 YellowSidd.Gems.prototype.startPaymentGems200 = function () {
   'use strict';
-  // alert('gems 200');
+   alert('gems 200');
   var that = this;
 
-  // store.verbosity = store.INFO;
+   store.verbosity = store.INFO;
 
   // Prepare product.
   store.register({
-    id:    "gems200",
+    id:    "com.doyban.yellowsidd.gems200",
     alias: "Gems 200",
     type:  store.CONSUMABLE
   });
@@ -166,7 +166,7 @@ YellowSidd.Gems.prototype.startPaymentGems200 = function () {
     store.refresh();
 
     // Add extra gems.
-    localStorage.gems = parseInt(localStorage.gems) + 200; // Add 20 gems.
+    localStorage.gems = parseInt(localStorage.gems) + 200; // Add 200 gems.
     that.upgrade_sound.play(); // Play upgrade sound.
     that.menu_items[5].select(); // Select sixth item.
   });
