@@ -43,7 +43,7 @@ gulp.task('copy-audio', function () {
 
 // Copy other files into destination directory.
 gulp.task('copy-others', function () {
-  gulp.src(['./app/index.html'])
+  gulp.src(['./app/index.html', './app/config.template.json', './app/fbapp-config.json'])
     .pipe(gulp.dest('./dist'));
 });
 
