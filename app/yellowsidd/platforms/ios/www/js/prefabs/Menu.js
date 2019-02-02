@@ -69,10 +69,10 @@ YellowSidd.Menu.prototype.startInvite = function () {
     message: 'Play YellowSidd with me!'
   };
   this.onSuccess = function(result) {
-   // alert("Success with invite, result: " + result);
+   alert("Success with invite, result: " + result);
   };
   this.onError = function(msg) {
-   // alert("Failed with invite, msg: " + msg);
+   alert("Failed with invite, msg: " + msg);
   };
 
   facebookConnectPlugin.showDialog(this.options, this.onSuccess, this.onError);

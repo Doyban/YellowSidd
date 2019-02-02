@@ -50,6 +50,7 @@
 		A11C10AA8D9B4ADD9F0A1DDB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE0BF2CA20F412AAC1869B5 /* AVFoundation.framework */; };
 		A6D2B39A32C941AB9DAE1977 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8295533ADBCE4E02A44A3768 /* Bolts.framework */; };
 		B9712C38C6A54762AC1A87D2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C73200BAE3540E5A71002FD /* CoreVideo.framework */; };
+		BA5C5F6922062C5300BC73A0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5C5F6822062C5300BC73A0 /* GameKit.framework */; };
 		BE9CDBE803FB469EA35B13E0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9BB9F240E641C0B7CF457E /* AudioToolbox.framework */; };
 		C59DAD252CB442798A484B44 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A747839149D42A7ADA43680 /* SafariServices.framework */; };
 		D10FC614ABA04795962DF86B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F6D2E33DE34B308DF25BFE /* FBSDKCoreKit.framework */; };
@@ -142,6 +143,7 @@
 		B0A629AF13EA4E03BEBCACB0 /* CULConfigXmlParser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CULConfigXmlParser.h; path = "cordova-universal-links-plugin/Parser/CULConfigXmlParser.h"; sourceTree = "<group>"; };
 		B2D32EB17640408FB6D42751 /* AppDelegate+CULPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+CULPlugin.m"; path = "cordova-universal-links-plugin/AppDelegate+CULPlugin.m"; sourceTree = "<group>"; };
 		B4F41904C6EE43889703AF16 /* CoreBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		BA5C5F6822062C5300BC73A0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		BC50C73CFBF0405AA533A01C /* CDVPluginResult+CULPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVPluginResult+CULPlugin.h"; path = "cordova-universal-links-plugin/JS/CDVPluginResult+CULPlugin.h"; sourceTree = "<group>"; };
 		BFD6A6C805A546F3B17906B3 /* CULPath.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CULPath.m; path = "cordova-universal-links-plugin/Model/CULPath.m"; sourceTree = "<group>"; };
 		CC4177A0843B4C10974BC70F /* CoreMotion.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -172,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5C5F6922062C5300BC73A0 /* GameKit.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				3AF9817D71754019B635CF0B /* Social.framework in Frameworks */,
 				19777EDEDECB49A582059898 /* MessageUI.framework in Frameworks */,
@@ -268,6 +271,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA5C5F6822062C5300BC73A0 /* GameKit.framework */,
 				7BFE85DFEACA46DB9DA1F644 /* Social.framework */,
 				E1E29E6DA907498FA1233405 /* MessageUI.framework */,
 				8295533ADBCE4E02A44A3768 /* Bolts.framework */,
@@ -404,7 +408,13 @@
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.GameCenter.iOS = {
-								enabled = 0;
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
 							};
 						};
 					};

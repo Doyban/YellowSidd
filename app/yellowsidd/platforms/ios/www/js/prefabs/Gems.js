@@ -20,6 +20,13 @@ YellowSidd.Gems = function (game_state, name, position, properties) {
   this.gems50Button = this.game.add.button(this.game.width * 0.8001, this.game.height * 0.2155, 'gems50', this.startPaymentGems50, this);
   this.gems100Button = this.game.add.button(this.game.width * 0.2, this.game.height * 0.605, 'gems100', this.startPaymentGems100, this);
   this.gems200Button = this.game.add.button(this.game.width * 0.6, this.game.height * 0.605, 'gems200', this.startPaymentGems200, this);
+
+  store.verbosity = store.DEBUG; // Enable maximum logging level.
+
+  // Log all errors.
+  store.error(function(error) {
+    alert('ERROR ' + error.code + ': ' + error.message);
+  });
 };
 
 // Set up constructor.
@@ -37,15 +44,15 @@ YellowSidd.Gems.prototype.startPaymentGems5 = function () {
 
   // Prepare product.
   store.register({
-    id:    "gems5",
+    id:    "com.doyban.yellowsidd.gems5",
     alias: "Gems 5",
     type:  store.CONSUMABLE
   });
 
   // Purchase product.
-  store.order("gems5");
+  store.order("com.doyban.yellowsidd.gems5");
   store.refresh();
-  store.when("gems5").approved(function (order) {
+  store.when("com.doyban.yellowsidd.gems5").approved(function (order) {
     order.finish();
     store.refresh();
 
@@ -63,15 +70,15 @@ YellowSidd.Gems.prototype.startPaymentGems20 = function () {
 
   // Prepare product.
   store.register({
-    id:    "gems20",
+    id:    "com.doyban.yellowsidd.gems20",
     alias: "Gems 20",
     type:  store.CONSUMABLE
   });
 
   // Purchase product.
-  store.order("gems20");
+  store.order("com.doyban.yellowsidd.gems20");
   store.refresh();
-  store.when("gems20").approved(function (order) {
+  store.when("com.doyban.yellowsidd.gems20").approved(function (order) {
     order.finish();
     store.refresh();
 
@@ -88,15 +95,15 @@ YellowSidd.Gems.prototype.startPaymentGems50 = function () {
 
   // Prepare product.
   store.register({
-    id:    "gems50",
+    id:    "com.doyban.yellowsidd.gems50",
     alias: "Gems 50",
     type:  store.CONSUMABLE
   });
 
   // Purchase product.
-  store.order("gems50");
+  store.order("com.doyban.yellowsidd.gems50");
   store.refresh();
-  store.when("gems50").approved(function (order) {
+  store.when("com.doyban.yellowsidd.gems50").approved(function (order) {
     order.finish();
     store.refresh();
 
@@ -113,15 +120,15 @@ YellowSidd.Gems.prototype.startPaymentGems100 = function () {
 
   // Prepare product.
   store.register({
-    id:    "gems100",
+    id:    "com.doyban.yellowsidd.gems100",
     alias: "Gems 100",
     type:  store.CONSUMABLE
   });
-  store.get("gems100");
+  
   // Purchase product.
-  store.order("gems100");
+  store.order("com.doyban.yellowsidd.gems100");
   store.refresh();
-  store.when("gems100").approved(function (order) {
+  store.when("com.doyban.yellowsidd.gems100").approved(function (order) {
     order.finish();
     store.refresh();
 
@@ -142,11 +149,10 @@ YellowSidd.Gems.prototype.startPaymentGems200 = function () {
     alias: "Gems 200",
     type:  store.CONSUMABLE
   });
-  store.get("com.doyban.yellowsidd.gems200");
   // Purchase product.
-  store.order("gems200");
+  store.order("com.doyban.yellowsidd.gems200");
   store.refresh();
-  store.when("gems200").approved(function (order) {
+  store.when("com.doyban.yellowsidd.gems200").approved(function (order) {
     order.finish();
     store.refresh();
 
