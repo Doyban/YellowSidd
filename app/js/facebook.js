@@ -10,7 +10,7 @@ var preloadedInterstitial = null;
 // Initialize Messenger ads.
 function initAds() {
   FBInstant.getInterstitialAdAsync(
-    '327736978026913_335734790560465' // Your Ad Placement Id, TODO: Change this ID.
+    '303990723590824_304377000218863' // Your Ad Placement Id
   ).then(function(interstitial) {
     // Load the Ad asynchronously
     preloadedInterstitial = interstitial;
