@@ -92,7 +92,7 @@
       "type": "start_state_item"
     },
     "gems_quantity_item": {
-      "position": {"x": 0.06, "y": 0.05},
+      "position": {"x": 0.08, "y": 0.05},
       "properties": {
         "text": "",
         "group": "hud",

@@ -14,9 +14,9 @@ YellowSidd.Gems = function (game_state, name, position, properties) {
   this.error_sound = this.game.add.audio('error');
   this.upgrade_sound = this.game.add.audio('upgrade');
 
-  // TODO: Remove.
-  // YellowSidd.FacebookAPI.prototype.showProducts(); // Show products.
-  // YellowSidd.FacebookAPI.prototype.showPurchases(); // Show purchases.
+  // TODO: Comment on deployment.
+  // YellowSidd.MessengerAPI.prototype.showProducts(); // Show products.
+  // YellowSidd.MessengerAPI.prototype.showPurchases(); // Show purchases.
 };
 
 // Set up constructor.
@@ -29,33 +29,28 @@ YellowSidd.Gems.prototype.update = function () {
     this.menu_items[0].select(); // Select first item.
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.gems_5_item.position.x) - 140 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.gems_5_item.position.x)) + 140 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.gems_5_item.position.y) - 140 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.gems_5_item.position.y)) + 140 / 2)) {
-    YellowSidd.FacebookAPI.prototype.gems5(); // Open payment method for gems5.
+    YellowSidd.MessengerAPI.prototype.gems5(); // Open payment method for gems5.
     this.menu_items[1].select(); // Select second item.
-    // localStorage.gems = parseInt(localStorage.gems) + 5; // Add 5 gems.
     this.upgrade_sound.play(); // Play upgrade sound.
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.gems_20_item.position.x) - 140 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.gems_20_item.position.x)) + 140 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.gems_20_item.position.y) - 140 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.gems_20_item.position.y)) + 140 / 2)) {
-    YellowSidd.FacebookAPI.prototype.gems20(); // Open payment method for gems20.
+    YellowSidd.MessengerAPI.prototype.gems20(); // Open payment method for g2ems20.
     this.menu_items[2].select(); // Select third item.
-    // localStorage.gems = parseInt(localStorage.gems) + 20; // Add 20 gems.
     this.upgrade_sound.play(); // Play upgrade sound.
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.gems_50_item.position.x) - 140 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.gems_50_item.position.x)) + 140 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.gems_50_item.position.y) - 140 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.gems_50_item.position.y)) + 140 / 2)) {
-    YellowSidd.FacebookAPI.prototype.gems50(); // Open payment method for gems50.
+    YellowSidd.MessengerAPI.prototype.gems50(); // Open payment method for gems50.
     this.menu_items[3].select(); // Select fourth item.
-    // localStorage.gems = parseInt(localStorage.gems) + 50; // Add 50 gems.
     this.upgrade_sound.play(); // Play upgrade sound.
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.gems_100_item.position.x) - 140 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.gems_100_item.position.x)) + 140 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.gems_100_item.position.y) - 140 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.gems_100_item.position.y)) + 140 / 2)) {
-    YellowSidd.FacebookAPI.prototype.gems100(); // Open payment method for gems100.
+    YellowSidd.MessengerAPI.prototype.gems100(); // Open payment method for gems100.
     this.menu_items[4].select(); // Select fifth item.
-    // localStorage.gems = parseInt(localStorage.gems) + 100; // Add 100 gems.
     this.upgrade_sound.play(); // Play upgrade sound.
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.gems_200_item.position.x) - 140 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.gems_200_item.position.x)) + 140 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.gems_200_item.position.y) - 140 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.gems_200_item.position.y)) + 140 / 2)) {
-    YellowSidd.FacebookAPI.prototype.gems200(); // Open payment method for gems200.
+    YellowSidd.MessengerAPI.prototype.gems200(); // Open payment method for gems200.
     this.menu_items[5].select(); // Select sixth item.
-    // localStorage.gems = parseInt(localStorage.gems) + 200; // Add 200 gems.
     this.upgrade_sound.play(); // Play upgrade sound.
   }
 };

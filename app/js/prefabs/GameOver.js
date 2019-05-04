@@ -33,6 +33,6 @@ YellowSidd.GameOver.prototype.update = function () {
   }
   else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.share_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.share_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.share_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.share_item.position.y)) + 70 / 2)) {
     this.menu_items[1].select(); // Select second item.
-    YellowSidd.FacebookAPI.prototype.shareScore(localStorage.lastScore); // Share score.
+    YellowSidd.MessengerAPI.prototype.shareScore(localStorage.lastScore); // Share score.
   }
 };

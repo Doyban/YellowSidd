@@ -23,8 +23,7 @@ YellowSidd.Menu = function (game_state, name, position, properties) {
   this.gameButton = this.game.add.button(this.game.width * 0.08, this.game.height * 0.3, 'game', this.startGame, this);
   this.informationButton = this.game.add.button(this.game.width * 0.455, this.game.height * 0.012, 'information', this.startInformation, this);
   this.inviteButton = this.game.add.button(this.game.width * 0.324, this.game.height * 0.012, 'invite', this.startInvite, this);
-  // TODO: Add this.
-  // this.purchaseButton = this.game.add.button(this.game.width * 0.58, this.game.height * 0.3, 'purchase', this.startPurchase, this);
+  this.purchaseButton = this.game.add.button(this.game.width * 0.58, this.game.height * 0.3, 'purchase', this.startPurchase, this);
   this.shareButton = this.game.add.button(this.game.width * 0.196, this.game.height * 0.012, 'share', this.startShare, this);
 
 
@@ -56,7 +55,6 @@ YellowSidd.Menu.prototype.startGame = function () {
 };
 
 YellowSidd.Menu.prototype.startInformation = function () {
-  // alert('information');
   window.open("https://doyban.com/yellowsidd");
 
   this.menu_items[2].select(); // Select third item.
@@ -77,19 +75,18 @@ YellowSidd.Menu.prototype.startInvite = function () {
       FIRST_PLAYED = false;
     }
 
-  YellowSidd.FacebookAPI.prototype.inviteFriends(); // Invite friends.
+  YellowSidd.MessengerAPI.prototype.inviteFriends(); // Invite friends.
 };
 
-// TODO: Add this.
-// YellowSidd.Menu.prototype.startPurchase = function () {
-//   this.menu_items[4].select(); // Select fifth item.
+YellowSidd.Menu.prototype.startPurchase = function () {
+  this.menu_items[4].select(); // Select fifth item.
 
-//     // Stop background music and prepare to play again once Menu will be called again.
-//     if (PLAY_MUSIC) {
-//       this.background_sound.stop();
-//       FIRST_PLAYED = false;
-//     }
-// };
+    // Stop background music and prepare to play again once Menu will be called again.
+    if (PLAY_MUSIC) {
+      this.background_sound.stop();
+      FIRST_PLAYED = false;
+    }
+};
 
 YellowSidd.Menu.prototype.startShare = function () {
   // Stop background music and prepare to play again once Menu will be called again.
@@ -98,7 +95,7 @@ YellowSidd.Menu.prototype.startShare = function () {
     FIRST_PLAYED = false;
   }
 
-  YellowSidd.FacebookAPI.prototype.shareGame(); // Share game.
+  YellowSidd.MessengerAPI.prototype.shareGame(); // Share game.
 };
 
 // Toggle background music.
