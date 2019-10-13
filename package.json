@@ -1,0 +1,51 @@
+{
+  "name": "com.doyban.yellowsidd",
+  "displayName": "YellowSidd",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cc.fovea.cordova.purchase": "^8.1.1",
+    "cordova-admob-sdklibs": "^2.1.6",
+    "cordova-ios": "^5.0.1",
+    "cordova-plugin-admob-simple": "^3.3.8",
+    "cordova-plugin-facebook4": "^5.0.0",
+    "cordova-plugin-inappbrowser": "^3.1.0",
+    "cordova-plugin-statusbar": "^2.4.3",
+    "cordova-plugin-x-socialsharing": "^5.6.0",
+    "es6-promise-plugin": "^4.2.2"
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-facebook4": {
+        "APP_ID": "242231026115859",
+        "APP_NAME": "YellowSidd",
+        "FACEBOOK_HYBRID_APP_EVENTS": "false",
+        "FACEBOOK_ANDROID_SDK_VERSION": "5.0.2"
+      },
+      "cordova-plugin-admob-simple": {},
+      "cc.fovea.cordova.purchase": {},
+      "cordova-plugin-x-socialsharing": {
+        "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
+        "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly."
+      },
+      "cordova-plugin-inappbrowser": {}
+    },
+    "platforms": [
+      "ios"
+    ]
+  }
+}
