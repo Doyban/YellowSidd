@@ -88,15 +88,12 @@ YellowSidd.Player.prototype.update = function () {
   this.game_state.game.physics.arcade.overlap(this, this.game_state.groups.enemy_fireballs, this.die, null, this);
 
   if (this.stick.isDown) {
-    // console.log(this.stick.forceX);
-
     if (this.stick.forceX >= 0) {
       // Move right.
       this.body.velocity.x = this.walking_speed;
       this.direction = "RIGHT";
       this.scale.setTo(1, 1);
-    }
-    else if (this.stick.forceX < 0) {
+    } else if (this.stick.forceX < 0) {
       // Move left.
       this.body.velocity.x = -this.walking_speed;
       this.direction = "LEFT";
@@ -118,8 +115,7 @@ YellowSidd.Player.prototype.update = function () {
         this.jump_sound.play(); // Play jump sound.
       }
     }
-  }
-  else {
+  } else {
     // Stop.
     this.body.velocity.x = 0;
     this.animations.stop();

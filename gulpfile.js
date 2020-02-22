@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 
 // Include plugins.
-var jshint = require('gulp-jshint');
+//var jshint = require('gulp-jshint');
 var imagemin = require('gulp-imagemin');
 var minifyCSS = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
@@ -29,11 +29,11 @@ gulp.task('serve-dist', [], function () {
 });
 
 // Use JSHint.
-gulp.task('jshint', function() {
-  gulp.src(['./app/js/*.js', '!./app/js/phaser.js'])
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
-});
+// gulp.task('jshint', function () {
+//   gulp.src(['./app/js/*.js', '!./app/js/phaser.js'])
+//     .pipe(jshint())
+//     .pipe(jshint.reporter('default'));
+// });
 
 // Copy audio into destination directory.
 gulp.task('copy-audio', function () {
@@ -48,14 +48,16 @@ gulp.task('copy-others', function () {
 });
 
 // Minify CSS code.
-gulp.task('minify-css', function() {
+gulp.task('minify-css', function () {
   gulp.src('./app/css/**/*.css')
-    .pipe(minifyCSS({keepBreaks: true}))
+    .pipe(minifyCSS({
+      keepBreaks: true
+    }))
     .pipe(gulp.dest('./dist/css'))
 });
 
 // Uglify JavaScript code.
-gulp.task('compress', function() {
+gulp.task('compress', function () {
   return gulp.src('./app/js/**/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js'))
@@ -64,14 +66,18 @@ gulp.task('compress', function() {
 // Concat JavaScript code.
 gulp.task('concat', function () {
   return gulp.src('./dist/js/*.js')
-    .pipe(concat('all.min.js', {newLine: ';'}))
+    .pipe(concat('all.min.js', {
+      newLine: ';'
+    }))
     .pipe(gulp.dest('./dist/js'));
 });
 
 // Minify images.
-gulp.task('compress-images', function() {
+gulp.task('compress-images', function () {
   return gulp.src(['./app/assets/**/*', '!./app/assets/xcf']) // source in pre-images folder, match all images
-    .pipe(imagemin({ optimizationLevel: 7 }))
+    .pipe(imagemin({
+      optimizationLevel: 7
+    }))
     .pipe(gulp.dest('./dist/assets'));
 });
 

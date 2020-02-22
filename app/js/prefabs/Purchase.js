@@ -24,11 +24,10 @@ YellowSidd.Purchase.prototype.update = function () {
    */
   if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.exit_item.position.x) - 70 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.exit_item.position.x)) + 70 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.exit_item.position.y) - 70 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.exit_item.position.y)) + 70 / 2)) {
     this.menu_items[0].select(); // Select second item.
-  }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.purchase_gems_item.position.x) - 250 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.purchase_gems_item.position.x)) + 250 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.purchase_gems_item.position.y) - 250 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.purchase_gems_item.position.y)) + 250 / 2)) {
+  } else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.purchase_gems_item.position.x) - 250 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.purchase_gems_item.position.x)) + 250 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.purchase_gems_item.position.y) - 250 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.purchase_gems_item.position.y)) + 250 / 2)) {
     this.menu_items[1].select(); // Select sixth item.
-  }
-  else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.purchase_skills_item.position.x) - 250 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.purchase_skills_item.position.x)) + 250 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.purchase_skills_item.position.y) - 250 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.purchase_skills_item.position.y)) + 250 / 2)) {
+    YellowSidd.MessengerAPI.prototype.addSounds();
+  } else if (this.swipe.isDown && (this.swipe.position.x >= ((this.game_state.prefabs.purchase_skills_item.position.x) - 250 / 2) && this.swipe.position.x <= ((this.game_state.prefabs.purchase_skills_item.position.x)) + 250 / 2) && (this.swipe.position.y >= ((this.game_state.prefabs.purchase_skills_item.position.y) - 250 / 2) && this.swipe.position.y <= ((this.game_state.prefabs.purchase_skills_item.position.y)) + 250 / 2)) {
     this.menu_items[2].select(); // Select seventh item.
   }
 };

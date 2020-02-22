@@ -26,7 +26,6 @@ YellowSidd.Menu = function (game_state, name, position, properties) {
   this.purchaseButton = this.game.add.button(this.game.width * 0.58, this.game.height * 0.3, 'purchase', this.startPurchase, this);
   this.shareButton = this.game.add.button(this.game.width * 0.196, this.game.height * 0.012, 'share', this.startShare, this);
 
-
   // Avoid to new track, while changing states.
   if (!FIRST_PLAYED) {
     this.background_sound.play(); // Play background sound.
@@ -69,11 +68,11 @@ YellowSidd.Menu.prototype.startInformation = function () {
 YellowSidd.Menu.prototype.startInvite = function () {
   this.menu_items[3].select(); // Select fourth item.
 
-    // Stop background music and prepare to play again once Menu will be called again.
-    if (PLAY_MUSIC) {
-      this.background_sound.stop();
-      FIRST_PLAYED = false;
-    }
+  // Stop background music and prepare to play again once Menu will be called again.
+  if (PLAY_MUSIC) {
+    this.background_sound.stop();
+    FIRST_PLAYED = false;
+  }
 
   YellowSidd.MessengerAPI.prototype.inviteFriends(); // Invite friends.
 };
@@ -81,11 +80,30 @@ YellowSidd.Menu.prototype.startInvite = function () {
 YellowSidd.Menu.prototype.startPurchase = function () {
   this.menu_items[4].select(); // Select fifth item.
 
-    // Stop background music and prepare to play again once Menu will be called again.
-    if (PLAY_MUSIC) {
-      this.background_sound.stop();
-      FIRST_PLAYED = false;
+  // Stop background music and prepare to play again once Menu will be called again.
+  if (PLAY_MUSIC) {
+    this.background_sound.stop();
+    FIRST_PLAYED = false;
+  }
+
+  // Only for development.
+  YellowSidd.MessengerAPI.prototype.showProducts(); // Show IAP products.
+  YellowSidd.MessengerAPI.prototype.showPurchases(); // Show IAP purchases.
+
+  // Consume purchases if they were not purchased.
+  FBInstant.payments.getPurchasesAsync().then(function (purchases) {
+    FBInstant.logEvent('Unconsumed purchases: ', purchases);
+
+    for (i in purchases) {
+      FBInstant.payments.consumePurchaseAsync(purchases[i].purchaseToken).then(function () {
+        FBInstant.logEvent('Consumed purchase: ', purchases[i].purchaseToken);
+      }).catch(function (error) {
+        FBInstant.logEvent(error); // Log consumed purchase error details to Facebook Analytics.
+      });
     }
+  }).catch(function (error) {
+    FBInstant.logEvent(error); // Log unconsumed purchases error details to Facebook Analytics.
+  });
 };
 
 YellowSidd.Menu.prototype.startShare = function () {
