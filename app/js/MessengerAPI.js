@@ -16,9 +16,9 @@ YellowSidd.MessengerAPI.prototype.shareGame = function () {
     image: encodedImage,
     text: 'Play YellowSidd on Messenger!'
   }).then(function () {
-    FBInstant.logEvent('Method shareGame() ran successfully.'); // Log "shareGame" information to Facebook Analytics.
+    FBInstant.logEvent('Method shareGame ran successfully.'); // Log "shareGame" information to Facebook Analytics.
   }).catch(function (error) {
-    FBInstant.logEvent('Method shareGame() error: ', error); // Log "shareGame" error to Facebook Analytics.
+    FBInstant.logEvent('Method shareGame error: ', error); // Log "shareGame" error to Facebook Analytics.
   });
 };
 
@@ -28,35 +28,35 @@ YellowSidd.MessengerAPI.prototype.shareScore = function (score) {
     image: encodedImage,
     text: 'My score in YellowSidd is ' + score + '.'
   }).then(function () {
-    FBInstant.logEvent('Method shareScore() ran successfully.'); // Log "shareScore" information to Facebook Analytics.
+    FBInstant.logEvent('Method shareScore ran successfully.'); // Log "shareScore" information to Facebook Analytics.
   }).catch(function (error) {
-    FBInstant.logEvent('Method shareScore() error: ', error); // Log "shareScore" error to Facebook Analytics.
+    FBInstant.logEvent('Method shareScore error: ', error); // Log "shareScore" error to Facebook Analytics.
   });
 };
 
 YellowSidd.MessengerAPI.prototype.inviteFriends = function () {
   FBInstant.context.chooseAsync().then(function () {
-    FBInstant.logEvent('Method inviteFriends() ran successfully.'); // Log "inviteFriends" information to Facebook Analytics.
+    FBInstant.logEvent('Method inviteFriends ran successfully.'); // Log "inviteFriends" information to Facebook Analytics.
   }).catch(function (error) {
-    FBInstant.logEvent('Method inviteFriends() error: ', error); // Log "inviteFriends" error to Facebook Analytics.
+    FBInstant.logEvent('Method inviteFriends error: ', error); // Log "inviteFriends" error to Facebook Analytics.
   });
 };
 
 // Show Messenger products to purchase in that game.
 YellowSidd.MessengerAPI.prototype.showProducts = function () {
   FBInstant.payments.getCatalogAsync().then(function (catalog) {
-    FBInstant.logEvent('Method showProducts() ran successfully. Catalog of products: ', catalog); // Log "showProducts" information to Facebook Analytics.
+    FBInstant.logEvent('Method showProducts ran successfully. Catalog of products: ', catalog); // Log "showProducts" information to Facebook Analytics.
   }).catch(function (error) {
-    FBInstant.logEvent('Method showProducts() error: ', error); // Log "showProducts" error to Facebook Analytics.
+    FBInstant.logEvent('Method showProducts error: ', error); // Log "showProducts" error to Facebook Analytics.
   });
 };
 
 // Show Messenger unconsumed purchases in that game.
 YellowSidd.MessengerAPI.prototype.showPurchases = function () {
   FBInstant.payments.getPurchasesAsync().then(function (purchases) {
-    FBInstant.logEvent('Method showProducts() ran successfully. List of purchases: ', purchases); // Log "showPurchases" information to Facebook Analytics.
+    FBInstant.logEvent('Method showProducts ran successfully. List of purchases: ', purchases); // Log "showPurchases" information to Facebook Analytics.
   }).catch(function (error) {
-    FBInstant.logEvent('Method showProducts() error: ', error); // Log "showPurchases" error to Facebook Analytics.
+    FBInstant.logEvent('Method showProducts error: ', error); // Log "showPurchases" error to Facebook Analytics.
   });
 };
 
@@ -67,17 +67,17 @@ YellowSidd.MessengerAPI.prototype.gems5 = function () {
   FBInstant.payments.purchaseAsync({
     productID: 'gems5'
   }).then(function (purchase) {
-    FBInstant.logEvent('Method purchaseAsync() of method gems5() ran successfully. Purchase details: ', purchase); // Log "purchaseAsync" of "gems5" information to Facebook Analytics.
+    FBInstant.logEvent('Method purchaseAsync of method gems5 ran successfully. Purchase details: ', purchase); // Log "purchaseAsync" of "gems5" information to Facebook Analytics.
     FBInstant.payments.consumePurchaseAsync(purchase.purchaseToken).then(function () {
       localStorage.gems = parseInt(localStorage.gems) + 5; // Add appropriate quantity of extra gems.
       that.upgrade_sound.play(); // Play upgrade sound.
-      FBInstant.logEvent('Method consumePurchaseAsync() of method gems5() ran successfully.'); // Log "consumePurchaseAsync" of "gems5" information to Facebook Analytics.
+      FBInstant.logEvent('Method consumePurchaseAsync of method gems5 ran successfully.'); // Log "consumePurchaseAsync" of "gems5" information to Facebook Analytics.
     }).catch(function (error) {
       that.error_sound.play(); // Play error sound.
-      FBInstant.logEvent('Method consumePurchaseAsync() of method gems5() error: ', error); // Log "consumePurchaseAsync" of "gems5" error to Facebook Analytics.
+      FBInstant.logEvent('Method consumePurchaseAsync of method gems5 error: ', error); // Log "consumePurchaseAsync" of "gems5" error to Facebook Analytics.
     });
   }).catch(function (error) {
-    FBInstant.logEvent('Method purchaseAsync() of method gems5() error: ', error); // Log "purchaseAsync" of "gems5" error to Facebook Analytics.
+    FBInstant.logEvent('Method purchaseAsync of method gems5 error: ', error); // Log "purchaseAsync" of "gems5" error to Facebook Analytics.
     that.error_sound.play(); // Play error sound.
   });
 };
@@ -89,17 +89,17 @@ YellowSidd.MessengerAPI.prototype.gems20 = function () {
   FBInstant.payments.purchaseAsync({
     productID: 'gems20'
   }).then(function (purchase) {
-    FBInstant.logEvent('Method purchaseAsync() of method gems20() ran successfully. Purchase details: ', purchase); // Log "purchaseAsync" of "gems20" information to Facebook Analytics.
+    FBInstant.logEvent('Method purchaseAsync of method gems20 ran successfully. Purchase details: ', purchase); // Log "purchaseAsync" of "gems20" information to Facebook Analytics.
     FBInstant.payments.consumePurchaseAsync(purchase.purchaseToken).then(function () {
       localStorage.gems = parseInt(localStorage.gems) + 20; // Add appropriate quantity of extra gems.
       that.upgrade_sound.play(); // Play upgrade sound.
-      FBInstant.logEvent('Method consumePurchaseAsync() of method gems20() ran successfully.'); // Log "consumePurchaseAsync" of "gems20" information to Facebook Analytics.
+      FBInstant.logEvent('Method consumePurchaseAsync of method gems20 ran successfully.'); // Log "consumePurchaseAsync" of "gems20" information to Facebook Analytics.
     }).catch(function (error) {
       that.error_sound.play(); // Play error sound.
-      FBInstant.logEvent('Method consumePurchaseAsync() of method gems20() error: ', error); // Log "consumePurchaseAsync" of "gems20" error to Facebook Analytics.
+      FBInstant.logEvent('Method consumePurchaseAsync of method gems20 error: ', error); // Log "consumePurchaseAsync" of "gems20" error to Facebook Analytics.
     });
   }).catch(function (error) {
-    FBInstant.logEvent('Method purchaseAsync() of method gems20() error: ', error); // Log "purchaseAsync" of "gems20" error to Facebook Analytics.
+    FBInstant.logEvent('Method purchaseAsync of method gems20 error: ', error); // Log "purchaseAsync" of "gems20" error to Facebook Analytics.
     that.error_sound.play(); // Play error sound.
   });
 };
@@ -111,17 +111,17 @@ YellowSidd.MessengerAPI.prototype.gems50 = function () {
   FBInstant.payments.purchaseAsync({
     productID: 'gems50'
   }).then(function (purchase) {
-    FBInstant.logEvent('Method purchaseAsync() of method gems50() ran successfully. Purchase details: ', purchase); // Log "purchaseAsync" of "gems50" information to Facebook Analytics.
+    FBInstant.logEvent('Method purchaseAsync of method gems50 ran successfully. Purchase details: ', purchase); // Log "purchaseAsync" of "gems50" information to Facebook Analytics.
     FBInstant.payments.consumePurchaseAsync(purchase.purchaseToken).then(function () {
       localStorage.gems = parseInt(localStorage.gems) + 50; // Add appropriate quantity of extra gems.
       that.upgrade_sound.play(); // Play upgrade sound.
-      FBInstant.logEvent('Method consumePurchaseAsync() of method gems50() ran successfully.'); // Log "consumePurchaseAsync" of "gems50" information to Facebook Analytics.
+      FBInstant.logEvent('Method consumePurchaseAsync of method gems50 ran successfully.'); // Log "consumePurchaseAsync" of "gems50" information to Facebook Analytics.
     }).catch(function (error) {
       that.error_sound.play(); // Play error sound.
-      FBInstant.logEvent('Method consumePurchaseAsync() of method gems50() error: ', error); // Log "consumePurchaseAsync" of "gems50" error to Facebook Analytics.
+      FBInstant.logEvent('Method consumePurchaseAsync of method gems50 error: ', error); // Log "consumePurchaseAsync" of "gems50" error to Facebook Analytics.
     });
   }).catch(function (error) {
-    FBInstant.logEvent('Method purchaseAsync() of method gems50() error: ', error); // Log "purchaseAsync" of "gems50" error to Facebook Analytics.
+    FBInstant.logEvent('Method purchaseAsync of method gems50 error: ', error); // Log "purchaseAsync" of "gems50" error to Facebook Analytics.
     that.error_sound.play(); // Play error sound.
   });
 };
@@ -133,17 +133,17 @@ YellowSidd.MessengerAPI.prototype.gems100 = function () {
   FBInstant.payments.purchaseAsync({
     productID: 'gems100'
   }).then(function (purchase) {
-    FBInstant.logEvent('Method purchaseAsync() of method gems100() ran successfully. Purchase details: ', purchase); // Log "purchaseAsync" of "gems100" information to Facebook Analytics.
+    FBInstant.logEvent('Method purchaseAsync of method gems100 ran successfully. Purchase details: ', purchase); // Log "purchaseAsync" of "gems100" information to Facebook Analytics.
     FBInstant.payments.consumePurchaseAsync(purchase.purchaseToken).then(function () {
       localStorage.gems = parseInt(localStorage.gems) + 100; // Add appropriate quantity of extra gems.
       that.upgrade_sound.play(); // Play upgrade sound.
-      FBInstant.logEvent('Method consumePurchaseAsync() of method gems100() ran successfully.'); // Log "consumePurchaseAsync" of "gems100" information to Facebook Analytics.
+      FBInstant.logEvent('Method consumePurchaseAsync of method gems100 ran successfully.'); // Log "consumePurchaseAsync" of "gems100" information to Facebook Analytics.
     }).catch(function (error) {
       that.error_sound.play(); // Play error sound.
-      FBInstant.logEvent('Method consumePurchaseAsync() of method gems100() error: ', error); // Log "consumePurchaseAsync" of "gems100" error to Facebook Analytics.
+      FBInstant.logEvent('Method consumePurchaseAsync of method gems100 error: ', error); // Log "consumePurchaseAsync" of "gems100" error to Facebook Analytics.
     });
   }).catch(function (error) {
-    FBInstant.logEvent('Method purchaseAsync() of method gems100() error: ', error); // Log "purchaseAsync" of "gems100" error to Facebook Analytics.
+    FBInstant.logEvent('Method purchaseAsync of method gems100 error: ', error); // Log "purchaseAsync" of "gems100" error to Facebook Analytics.
     that.error_sound.play(); // Play error sound.
   });
 };
@@ -155,17 +155,17 @@ YellowSidd.MessengerAPI.prototype.gems200 = function () {
   FBInstant.payments.purchaseAsync({
     productID: 'gems200'
   }).then(function (purchase) {
-    FBInstant.logEvent('Method purchaseAsync() of method gems200() ran successfully. Purchase details: ', purchase); // Log "purchaseAsync" of "gems200" information to Facebook Analytics.
+    FBInstant.logEvent('Method purchaseAsync of method gems200 ran successfully. Purchase details: ', purchase); // Log "purchaseAsync" of "gems200" information to Facebook Analytics.
     FBInstant.payments.consumePurchaseAsync(purchase.purchaseToken).then(function () {
       localStorage.gems = parseInt(localStorage.gems) + 200; // Add appropriate quantity of extra gems.
       that.upgrade_sound.play(); // Play upgrade sound.
-      FBInstant.logEvent('Method consumePurchaseAsync() of method gems200() ran successfully.'); // Log "consumePurchaseAsync" of "gems200" information to Facebook Analytics.
+      FBInstant.logEvent('Method consumePurchaseAsync of method gems200 ran successfully.'); // Log "consumePurchaseAsync" of "gems200" information to Facebook Analytics.
     }).catch(function (error) {
       that.error_sound.play(); // Play error sound.
-      FBInstant.logEvent('Method consumePurchaseAsync() of method gems200() error: ', error); // Log "consumePurchaseAsync" of "gems200" error to Facebook Analytics.
+      FBInstant.logEvent('Method consumePurchaseAsync of method gems200 error: ', error); // Log "consumePurchaseAsync" of "gems200" error to Facebook Analytics.
     });
   }).catch(function (error) {
-    FBInstant.logEvent('Method purchaseAsync() of method gems200() error: ', error); // Log "purchaseAsync" of "gems200" error to Facebook Analytics.
+    FBInstant.logEvent('Method purchaseAsync of method gems200 error: ', error); // Log "purchaseAsync" of "gems200" error to Facebook Analytics.
     that.error_sound.play(); // Play error sound.
   });
 };
